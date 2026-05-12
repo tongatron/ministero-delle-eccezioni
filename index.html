@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+<meta name="theme-color" content="#f3ece1" media="(prefers-color-scheme: light)" />
+<meta name="theme-color" content="#16130f" media="(prefers-color-scheme: dark)" />
+<title>Il Ministero delle Eccezioni</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #f3ece1;
+    --bg-soft: #ece3d3;
+    --fg: #1c1a16;
+    --fg-soft: #5a534a;
+    --rule: #d9cdb7;
+    --accent: #8a5a2b;
+    --max: 38rem;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #16130f;
+      --bg-soft: #1f1b15;
+      --fg: #e9e2d4;
+      --fg-soft: #9a9285;
+      --rule: #2e2820;
+      --accent: #d6a467;
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: var(--bg); color: var(--fg); }
+  body {
+    font-family: "Crimson Pro", Georgia, "Times New Roman", serif;
+    font-size: 19px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    padding-bottom: 6rem;
+  }
+  header.site {
+    border-bottom: 1px solid var(--rule);
+    padding: 0.9rem 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background: var(--bg);
+    z-index: 5;
+    backdrop-filter: saturate(140%) blur(6px);
+  }
+  header.site .brand {
+    font-family: "Inter", system-ui, sans-serif;
+    font-size: 0.82rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--fg-soft);
+    text-decoration: none;
+  }
+  header.site .brand:hover { color: var(--fg); }
+  header.site nav { display: flex; gap: 0.4rem; }
+  header.site button, header.site a.btn {
+    font-family: "Inter", system-ui, sans-serif;
+    font-size: 0.78rem;
+    color: var(--fg-soft);
+    background: transparent;
+    border: 1px solid var(--rule);
+    padding: 0.35rem 0.7rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  header.site button:hover, header.site a.btn:hover { color: var(--fg); border-color: var(--fg-soft); }
+
+  main {
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: 1.5rem 1.2rem 4rem;
+  }
+  main h1 {
+    font-weight: 600;
+    font-size: 2.1rem;
+    line-height: 1.15;
+    margin: 1.5rem 0 0.3rem;
+    letter-spacing: -0.01em;
+  }
+  main h1.book-title {
+    font-size: 2.6rem;
+    margin-top: 2.2rem;
+    margin-bottom: 0.4rem;
+  }
+  main .subtitle {
+    font-family: "Inter", system-ui, sans-serif;
+    font-size: 0.85rem;
+    color: var(--fg-soft);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 2.2rem;
+  }
+  main h2 { font-weight: 600; font-size: 1.4rem; margin: 2.2rem 0 0.6rem; }
+  main h3 { font-weight: 600; font-size: 1.15rem; margin: 1.8rem 0 0.4rem; font-style: italic; color: var(--fg-soft); }
+  main p { margin: 0 0 1.1rem; hyphens: auto; }
+  main p + p { text-indent: 1.2em; }
+  main p:first-of-type, main h1 + p, main h2 + p, main h3 + p, main hr + p { text-indent: 0; }
+  main em { font-style: italic; }
+  main strong { font-weight: 600; }
+  main blockquote {
+    margin: 1.2rem 0;
+    padding: 0.1rem 1rem;
+    border-left: 2px solid var(--accent);
+    color: var(--fg-soft);
+    font-style: italic;
+  }
+  main blockquote p { text-indent: 0 !important; }
+  main hr {
+    border: none;
+    text-align: center;
+    margin: 2rem 0;
+    color: var(--fg-soft);
+  }
+  main hr::before {
+    content: "✻   ✻   ✻";
+    letter-spacing: 0.6em;
+    font-size: 0.8rem;
+  }
+  main ul, main ol { padding-left: 1.4rem; }
+  main li { margin-bottom: 0.3rem; }
+
+  .toc {
+    list-style: none;
+    padding: 0;
+    margin: 1.4rem 0 0;
+    border-top: 1px solid var(--rule);
+  }
+  .toc li { margin: 0; border-bottom: 1px solid var(--rule); }
+  .toc a {
+    display: flex;
+    align-items: baseline;
+    gap: 0.9rem;
+    padding: 0.95rem 0.2rem;
+    color: var(--fg);
+    text-decoration: none;
+  }
+  .toc a:hover { color: var(--accent); }
+  .toc .num {
+    font-family: "Inter", system-ui, sans-serif;
+    font-size: 0.78rem;
+    color: var(--fg-soft);
+    min-width: 1.6rem;
+    font-variant-numeric: tabular-nums;
+  }
+  .toc .title { flex: 1; font-size: 1.1rem; }
+
+  .chapter-nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 3rem;
+    padding-top: 1.4rem;
+    border-top: 1px solid var(--rule);
+    font-family: "Inter", system-ui, sans-serif;
+    font-size: 0.85rem;
+  }
+  .chapter-nav a {
+    color: var(--fg-soft);
+    text-decoration: none;
+    max-width: 45%;
+    display: block;
+  }
+  .chapter-nav a:hover { color: var(--accent); }
+  .chapter-nav .label {
+    display: block;
+    font-size: 0.7rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--fg-soft);
+    margin-bottom: 0.2rem;
+  }
+  .chapter-nav .name { color: var(--fg); }
+  .chapter-nav .next { text-align: right; margin-left: auto; }
+
+  .loading {
+    color: var(--fg-soft);
+    font-family: "Inter", system-ui, sans-serif;
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 3rem 1rem;
+  }
+
+  footer.site {
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: 2rem 1.2rem 3rem;
+    font-family: "Inter", system-ui, sans-serif;
+    font-size: 0.78rem;
+    color: var(--fg-soft);
+    text-align: center;
+    border-top: 1px solid var(--rule);
+  }
+  footer.site a { color: var(--fg-soft); }
+
+  @media (max-width: 480px) {
+    body { font-size: 18px; }
+    main h1.book-title { font-size: 2.1rem; }
+    main h1 { font-size: 1.7rem; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <a href="#/" class="brand">Ministero delle Eccezioni</a>
+  <nav>
+    <a href="#/" class="btn">Indice</a>
+  </nav>
+</header>
+
+<main id="app">
+  <div class="loading">Caricamento…</div>
+</main>
+
+<footer class="site">
+  <p>Romanzo in lavorazione · <a href="https://github.com/tongatron/ministero-delle-eccezioni">github</a></p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script>
+const CHAPTERS = [
+  { n: 1, slug: "capitolo-1", title: "Una convocazione cortese",        file: "capitoli/01_capitolo_1.md" },
+  { n: 2, slug: "capitolo-2", title: "La città che non attraversa",      file: "capitoli/02_capitolo_2.md" },
+  { n: 3, slug: "capitolo-3", title: "Otto colleghi, sette di troppo",  file: "capitoli/03_capitolo_3.md" }
+];
+
+const app = document.getElementById("app");
+
+function renderIndex() {
+  document.title = "Il Ministero delle Eccezioni";
+  app.innerHTML = `
+    <h1 class="book-title">Il Ministero delle Eccezioni</h1>
+    <div class="subtitle">Un romanzo in lavorazione</div>
+    <p><em>Una commedia burocratica cosmica in cui la civiltà non è caduta: è solo bloccata in attesa di approvazione.</em></p>
+    <h2>Capitoli</h2>
+    <ul class="toc">
+      ${CHAPTERS.map(c => `
+        <li><a href="#/${c.slug}">
+          <span class="num">${String(c.n).padStart(2,"0")}</span>
+          <span class="title">${c.title}</span>
+        </a></li>
+      `).join("")}
+    </ul>
+  `;
+  window.scrollTo(0, 0);
+}
+
+async function renderChapter(slug) {
+  const idx = CHAPTERS.findIndex(c => c.slug === slug);
+  if (idx === -1) { renderIndex(); return; }
+  const ch = CHAPTERS[idx];
+  document.title = `${ch.title} · Il Ministero delle Eccezioni`;
+  app.innerHTML = `<div class="loading">Caricamento del capitolo…</div>`;
+  try {
+    const res = await fetch(ch.file, { cache: "no-cache" });
+    if (!res.ok) throw new Error("HTTP " + res.status);
+    const md = await res.text();
+    // Strip the first H1 since we render our own header
+    const body = md.replace(/^#\s+.*$/m, "").trim();
+    const html = marked.parse(body);
+    const prev = idx > 0 ? CHAPTERS[idx - 1] : null;
+    const next = idx < CHAPTERS.length - 1 ? CHAPTERS[idx + 1] : null;
+    app.innerHTML = `
+      <div class="subtitle">Capitolo ${ch.n}</div>
+      <h1>${ch.title}</h1>
+      <article>${html}</article>
+      <nav class="chapter-nav">
+        ${prev ? `<a href="#/${prev.slug}" class="prev"><span class="label">← Precedente</span><span class="name">${prev.title}</span></a>` : `<span></span>`}
+        ${next ? `<a href="#/${next.slug}" class="next"><span class="label">Successivo →</span><span class="name">${next.title}</span></a>` : `<a href="#/" class="next"><span class="label">Indice</span><span class="name">Tutti i capitoli</span></a>`}
+      </nav>
+    `;
+    window.scrollTo(0, 0);
+  } catch (e) {
+    app.innerHTML = `<div class="loading">Impossibile caricare il capitolo. (${e.message})</div>`;
+  }
+}
+
+function route() {
+  const hash = location.hash.replace(/^#\/?/, "");
+  if (!hash || hash === "/") { renderIndex(); return; }
+  renderChapter(hash);
+}
+
+window.addEventListener("hashchange", route);
+route();
+</script>
+</body>
+</html>
