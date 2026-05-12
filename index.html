@@ -213,6 +213,7 @@
   <a href="#/" class="brand">Ministero delle Eccezioni</a>
   <nav>
     <a href="#/" class="btn">Indice</a>
+    <a href="#/progetto" class="btn">Progetto</a>
   </nav>
 </header>
 
@@ -232,6 +233,18 @@ const CHAPTERS = [
   { n: 2, slug: "capitolo-2",   title: "La città che non attraversa",    label: "Capitolo 2",    file: "capitoli/02_capitolo_2.md" },
   { n: 3, slug: "capitolo-3",   title: "Otto colleghi, sette di troppo", label: "Capitolo 3",    file: "capitoli/03_capitolo_3.md" },
   { n: 4, slug: "capitolo-4",   title: "Lo scantinato",                  label: "Capitolo 4",    file: "capitoli/04_capitolo_4.md" }
+];
+
+const PROJECT_FILES = [
+  { slug: "outline",              title: "Outline",                    file: "progetto/01_outline.md" },
+  { slug: "personaggi",           title: "Personaggi",                 file: "progetto/02_personaggi.md" },
+  { slug: "worldbuilding",        title: "Worldbuilding",              file: "progetto/03_worldbuilding.md" },
+  { slug: "struttura-capitoli",   title: "Struttura capitoli",         file: "progetto/04_struttura_capitoli.md" },
+  { slug: "temi-running-jokes",   title: "Temi e running jokes",       file: "progetto/05_temi_e_running_jokes.md" },
+  { slug: "scene-chiave",         title: "Scene chiave",               file: "progetto/06_scene_chiave.md" },
+  { slug: "dialoghi-memorabili",  title: "Dialoghi memorabili",        file: "progetto/07_dialoghi_memorabili.md" },
+  { slug: "proposta-prosecuzione",title: "Proposta di prosecuzione",   file: "progetto/09_proposta_prosecuzione.md" },
+  { slug: "regole-di-voce",       title: "Regole di voce",             file: "progetto/10_regole_di_voce.md" }
 ];
 
 const app = document.getElementById("app");
@@ -285,9 +298,58 @@ async function renderChapter(slug) {
   }
 }
 
+function renderProjectIndex() {
+  document.title = "Progetto · Il Ministero delle Eccezioni";
+  app.innerHTML = `
+    <div class="subtitle">Materiali di lavorazione</div>
+    <h1>Progetto</h1>
+    <p><em>Documenti dietro le quinte: outline, personaggi, mondo, struttura, regole di voce. Non fanno parte del romanzo — sono lo scheletro su cui è costruito.</em></p>
+    <ul class="toc">
+      ${PROJECT_FILES.map((p, i) => `
+        <li><a href="#/progetto/${p.slug}">
+          <span class="num">${String(i+1).padStart(2,"0")}</span>
+          <span class="title">${p.title}</span>
+        </a></li>
+      `).join("")}
+    </ul>
+  `;
+  window.scrollTo(0, 0);
+}
+
+async function renderProjectDoc(slug) {
+  const idx = PROJECT_FILES.findIndex(p => p.slug === slug);
+  if (idx === -1) { renderProjectIndex(); return; }
+  const doc = PROJECT_FILES[idx];
+  document.title = `${doc.title} · Progetto · Il Ministero delle Eccezioni`;
+  app.innerHTML = `<div class="loading">Caricamento…</div>`;
+  try {
+    const res = await fetch(doc.file, { cache: "no-cache" });
+    if (!res.ok) throw new Error("HTTP " + res.status);
+    const md = await res.text();
+    const body = md.replace(/^#\s+.*$/m, "").trim();
+    const html = marked.parse(body);
+    const prev = idx > 0 ? PROJECT_FILES[idx - 1] : null;
+    const next = idx < PROJECT_FILES.length - 1 ? PROJECT_FILES[idx + 1] : null;
+    app.innerHTML = `
+      <div class="subtitle">Progetto</div>
+      <h1>${doc.title}</h1>
+      <article>${html}</article>
+      <nav class="chapter-nav">
+        ${prev ? `<a href="#/progetto/${prev.slug}" class="prev"><span class="label">← Precedente</span><span class="name">${prev.title}</span></a>` : `<a href="#/progetto" class="prev"><span class="label">← Progetto</span><span class="name">Indice</span></a>`}
+        ${next ? `<a href="#/progetto/${next.slug}" class="next"><span class="label">Successivo →</span><span class="name">${next.title}</span></a>` : `<a href="#/progetto" class="next"><span class="label">Progetto</span><span class="name">Indice</span></a>`}
+      </nav>
+    `;
+    window.scrollTo(0, 0);
+  } catch (e) {
+    app.innerHTML = `<div class="loading">Impossibile caricare il documento. (${e.message})</div>`;
+  }
+}
+
 function route() {
   const hash = location.hash.replace(/^#\/?/, "");
   if (!hash || hash === "/") { renderIndex(); return; }
+  if (hash === "progetto") { renderProjectIndex(); return; }
+  if (hash.startsWith("progetto/")) { renderProjectDoc(hash.slice("progetto/".length)); return; }
   renderChapter(hash);
 }
 
