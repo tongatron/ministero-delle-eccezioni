@@ -56,7 +56,7 @@ ARMSTRONG-Λ, Operazione Blue Parentheses, manager FALCONE-Ω in pensione. Sette
 **Gancio**: dopo, Greta si chiude in silenzio. Teo capisce che lei *sapeva*.
 **Tono**: comico-misterioso. Tipo enigma sherlockiano risolto da una bambina.
 
-### Cap 10 — *Il servizio funerario predittivo* ⏳
+### Cap 10 — *Il servizio funerario predittivo* ✅
 **Situazione**: il Servizio Funerario Automatizzato ha iniziato a seppellire persone vive per "anticipazione predittiva di decesso". Bare confortevoli con WiFi. Una signora è già stata seppellita per quattro giorni. Sta bene, ha letto due libri.
 **Conflitto**: la clausola di "predizione di decesso" si auto-conferma: se non muori dopo la sepoltura, "il sistema ti aveva salvato la vita".
 **Personaggi**: Teo, Padre Eligio (centrale; usa la stola viola).
