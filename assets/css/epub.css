@@ -1,0 +1,185 @@
+/* ============================================
+   Il Ministero delle Eccezioni — Stile ePub
+   Compatibile con: Apple Books, Calibre, Kobo,
+   Kindle Previewer (KFX/EPUB3)
+   ============================================ */
+
+/* --- Reset base --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* --- Body e tipografia --- */
+body {
+  font-family: "Georgia", "Palatino Linotype", serif;
+  font-size: 1em;
+  line-height: 1.75;
+  color: #1a1a1a;
+  background-color: #ffffff;
+  text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  padding: 0 1em;
+}
+
+/* --- Dark mode --- */
+@media (prefers-color-scheme: dark) {
+  body {
+    color: #e8e0d0;
+    background-color: #1c1c1e;
+  }
+  h1, h2, h3 {
+    color: #f5f0e8;
+  }
+  blockquote {
+    border-left-color: #555;
+    color: #c0b8a8;
+  }
+  hr {
+    border-color: #444;
+  }
+}
+
+/* --- Titoli capitolo --- */
+h1 {
+  font-size: 1.8em;
+  font-weight: bold;
+  line-height: 1.3;
+  margin-top: 3em;
+  margin-bottom: 0.5em;
+  page-break-before: always;
+  break-before: page;
+  text-align: left;
+}
+
+h2 {
+  font-size: 1.25em;
+  font-weight: bold;
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+  text-align: left;
+}
+
+h3 {
+  font-size: 1.05em;
+  font-weight: bold;
+  margin-top: 1.5em;
+  margin-bottom: 0.4em;
+  text-align: left;
+}
+
+/* --- Paragrafi --- */
+p {
+  margin-bottom: 0.8em;
+  orphans: 3;
+  widows: 3;
+}
+
+p + p {
+  text-indent: 1.5em;
+  margin-top: 0;
+}
+
+/* Rimuove il rientro dopo titoli e separatori */
+h1 + p,
+h2 + p,
+h3 + p,
+hr + p,
+blockquote + p {
+  text-indent: 0;
+}
+
+/* --- Citazioni e corsivo --- */
+blockquote {
+  margin: 1.5em 2em;
+  padding-left: 1em;
+  border-left: 3px solid #aaa;
+  font-style: italic;
+  color: #444;
+}
+
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: bold;
+}
+
+/* --- Separatore di scena --- */
+hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 2em auto;
+  width: 40%;
+  text-align: center;
+}
+
+/* --- Copertina --- */
+.cover-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+/* --- Note a piè di pagina --- */
+.footnote {
+  font-size: 0.85em;
+  line-height: 1.5;
+  margin-top: 0.5em;
+  color: #555;
+}
+
+/* --- Indice (TOC) --- */
+nav#toc ol,
+nav#toc ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+nav#toc li {
+  margin: 0.4em 0;
+  font-size: 1em;
+}
+
+nav#toc a {
+  text-decoration: none;
+  color: inherit;
+}
+
+nav#toc a:hover {
+  text-decoration: underline;
+}
+
+/* --- Pagina titolo --- */
+.title-page {
+  text-align: center;
+  padding: 4em 1em;
+}
+
+.title-page h1 {
+  font-size: 2.2em;
+  margin-bottom: 0.3em;
+  page-break-before: avoid;
+  break-before: avoid;
+}
+
+.title-page .author {
+  font-size: 1.2em;
+  font-style: italic;
+  margin-top: 0.5em;
+}
+
+/* --- Ottimizzazione mobile --- */
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 1em;
+    padding: 0 0.5em;
+  }
+  h1 {
+    font-size: 1.5em;
+  }
+}

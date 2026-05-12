@@ -2,3 +2,12 @@
 .vscode/
 .idea/
 *.swp
+
+# Build output
+build/
+
+# Font (di solito pesanti — traccia solo i metadata)
+assets/fonts/*.ttf
+assets/fonts/*.otf
+assets/fonts/*.woff
+assets/fonts/*.woff2
