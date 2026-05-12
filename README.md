@@ -13,7 +13,8 @@ libro/
 │   ├── 02_capitolo_2.md      # La città che non attraversa
 │   ├── 03_capitolo_3.md      # Otto colleghi, sette di troppo
 │   ├── 04_capitolo_4.md      # Lo scantinato
-│   └── 05_capitolo_5.md      # Il sonno è una pratica non ottimizzata
+│   ├── 05_capitolo_5.md      # Il sonno è una pratica non ottimizzata
+│   └── 06_capitolo_6.md      # Una guerra in attesa di chiusura
 └── progetto/                 # documenti di lavoro
     ├── 01_outline.md
     ├── 02_personaggi.md
@@ -34,6 +35,7 @@ libro/
 3. [Otto colleghi, sette di troppo](capitoli/03_capitolo_3.md)
 4. [Lo scantinato](capitoli/04_capitolo_4.md)
 5. [Il sonno è una pratica non ottimizzata](capitoli/05_capitolo_5.md)
+6. [Una guerra in attesa di chiusura](capitoli/06_capitolo_6.md)
 
 ## Tono in una riga
 
