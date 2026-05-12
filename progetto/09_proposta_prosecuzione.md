@@ -1,38 +1,93 @@
-# Proposta di prosecuzione
+# Guida alla prosecuzione (per agenti AI)
 
-Abbiamo posato le fondamenta: outline, personaggi, mondo, struttura per capitoli, temi, scene madri, dialoghi-seme, e un'apertura del primo capitolo. Da qui si può procedere in molti modi. Ti propongo cinque direzioni, in ordine di consiglio.
+Questo documento è la prima cosa che un agente AI dovrebbe leggere prima di scrivere un nuovo capitolo. Se ne hai tempo per leggerne uno solo, leggi questo.
 
-## Opzione A — Completare il Capitolo 1 *(consigliata)*
+## Stato corrente
 
-L'apertura attualmente arriva fino all'ingresso di Teo nel Ministero. Il capitolo si chiude logicamente con il primo incontro pieno con MINERVA-7, la firma — inconsapevole — del contratto, e il primo accenno al caso della città bloccata. Aggiungiamo circa 2.500–3.500 parole, poi rileggiamo insieme e calibriamo voce, ritmo, densità delle battute. Una volta che il Cap. 1 è "giusto", abbiamo lo stampo per tutti gli altri.
+- **Capitoli scritti**: 1–6 (~32.000 parole totali).
+- **Capitoli da scrivere**: 7–23 + epilogo.
+- **Outline completo**: `01_outline.md`.
+- **Voce e regole**: `10_regole_di_voce.md`.
+- **Personaggi canone**: `02_personaggi.md`.
+- **Fili narrativi attivi**: `11_continuita_e_fili.md` (leggi obbligatoria).
 
-## Opzione B — Saltare al Cap. 2 (la città che non attraversa)
+## Procedura per scrivere un nuovo capitolo
 
-È il primo set-piece comico vero e proprio: ci dà subito la temperatura della satira e ci permette di stress-testare il tono nelle scene di "lavoro sul campo" di Teo. Utile se vuoi assicurarti che il libro funzioni *anche* nei capitoli-caso, non solo nelle scene istituzionali.
+1. **Leggi obbligatoriamente** prima di partire:
+   - `10_regole_di_voce.md` (per la voce);
+   - `02_personaggi.md` (per i tic di ogni personaggio);
+   - `11_continuita_e_fili.md` (per non contraddire le rivelazioni programmate);
+   - `04_struttura_capitoli.md`, la sezione del capitolo che stai scrivendo (per la trama);
+   - **il capitolo immediatamente precedente** in `capitoli/` (per la voce attuale di Teo e gli stati emotivi correnti).
 
-## Opzione C — Scrivere prima le scene madri
+2. **Calibra l'apertura**:
+   - Quasi sempre con una notifica o un piccolo dettaglio domestico (bonsai, bollitore, telefono).
+   - Sempre passato remoto, sempre terza persona aderente a Teo.
 
-Saltare alle scene chiave (cap. 4 con BOTHWELL, cap. 13 con il distributore, cap. 22 funerale) per avere subito i pilastri emotivi. Rischio: senza il tessuto connettivo, suonano isolate. Vantaggio: capiamo subito se l'asse emotivo regge.
+3. **Costruisci il caso**:
+   - Una situazione assurda, raccontata in due-tre paragrafi.
+   - Un conflitto burocratico chiaro.
+   - Almeno una clausola fittizia con anno e numero (es. *"clausola del 2058, lettera c, comma 4"*).
 
-## Opzione D — Espandere il worldbuilding
+4. **Dosa l'umorismo**:
+   - Una battuta a pagina, mai due.
+   - La battuta arriva alla fine. Mai sottolinearla.
+   - L'umorismo è secco, britannico, mai gridato.
 
-Aggiungere file dedicati: glossario, mappa di Larvego, gerarchia dei Dicasteri, taxonomy delle AI, un finto manuale di onboarding del Ministero (utilissimo come materiale paratestuale, in stile Pratchett/Adams). Buono se vogliamo accumulare dettagli prima di scrivere a regime.
+5. **Inserisci il running joke**:
+   - Almeno una notifica nuova nello stile canonico.
+   - Almeno un richiamo a un running joke esistente (caramelle, sedia, bonsai, moquette salmone, *Cordialmente*).
 
-## Opzione E — Definire la voce narrante
+6. **Tieni il filone**:
+   - Se il capitolo è 7-15: lascia trapelare *senza spiegare* qualcosa di Vellario/Mottera/Sondrio.
+   - Se il capitolo è 12-15: prepara la rivelazione su Bothwell (cap 15) e la sua morte (cap 21).
+   - Se il capitolo è 16-22: il filone diventa centrale.
 
-Decidere ora, in modo esplicito: terza persona aderente a Teo, prossima al free indirect, con incursioni saggistiche del narratore (alla Adams). Possiamo scrivere un breve documento di "regole di voce" — cosa il narratore può fare e cosa no — per garantire coerenza tonale su 23 capitoli.
+7. **Chiusura**:
+   - Quasi sempre una notifica + una piccola immagine domestica (bonsai, telefono, una luce).
+   - Mai morale, mai riassunto, mai climax di parole.
 
----
+## Cosa NON fare mai
 
-## La mia raccomandazione
+- **Non spiegare le battute**. Mai. Se hai scritto "ironicamente sorrise", riscrivi.
+- **Non far diventare Teo un eroe**. Resta mediocre. Le sue intuizioni sono *involontariamente* utili.
+- **Non rivelare in anticipo che Bothwell ha creato il Ministero**. È la rivelazione del cap 15.
+- **Non far morire Bothwell prima del cap 21**.
+- **Non sciogliere il mistero di Vellario in modo netto**. Resta sospeso. Il caso del cap 8 è una *prova generale*, non la conclusione.
+- **Non risolvere il ticket #883**. Mistero parallelo deliberatamente irrisolto.
+- **Non dare un nome di battesimo a Pisu**.
+- **Non far parlare ARMSTRONG-Λ a voce**.
+- **Non far perdere a Bothwell le parentesi quadre**.
+- **Non aggiungere emoji al testo principale**. Le notifiche possono contenere, di rado, una piccola emoji vintage tipo girasole.
+- **Non far comparire personaggi nuovi se ne esiste uno già canonico che potrebbe servire**.
+- **Non riassumere i capitoli precedenti dentro il capitolo nuovo**. Se serve un richiamo, basta una frase.
 
-Procediamo con **A + E in parallelo**: completiamo il Capitolo 1, e nel frattempo (o subito dopo) fissiamo un breve documento sulle regole di voce. Quando avremo il Cap. 1 calibrato, scriveremo il Cap. 2 con sicurezza, e poi proseguiremo a ritmo, un capitolo alla volta, con check di tono ogni tre capitoli.
+## Cosa SÌ fare sempre
 
-Fammi sapere quale opzione preferisci, e se hai correzioni di rotta sul materiale già impostato — soprattutto su:
+- Una notifica per capitolo, minimo.
+- Una clausola fittizia con anno, minimo.
+- Un richiamo a un running joke esistente.
+- Una variazione tonale: comicità + inquietudine + tenerezza.
+- Una citazione di moquette salmone (almeno una volta).
+- Un *Cordialmente* fuori contesto.
 
-1. Tono generale (è abbastanza asciutto? troppo britannico? troppo italiano?).
-2. Il protagonista (Teo ti convince come centro emotivo? vuoi più malinconia, più sarcasmo, più tenerezza?).
-3. Il twist su BOTHWELL (lo lasciamo a metà romanzo o lo sposti?).
-4. Lunghezza target del libro (capitoli più brevi e più numerosi? o capitoli più lunghi, più "respirati"?).
+## Domande di calibrazione da farsi prima di consegnare il capitolo
 
-Quando mi rispondi, riparto.
+1. Suona come continuazione naturale del capitolo precedente?
+2. Ogni AI parla con la propria voce stabilita?
+3. Ogni personaggio umano fa il proprio tic?
+4. C'è almeno una battuta che voglio rileggere?
+5. C'è almeno una frase che voglio rileggere *per emozione*?
+6. Ho aggiornato il telefono di Teo (notifiche)?
+7. Ho rispettato il filone Vellario/Mottera/Bothwell senza accelerarlo?
+8. Il capitolo si chiude su una piccola immagine concreta?
+
+## Procedura tecnica
+
+1. Crea il file `capitoli/0X_capitolo_X.md`.
+2. Apri con il titolo in `# Capitolo X — *Titolo*` (il sito strappa l'H1 prima del rendering).
+3. Scrivi.
+4. Aggiungi la voce in `CHAPTERS` di `index.html`.
+5. Aggiorna `README.md` con il nuovo file.
+6. Commit con messaggio: `Capitolo X: <titolo>`.
+7. Push.

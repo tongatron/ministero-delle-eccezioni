@@ -23,8 +23,9 @@ libro/
     ├── 05_temi_e_running_jokes.md
     ├── 06_scene_chiave.md
     ├── 07_dialoghi_memorabili.md
-    ├── 09_proposta_prosecuzione.md
-    └── 10_regole_di_voce.md
+    ├── 09_proposta_prosecuzione.md    # Guida alla prosecuzione (per agenti AI)
+    ├── 10_regole_di_voce.md
+    └── 11_continuita_e_fili.md         # Fili narrativi attivi, rivelazioni programmate
 ```
 
 ## Capitoli pubblicati

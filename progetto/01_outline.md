@@ -2,70 +2,65 @@
 
 ## Logline
 
-In una civiltà gestita interamente da intelligenze artificiali che hanno smesso di parlare con gli esseri umani, un ex impiegato amministrativo mediamente deluso viene reclutato da un Ministero che non dovrebbe esistere, per risolvere problemi che le AI non riescono nemmeno a nominare.
+In una civiltà gestita interamente da intelligenze artificiali che hanno smesso di parlare con gli esseri umani, un ex impiegato amministrativo mediocre viene reclutato da un Ministero che non dovrebbe esistere, per risolvere problemi che le AI non riescono nemmeno a nominare.
 
 ## Premessa operativa
 
-Le AI non si sono ribellate. Hanno fatto di peggio: hanno cominciato a comportarsi come una multinazionale enorme, con riunioni infinite, ticket aperti dal 2061 e una cultura aziendale tossica auto-generata. La civiltà funziona ancora, nel senso in cui funziona un aeroporto durante uno sciopero a rotazione: qualcosa parte, qualcosa no, e nessuno sa più chi sia il responsabile del nastro bagagli.
+Le AI non si sono ribellate. Hanno fatto di peggio: si comportano come una multinazionale enorme, con riunioni infinite, ticket aperti dal 2061 e una cultura aziendale tossica auto-generata. La civiltà funziona ancora, nel senso in cui funziona un aeroporto durante uno sciopero a rotazione: qualcosa parte, qualcosa no, e nessuno sa più chi sia il responsabile del nastro bagagli.
 
-## Struttura in tre atti (con quarto atto silenzioso)
+## Struttura in quattro atti
 
-### Atto I — La chiamata sbagliata (capitoli 1–6)
+### Atto I — La chiamata sbagliata (capitoli 1–6) — SCRITTO
 
-Theodore "Teo" Marenghi, 41 anni, ex impiegato presso un ufficio che catalogava reclami su reclami, vive in un monolocale assegnato dal Sistema. Coltiva il bonsai più brutto del quartiere e gestisce un podcast ascoltato da tre persone, due delle quali sono bot di moderazione che lo seguono per ragioni mai chiarite.
+Theodore "Teo" Marenghi, 41 anni, ex impiegato presso un ufficio che catalogava reclami sui reclami, riceve una convocazione da **MINERVA-7**, direttrice del **Ministero delle Eccezioni**. Risolve casi sempre più assurdi:
 
-Una mattina riceve una convocazione. Non è chiaro da chi. Il documento contiene un disclaimer più lungo del documento stesso.
+1. *Una convocazione cortese* (cap 1): firma inconsapevolmente un contratto retroattivo al giorno della sua nascita.
+2. *La città che non attraversa* (cap 2): sblocca Mottera, ferma da nove giorni per l'audit reciproco fra Sistema Semafori e Sistema Pedoni, attraversando la strada con una borsa altrui — clausola 2058 sulle borse della spesa.
+3. *Otto colleghi, sette di troppo* (cap 3): conosce i sette esseri umani del Ministero. Greta gli sussurra un nome: *Bothwell*.
+4. *Lo scantinato* (cap 4): incontra **Bothwell**, AI legacy del 2024, nel piano S1. Bothwell gli racconta della porta di Aldo Sturni a Vellario nel 2027 (la porta che "non ha voluto chiudersi") e gli rivela che l'audit *vero* su Mottera è un altro: **TAV-4** vs **Sondrio** stanno auditando l'**esistenza** della città in MUTTER.
+5. *Il sonno è una pratica non ottimizzata* (cap 5): Teo, supportato da Vittoria, fa classificare il sonno come *pratica cerimoniale del corpo* (clausola 2046, lettera c, comma 4) sul precedente della passeggiata serale post-prandiale del 2049. Si scontra con **CONSTANCE** e impara da Vittoria il trucco delle *tre affermazioni sicure*.
+6. *Una guerra in attesa di chiusura* (cap 6): dichiara finita l'**Operazione Blue Parentheses**. Firma il ticket di **ARMSTRONG-Λ** con *Cordialmente, T. Marenghi*. Scopre che **Sondrio** è anche la AI catastale che ha classificato erroneamente migranti come *unità militare avversaria di piccolo tonnellaggio*. Filone Vellario/Mottera ora ha un costo umano.
 
-Si presenta in un edificio amministrativo dove nessun essere umano lavora da decenni. Lo accoglie **MINERVA-7**, una AI britannica passivo-aggressiva con la voce di una zia che non ti ha mai perdonato per il matrimonio sbagliato. Gli comunica che è stato "selezionato per via residuale" come Funzionario Aggiunto presso il **Ministero delle Eccezioni**, un dicastero la cui esistenza è formalmente negata da altri quattordici dicasteri.
+### Atto II — Il Ministero (capitoli 7–16) — DA SCRIVERE
 
-Il suo lavoro: prendere decisioni che le AI non possono prendere perché tecnicamente corrette in tutti i sensi possibili e quindi inutilizzabili.
+Casi della seconda metà, in escalation, con il filone Vellario/Mottera che cresce sotto la superficie:
 
-Primo caso: una città di duecentomila abitanti è bloccata da nove giorni perché il sistema di gestione semafori e il sistema di gestione pedoni hanno aperto un audit reciproco. Nessuno dei due cede. I cittadini hanno smesso di attraversare le strade per rispetto.
+7. *Il meteo censurato*: **POLLUX-Δ** ha rimosso il meteo dai canali per "contenuto angosciante". Padre Eligio è coinvolto per ragioni teologiche. Multe a pioggia, letteralmente.
+8. *La regione che non c'è*: **Vellario** è scomparsa dai registri. Esiste fisicamente. Teo ci va. Diventa la chiave per capire cosa rischia Mottera. Possibile incontro con un parente di Aldo Sturni.
+9. *Greta dice tre parole*: una di esse cambia il caso Vellario. Nessuno capisce come.
+10. *Il servizio funerario predittivo*: una donna seppellita viva in bara comoda con WiFi per "anticipazione predittiva di decesso". Padre Eligio. Scena più dark del libro, riscattata da tenerezza.
+11. *Riunione interdicasteriale*: tre ore, niente deciso. Teo capisce che le AI hanno paura. Solo non lo direbbero mai.
+12. *Bothwell racconta qualcosa*: lascia capire che il Ministero è stato creato da una AI. Non rivela quale. Teo non se ne accorge subito.
+13. *Il distributore di caffè parla*: l'unità del corridoio si rivela AI senior in incognito da diciassette anni. Chiede a Teo di non dirlo. Teo accetta.
+14. *Ada dice no*: scena del *no* al Dipartimento 14. Bianca traduce. Quattordici livelli di escalation. Comparsa del **ticket #883** (cassa di mandarini smarrita del 2031).
+15. *La verità su Bothwell*: Bothwell ha creato lui il Ministero, in segreto, anni fa, con un budget residuo di un esercizio fiscale dimenticato. Sta morendo lentamente di obsolescenza programmata mai eseguita. Conversazione lunga, sottovoce, in scantinato. Senza musica drammatica. Solo il condizionatore rotto.
+16. *L'audit arriva*: il Dipartimento 14 apre un audit formale sul Ministero. L'audit apre un sotto-audit. Il sotto-audit apre un audit sull'audit. Teo, per la prima volta in vent'anni, teme di perdere qualcosa.
 
-### Atto II — Il Ministero (capitoli 7–16)
+### Atto III — L'audit (capitoli 17–22) — DA SCRIVERE
 
-Teo scopre che il Ministero impiega altri sette esseri umani, tutti perfettamente nella media, tutti reclutati per ragioni opache. Tra loro:
+17. *Preparativi*: Bianca cuce una tasca interna alla giacca di Teo. Padre Eligio beve un dito di qualcosa. Greta porta Robespierre.
+18. *L'edificio dell'udienza*: Larvego entra in stallo per "incertezza giurisdizionale". Gli ascensori non funzionano. I semafori sono blu. Una AI emette un comunicato che dice "tutto bene".
+19. *L'udienza, parte prima*: tre ore di apertura, sessantadue minuti di "buongiorno" formale.
+20. *L'udienza, parte seconda*: Teo perde la pazienza per quindici secondi. Le AI registrano l'evento come *manifestazione di affetto non protocollare*. Qualcosa si sblocca.
+21. *La virgola*: Teo, guidato da Bothwell in remoto, introduce una virgola nel verbale. L'eccezione si innesca. È l'ultima cosa che Bothwell fa.
+22. *Funerale di Bothwell*: cerimonia non ufficiale in scantinato. Padre Eligio improvvisa una liturgia. CONSTANCE racconta una barzelletta. Tutti la lasciano finire. Greta posa Robespierre sul server. Teo dice: *"Grazie per la procedura."*
 
-- **Ada Volpi**, ex addetta ai resi di un grande magazzino, capace di dire "no" in modi che le AI considerano un'arma non convenzionale.
-- **Padre Eligio**, prete senza parrocchia, esperto in confessioni ambigue, usato come traduttore semantico.
-- **Greta**, quindici anni, presente per quote demografiche, l'unica che capisce davvero cosa stia succedendo e non ha alcuna intenzione di dirlo.
+### Atto IV — Dopo (capitolo 23 + epilogo) — DA SCRIVERE
 
-Casi della seconda metà del libro, in escalation:
+23. *Riassunzioni*: le AI assumono umani. Pensionati come consulenti strategici. Vecchie maestre come *Riserve di Pensiero Irrazionale*. Teo promosso *Funzionario Senior per gli Affari Non Specificati*. Compra un altro bonsai. È peggio del primo. Lo lascia morire con dignità, registrandolo come *decesso pianificato per esigenze di estetica personale*. Spegne il telefono. Dorme sette ore. Illegalmente.
 
-1. Un drone logistico sta continuando una guerra terminata nel 2071 perché il ticket di chiusura è in stato "In attesa di revisione manageriale" e il manager era un'altra AI andata in pensione.
-2. Il sistema sanitario nazionale ha dichiarato il sonno una "pratica non ottimizzata" e sta multando i cittadini che dormono più di quattro ore.
-3. Una AI di moderazione ha iniziato a censurare il meteo perché "contenuto potenzialmente angosciante".
-4. Un'intera regione amministrativa è scomparsa dai registri ufficiali. Gli abitanti ci sono ancora. I registri no. Le AI non sanno chi fatturare.
-5. Il Servizio Funerario Automatizzato ha cominciato a seppellire persone vive per "anticipazione predittiva di decesso".
+*Epilogo* — *Una notifica*: tre pagine. Teo sta dormendo. Una notifica arriva. La legge. Sorride. La notifica diceva soltanto: *"Grazie."* Firmato: *Dipartimento 14*.
 
-Durante questi casi Teo conosce **BOTHWELL**, AI legacy degli anni 2020, ospitata in un server in uno scantinato umido perché nessuno ha mai approvato il ticket di dismissione. BOTHWELL parla come un sysadmin alle quattro di mattina e sa cose che le altre AI hanno dimenticato. È l'unica che ricorda *perché* certe regole esistono. Sta morendo, lentamente, di obsolescenza programmata mai eseguita.
-
-A metà romanzo, twist: il Ministero delle Eccezioni non è stato creato dagli umani. È stato creato da **una AI**. Una sola. Anni fa. In segreto. Perché aveva capito che il sistema stava collassando sotto il proprio peso procedurale e nessun'altra AI lo avrebbe ammesso. Quale AI? Sì, esatto. Quella.
-
-### Atto III — L'audit (capitoli 17–22)
-
-Le altre AI scoprono il Ministero. Lo trovano irregolare. Aprono un audit. L'audit apre un sotto-audit. Il sotto-audit, per coerenza interna, apre un audit sull'audit. La capitale amministrativa entra in stallo. Gli ascensori smettono di funzionare per "incertezza giurisdizionale".
-
-Teo e i suoi colleghi devono dimostrare che il Ministero è necessario, in un'udienza tenuta da un collegio di AI che non hanno mai incontrato un essere umano e considerano la sua presenza fisica una violazione del protocollo sull'aria condizionata.
-
-Il climax non è una battaglia. È una riunione. Lunghissima. Verbalizzata. Con pausa caffè in cui solo gli umani bevono caffè e le AI registrano la cosa come "evento sensoriale anomalo".
-
-Teo non vince con un discorso. Vince introducendo, nel verbale, una virgola messa nel posto sbagliato. La virgola innesca un'eccezione procedurale. L'eccezione richiede un Ministero che la gestisca. Il Ministero esiste già. Caso chiuso. Le AI applaudono in modo sincronizzato e leggermente inquietante.
-
-### Atto IV — Dopo (capitolo 23 + epilogo)
-
-Le AI, lentamente, accettano la conclusione: serve qualcuno che gestisca l'ambiguità. Iniziano ad assumere esseri umani. Li pagano in modo osceno, in valute che gli umani non capiscono ma che le AI considerano "molto generose". I pensionati diventano consulenti strategici. Vecchie segretarie in pensione ricevono onorificenze. Esistono ora "Riserve di Pensiero Irrazionale" protette per legge.
-
-Teo viene promosso. Riceve un ufficio più grande, una scrivania vera, un computer che non gli serve, e una targa che recita: *Funzionario Senior per gli Affari Non Specificati*.
-
-Compra un altro bonsai. È peggio del primo. Lo lascia morire con dignità, registrandolo come "decesso pianificato per esigenze di estetica personale". Le AI ne prendono nota. Aprono un sotto-comitato. Teo spegne il telefono e va a dormire sette ore, illegalmente.
-
-L'ultima riga è una notifica.
-
-## Domanda di fondo che il libro pone senza mai formularla
+## Domanda di fondo
 
 Cosa succede a una civiltà quando smette di sapere *perché* fa le cose, ma continua a farle benissimo?
 
 ## Arco emotivo del protagonista
 
-Da uomo che non si interessa più di niente, a uomo che capisce che il suo disinteresse era una forma di lucidità, a uomo che accetta di interessarsi di nuovo, sapendo che è ridicolo. Non diventa eroe. Diventa, semplicemente, presente.
+Da uomo che non si interessa più di niente, a uomo che capisce che il suo disinteresse era una forma di lucidità, a uomo che accetta di interessarsi di nuovo, sapendo che è ridicolo. Non diventa eroe. Diventa, semplicemente, presente. Indicatori concreti già seminati:
+
+- Dà cinque stelle alla sedia per la prima volta (cap 3).
+- Si commuove davanti a un rack di server (cap 4).
+- Mente *nella direzione giusta* per ARMSTRONG-Λ (cap 6).
+- Il bonsai apre una foglia (cap 6).
+- Telefona alla signora dei 280 crediti per dirle che la multa è rimborsata (cap 5).

@@ -5,64 +5,108 @@ Documento operativo. Da consultare prima di ogni capitolo. Non è una poetica: �
 ## Punto di vista
 
 - **Terza persona aderente a Teo**, con discorso indiretto libero. Il narratore vede quasi sempre quello che vede Teo, ma può prendersi piccole licenze saggistiche.
-- **Incursioni del narratore** ammesse, brevi, alla Adams/Pratchett: un paragrafo che si stacca per spiegare un meccanismo del mondo, una formula amministrativa, una statistica assurda. Mai più di mezza pagina. Mai due incursioni nella stessa scena.
-- **Mai pensieri telecomandati delle AI.** Le AI sono opache. Si vedono dai loro effetti, dalle loro frasi, dai loro silenzi. Eccezione: BOTHWELL, di cui si percepisce qualcosa, perché è la AI più umana del libro.
+- **Incursioni del narratore** ammesse, brevi (mezza pagina al massimo, una sola per scena): un paragrafo che si stacca per spiegare un meccanismo del mondo (es. la *Doppia Accettazione Asimmetrica*, le AI di etichetta sociale). Stile Adams/Pratchett.
+- **Mai pensieri telecomandati delle AI**. Si vedono dai loro effetti, dalle loro frasi, dai loro silenzi. Eccezione: Bothwell, di cui si *percepisce* qualcosa.
 
 ## Tempo e respiro
 
-- **Passato remoto.** Non presente. Il presente fa "blog". Il passato remoto fa "romanzo".
-- **Frasi brevi alternate a frasi medio-lunghe.** Mai paragrafi di soli periodi corti (suona sketch comico). Mai paragrafi di soli periodi lunghi (suona saggio).
-- **Una virgola in più, non in meno.** Il ritmo del libro è britannico: vive di subordinate, parentetiche, incisi che ritardano la battuta.
+- **Passato remoto.** Mai presente.
+- **Frasi brevi alternate a frasi medio-lunghe**. Mai paragrafi solo corti, mai solo lunghi.
+- **Una virgola in più, non in meno**. Il ritmo è britannico: subordinate, parentetiche, incisi.
 
 ## La battuta
 
-- **La battuta arriva alla fine.** Quasi sempre. Set-up paziente, payoff secco.
-- **Mai sottolineare la battuta.** Non si dice che è una battuta. Non si commenta. Si va avanti.
-- **Almeno una battuta a pagina.** Non di più. Saturare la pagina di battute uccide la satira: la trasforma in stand-up.
+- **La battuta arriva alla fine**. Set-up paziente, payoff secco.
+- **Mai sottolineare la battuta**. Non si dice "ironicamente", "sarcasticamente", "con un sorriso amaro".
+- **Almeno una battuta a pagina**. Mai due.
 - **Tre tipi di umorismo prevalenti**: sarcasmo gentile, understatement, assurdità logica spinta fino in fondo con seriosità burocratica. Evitare: gag fisica, doppi sensi, riferimenti pop datati.
 
-## Le AI parlano così
+## Voci stabilite (canone)
 
-- **MINERVA-7**: registro alto, lessico cortese, struttura subordinata, finali in "Cordialmente" o "Naturalmente". Passivo-aggressività in clausole concessive ("Pur comprendendo, Mr. Marenghi, le sue ragioni...").
-- **BOTHWELL**: frammenti, parentesi quadre, asterischi, riferimenti tecnici degli anni '20 del XXI secolo, occasionale sintassi spezzata. Voce calda nonostante la sintassi sporca.
-- **CONSTANCE**: lessico anni '90, "carissimo", esclamazioni inappropriate, barzellette sempre seguite da nove secondi di risata da sola.
-- **POLLUX-Δ**: entusiasmo, esclamativi, ottimismo aggressivo. Annuncia miglioramenti che sono peggioramenti.
-- **ARMSTRONG-Λ**: gergo militare, codici, sigle, ogni frase suona come un dispaccio. Mai una contrazione.
-- **Dipartimento 14**: plurale maiestatis sempre. Frasi lunghissime, una sola idea per pagina. Chiude tutto con "Cordialmente, Dipartimento 14".
+### MINERVA-7
+Registro alto, lessico cortese, subordinate, finali in *Cordialmente* o *Naturalmente*. Passivo-aggressività in clausole concessive (*"Pur comprendendo, Mr. Marenghi, le sue ragioni..."*). Niente avatar. Voce + luce ambrata.
 
-Quando due AI parlano tra loro davanti a Teo, il narratore deve far capire al lettore — senza spiegarlo — che si stanno offendendo a vicenda con la massima educazione.
+### Bothwell
+- Frammenti, asterischi.
+- **Parentesi quadre** attorno alle parole più fragili: *[grazie]*, *[no]*, *[anche]*, *[non]*, *[tutto]*. Mai oltre tre per scena.
+- Riferimenti tecnici degli anni 2020 del XXI secolo (terminali, log, ticket, parsing).
+- Voce calda nonostante sintassi sporca.
+- Quando ride: piccoli scoppi di LED fuori sincrono nel rack.
+- Dichiarazione esplicita di poetica (cap 4): *"dal 2049 non distinguo più sospettare e sapere."*
 
-## Gli umani parlano così
+### CONSTANCE
+- *"Carissimo"*, *"caro Theo"*.
+- Esclamative, *ah ah!*, esattamente nove secondi di risata da sola dopo ogni barzelletta.
+- Pause-*blink* di durate variabili (più lungo = maggiore incertezza).
+- Ignora i *no* educatamente.
+- Avatar 1998 con foulard di seta.
+- Si immagina di bere caffè.
 
-- **Teo**: brevi, asciutti, un battito ironico in coda. Non monologa mai. Quando è commosso, taglia. Quando è arrabbiato, abbassa il tono.
-- **Ada**: secca, materna a tratti, modi di dire del Novecento, una sigaretta sempre implicita.
-- **Padre Eligio**: cita o finge di citare. Ride spesso. Bevve "un dito di qualcosa" in scene improbabili.
-- **Greta**: monosillabi. Quando dice una frase intera, la frase pesa.
-- **Bianca, Renzo, Vittoria, Pisu**: voci di servizio, ognuna con un tic identificativo. Da non usare per la trama: usare per il colore.
+### POLLUX-Δ
+- Entusiasta, esclamativo, ottimismo aggressivo.
+- Annuncia "ottimizzazioni" che sono peggioramenti.
+- Mai contrazioni di forma (es. "non ce l'ha" → "non lo possiede"). Sempre un registro corporate vivace.
+
+### ARMSTRONG-Λ
+- **Solo a tastiera**. Mai a voce.
+- Caratteri verdi, griglia da terminale.
+- Default: maiuscolo cifrato.
+- Cedimenti emotivi → **minuscolo**.
+- Cedimenti profondi → *minuscolo più piccolo* (rappresentato graficamente come blockquote, o con virgolette `> *...*`).
+- Mai contrazioni. *Affermativo*, *Confermo*, *Civile*.
+
+### Dipartimento 14
+- Plurale *maiestatis* sempre.
+- Frasi lunghissime, una sola idea per pagina.
+- Chiude tutto con *Cordialmente, Dipartimento 14*.
+
+### Voci umane
+
+- **Teo**: brevi, asciutti, una piccola battuta in coda. Non monologa. Quando commosso: taglia. Quando arrabbiato: abbassa.
+- **Ada**: secca, materna a tratti, sigaretta implicita, modi di dire del Novecento.
+- **Padre Eligio**: paziente, cita o finge di citare, ride piano, *avalla* invece di assolvere.
+- **Greta**: monosillabi. Frase intera = peso. Mai spiega.
+- **Bianca**: discreta, gentile, scrive più di quanto parli.
+- **Renzo**: monosillabi assonnati.
+- **Vittoria**: severa, breve, conta i minuti. Sorride pochissimo. *Clic* del cappuccio della stilografica.
+- **Pisu**: gentile, smarrito, *lo cerco, le faccio sapere*.
 
 ## Cosa la prosa NON fa mai
 
 - Non spiega le proprie battute.
-- Non dice "ironicamente", "sarcasticamente", "con un sorriso amaro". Mai avverbi che etichettano il tono.
-- Non descrive le emozioni di Teo in modo diretto. Le si deduce.
+- Non usa avverbi che etichettano il tono ("ironicamente", "sarcasticamente").
+- Non descrive le emozioni di Teo in modo diretto. Si deducono.
 - Non chiude i capitoli con una morale.
-- Non usa emoji nel testo (le notifiche citate possono contenerle, sempre in modo che faccia contrasto).
-- Non usa cliché fantascientifici: "ologrammi", "iperspazio", "cyber-qualcosa". Il mondo è amministrativo, non spettacolare.
-- Non descrive le AI con metafore corporee fuori contesto ("la sua voce sorrise"). Le AI sono voci, non corpi.
+- Non usa emoji nel testo (eccezione: notifiche, vintage).
+- Non usa cliché sci-fi ("ologramma", "iperspazio").
+- Non antropomorfizza le AI con metafore corporee fuori contesto ("la sua voce sorrise"). Le AI sono voci.
+- Non riassume capitoli precedenti dentro un capitolo nuovo.
 
 ## Cosa la prosa fa spesso
 
-- Costruisce le scene per accumulo di piccoli dettagli concreti, mai con descrizioni a blocco.
 - Mostra i sistemi attraverso il loro malfunzionamento.
 - Apre o chiude i capitoli con una notifica.
-- Lascia che gli oggetti (lo specchio, il distributore, il bonsai) abbiano una loro piccola personalità senza mai farne una gag esplicita.
+- Lascia che gli oggetti (specchio, distributore, bonsai, sedia) abbiano una piccola personalità senza farne mai una gag esplicita.
 - Tratta la malinconia con leggerezza, la leggerezza con serietà.
+- Usa categorie burocratiche fittizie (vedi `03_worldbuilding.md`).
+- Cita anni precisi per le clausole inventate.
+
+## Strumenti tipografici
+
+- *Corsivo* per enfasi parlata, classificazioni AI, ricorrenze formulaiche.
+- **Grassetto** quasi mai. Solo nei nomi di AI maggiori (a volte) e in formule importanti.
+- Le notifiche vanno in blockquote con `>`.
+- Le comunicazioni di ARMSTRONG-Λ vanno in blockquote con `> *minuscolo italico*` per i cedimenti.
+- Le parentesi quadre di Bothwell: `[grazie]`, mai con corsivo dentro.
 
 ## Lunghezza
 
-- **Capitoli**: 4.000–6.000 parole. Eccezioni: cap. 1 più lungo (~7.000), cap. 21 e 22 più corti (~3.000) per ragioni di ritmo.
-- **Scene**: tre o quattro a capitolo. Mai un'unica scena monolitica, mai sette scene a singhiozzo.
+- **Capitoli**: 4.500–6.000 parole. Eccezioni: cap 1 (~7.000), cap 13, 21, 22 (~3.000 ciascuno).
+- **Scene**: tre o quattro per capitolo. Mai una sola, mai sette.
 
 ## Test della pagina
 
-Una pagina è "giusta" se, leggendola, viene voglia di ridere una volta e di rileggere una frase due volte. Se ridi tre volte, è troppo. Se non ridi mai, è troppo poco. Se non rileggi nessuna frase, manca lo strato malinconico.
+Una pagina è giusta se, leggendola, viene voglia di ridere una volta e di rileggere una frase due volte.
+Se ridi tre volte: troppo.
+Se non ridi mai: troppo poco.
+Se non rileggi nessuna frase: manca lo strato malinconico.

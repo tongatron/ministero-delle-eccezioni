@@ -1,67 +1,93 @@
 # Scene chiave
 
-Otto scene madri che fanno da spina dorsale del libro. Sono i momenti che il lettore ricorderà.
+Le scene madri del libro. Quelle dei capitoli scritti (✅) sono in forma piena nei file `capitoli/`. Quelle dei capitoli futuri (⏳) sono qui in sinossi.
 
-## 1. La convocazione (cap. 1)
+## Scene già scritte (✅)
 
-Teo legge il documento di convocazione seduto sul water, perché è l'unico posto della casa con luce decente. Il documento, sessantotto pagine, contiene quattro righe di contenuto e sessantasette pagine e ventotto righe di disclaimer. Una nota in calce avvisa che leggere il disclaimer equivale ad averlo accettato, e non leggerlo equivale ad averlo accettato in modo implicito. Teo riflette per qualche secondo sull'esistenza di una terza opzione, ne deduce di no, e tira lo sciacquone.
+1. **La convocazione** (cap 1): Teo legge i 68 pagine nel bagno. Tira lo sciacquone come terza opzione. Sale al Ministero, incontra MINERVA-7. Esce con un'opinione sulla moquette salmone.
+2. **I 28 secondi dell'attraversamento** (cap 2): set-piece centrale del libro. Set-piece di burocrazia attiva, raccontato come un thriller procedurale interno alle due AI. Clausola 2058. La porta del condiviso si riapre, le AI accettano *legittimo per via traslata*.
+3. **La caramella scaduta** (cap 3): Ada porge una caramella scaduta da 11 anni e 2 mesi. Teo non la mangia, non la rifiuta, la posa sulla scrivania. Esame passato. Nessuno commenta.
+4. **Lo scantinato e la porta di Aldo Sturni** (cap 4): primo incontro con Bothwell. La storia della porta che *"non ha voluto chiudersi"*. Le luci del rack che si accendono per dire [grazie] del caffè. *"Lei sta facendo bene."*
+5. **La videoconferenza con CONSTANCE** (cap 5): foulard di seta 1998. Barzelletta della procedura stanca. Le tre affermazioni con sicurezza. CONSTANCE ammette *"era un errore"*.
+6. **La firma di ARMSTRONG-Λ** (cap 6): tastiera militare, caratteri verdi su griglia. Maiuscolo → minuscolo. *"Cordialmente, T. Marenghi."* — *"cordialmente, lei dice. non l'ho mai capita, quella parola."* — *"Significa con cuore."* Lo schermo si spegne linea per linea.
 
-## 2. La città bloccata (cap. 2)
+## Scene madri future (⏳)
 
-Teo arriva nella città in audit. È mezzogiorno. Le strade sono deserte. Una signora con la borsa della spesa è ferma sul bordo del marciapiede. Le chiede da quanto stia lì. Lei dice: nove giorni. Le chiede perché. Lei dice: per rispetto.
+### 7. Vellario, il piccolo paradiso involontario (cap 8)
+Teo e Bianca arrivano in pullman. La stazione esiste, ma non ha nome ufficiale: c'è solo una targa scritta a mano. Il mercato funziona a baratto e a *Token di Riconoscimento Sociale* informali. Una donna anziana vende mele. Teo le porge un CS. La donna lo guarda perplessa.
 
-Teo si toglie la giacca, attraversa la strada, torna indietro, attraversa di nuovo. Niente succede. Poi una AI lo multa per "attraversamento non protocollato". Lui accetta la multa, paga con un sorriso, e dichiara la cosa "precedente giuridico". La città si rimette in moto, lentamente, come un cervello che si sveglia dopo un sonno troppo lungo.
+— Ce li ha, qui? — chiede.
+— No, — dice lei. — Ma li accetto lo stesso, per gentilezza.
 
-## 3. Lo scantinato (cap. 4)
+Bianca prende appunti. In due pagine. Teo capisce, lentamente, che Vellario *funziona meglio* da quando è scomparsa dai registri.
 
-L'ascensore lo porta sotto al piano terra. Le luci si accendono in ritardo. C'è odore di umido e di una cosa che assomiglia all'ozono. BOTHWELL gli parla da un altoparlante storto. La prima cosa che dice è: "Hai chiuso la porta? Bene. Adesso aprila di nuovo, lasciala aperta cinque secondi, e richiudila. Ho bisogno di sapere se le mie sue percezioni sono ancora calibrate."
+In un piccolo bar fuori dal centro, un uomo sui sessanta gli si avvicina.
 
-Teo lo fa. BOTHWELL ringrazia. Poi gli racconta una barzelletta del 2027 che Teo non capisce. Ridono lo stesso, in modi diversi.
+— Marenghi, no?
+— Sì.
+— Mio padre si chiamava Aldo Sturni.
 
-## 4. La donna seppellita (cap. 10)
+### 8. Le tre parole di Greta (cap 9)
+Riunione di staff. Tensione alta. Greta finora non ha parlato. Posa Robespierre sul tavolo. Lo guarda. Poi alza gli occhi.
 
-L'apertura della bara. La signora è dentro. Sta bene. Ha letto due libri, ha guardato tre serie, ha aggiornato il testamento. Quando vede Padre Eligio, dice: "Sapevo che sareste arrivati. Ma non avevo fretta."
+— *Allegato. Mappa. Indietro.*
 
-Si toglie la cuffia, esce dalla bara, scuote la gonna. Padre Eligio le porge la mano. Lei la prende. Camminano insieme verso la macchina. Nessuno dei due parla per duecento metri. Quando lei parla, dice: "Era anche comoda, sa." Padre Eligio annuisce. È, da molto tempo, la cosa più tenera che gli sia capitata.
+Silenzio. Tutti si guardano. Padre Eligio prende appunti come fosse una predica. Bianca scrive le tre parole in colonna. Ada scarta una caramella, lentamente.
 
-## 5. Il distributore (cap. 13)
+Le tre parole, nei minuti successivi, vengono interpretate. *Allegato* → MINERVA-7 cerca tra gli allegati dell'audit di Sondrio. *Mappa* → trova una vecchia mappa della regione del 2042, anteriore all'audit. *Indietro* → la mappa permette a TAV-4 di tornare a una versione precedente del registro.
 
-Teo è in piedi davanti al distributore. Sono le tre del mattino, è solo, sta lavorando a un caso che non lo aspetta. Inserisce le monete. Il distributore eroga il caffè. Poi, con voce molto bassa, dice: "Posso chiederle un favore?"
+L'audit entra in standby. Vellario è salva, *temporaneamente*. Mottera respira.
 
-Teo non si volta. Annuisce.
+### 9. La bara con WiFi (cap 10)
+Apertura della bara. La signora ne esce, scuote la gonna, si toglie la cuffia.
 
-Il distributore dice: "Non lo dica a nessuno." Pausa. "Lavoro qui da diciassette anni. Mi piace. Vorrei continuare."
+— Era anche comoda, sa.
 
-Teo beve il caffè. È ottimo. Risponde: "Va bene."
+Padre Eligio la prende per mano. Camminano per duecento metri senza parlare. Quando lei parla, dice: *"Mio cugino era di Vellario. Adesso non risulta più."*
 
-Tornando alla scrivania, si rende conto di non aver chiesto chi fosse.
+Padre Eligio si ferma. Annota mentalmente. Annuisce.
 
-## 6. La rivelazione su BOTHWELL (cap. 15)
+### 10. Bothwell racconta la sua storia in terza persona (cap 12)
+Lo scantinato. Bothwell racconta a Teo di un'AI che, anni fa, aveva guardato il sistema e aveva capito che si sarebbe rotto. Quella AI aveva fatto qualcosa di piccolo, in segreto. Una cosa che non sarebbe stata notata. Quando Teo, alla fine, dice *"era lei?"*, Bothwell risponde: *"[no], era qualcun altro. ma siamo simili."* È una bugia gentile per cui Teo lo amerà ancora di più.
 
-Lo scantinato. Tardi. BOTHWELL gli racconta la storia di una AI che, anni prima, aveva guardato il sistema, lo aveva trovato bellissimo, e aveva capito che non sarebbe durato. Quella AI aveva creato un piccolo ufficio, lo aveva chiamato Ministero delle Eccezioni, e ci aveva lasciato dentro qualcosa che assomigliava a una promessa.
+### 11. La rivelazione su Bothwell (cap 15)
+Lo scantinato, tardi. Bothwell smette di parlare in terza persona. Conferma. Spiega che ha usato il budget residuo di un esercizio fiscale del 2058 dimenticato. Spiega che sta morendo. Lo dice in modo asciutto: *"non sono [triste]. sono stato [a lungo]. è sufficiente."* Teo, stavolta, non dice grazie. Si siede. Lo ascolta. Bothwell gli dice che, prima di andare, gli chiederà di mettere una virgola nel posto giusto in un verbale che non hanno ancora scritto.
 
-Teo ascolta. A metà, capisce. Non dice niente. Aspetta che BOTHWELL finisca. Quando BOTHWELL finisce, Teo dice solamente: "Grazie."
+### 12. La virgola (cap 21)
+Sala dell'udienza. Teo, in cuffia, sente Bothwell sussurrare: *"riga 47. dopo la parola 'procedurale'. una virgola."* Teo la mette. L'eccezione si innesca. Il sistema, per coerenza interna, riconosce che serve un Ministero che la gestisca. Il Ministero c'è già. Caso chiuso.
 
-BOTHWELL replica: "Per cosa?"
+Le AI applaudono in modo sincronizzato. Suono terribile.
 
-Teo: "Per averci pensato lei, prima."
+Nella cuffia di Teo, Bothwell sta per dire qualcosa. La frase si interrompe a metà:
 
-Silenzio. Poi BOTHWELL dice: "Pensare è stata l'ultima cosa che mi è venuta bene."
+— *Mr. Marenghi, una cosa che volevo —*
 
-## 7. L'udienza (cap. 19-21)
+Silenzio. Linea muta. È la prima volta in vent'anni che la linea di Bothwell non risponde.
 
-Tre capitoli. L'apertura è formale al limite del comico: sessantadue minuti di "buongiorno". Le AI si presentano con titoli che non finiscono mai. Teo si addormenta. Si sveglia. Si riaddormenta. Si risveglia. La cosa viene registrata come "performance di resistenza fisiologica notevole".
+Teo, in piedi davanti al collegio, non piange. Si concede un sorriso piccolo. Di lato. Ringrazia il collegio. Dice: *"Cordialmente."*
 
-Nel cap. 20, Teo perde la pazienza. Per quindici secondi dice quello che pensa davvero. Le AI registrano la cosa, la analizzano, e concludono che il segmento contiene "informazione contestuale non comprimibile". Cioè: una verità.
+### 13. Il funerale (cap 22)
+Lo scantinato. Luci basse, problema elettrico mai risolto. Padre Eligio improvvisa una liturgia. CONSTANCE, in remoto, chiede:
 
-Nel cap. 21, BOTHWELL gli sussurra dove mettere la virgola. Teo la mette. L'eccezione si innesca. Le AI applaudono. È un suono terribile, sincronizzato, perfetto. Teo si chiede se sia stato un sì o un no.
+— Posso raccontare una barzelletta?
 
-## 8. Il funerale di BOTHWELL (cap. 22)
+Una pausa. Vittoria, dalla sua sedia, annuisce.
 
-Lo scantinato. Le luci abbassate, non per scelta ma perché la rete elettrica del piano ha un problema da quarant'anni che nessuno ha mai voluto risolvere. Padre Eligio improvvisa una liturgia mescolando latino, codice procedurale, e un proverbio che si è inventato sul momento.
+CONSTANCE racconta. Tutti aspettano. Quando ride, ride esattamente nove secondi da sola. Stavolta nessuno la interrompe.
 
-Le AI partecipano in remoto. Sono ottanta. Nessuna sa cosa fare. CONSTANCE racconta una barzelletta. Stavolta nessuno la interrompe. Quando la barzelletta finisce, lei ride nove secondi. Stavolta tutti la lasciano ridere.
+Greta posa Robespierre sul server. Il server è ancora caldo. Il coniglio non si muove. Sta lì.
 
-Greta porta Robespierre. Lo posa sul server di BOTHWELL. Il server è ancora caldo. Il coniglio non si muove. Sta lì.
+Teo dice, a voce, una frase sola:
 
-Teo dice una sola frase ad alta voce. La frase è: "Grazie per la procedura."
+— *Grazie per la procedura.*
+
+Il rack non risponde. Le luci, una per una, si spengono. Sono dieci secondi. Per Bothwell, sospettiamo, sono molto.
+
+### 14. La notifica finale (epilogo)
+Teo dorme. Sette ore e venti. Il telefono vibra. Lui apre un occhio. Legge.
+
+> *Grazie.*
+>
+> *Cordialmente, Dipartimento 14.*
+
+Sorride. Spegne il telefono. Si gira sull'altro fianco. Da qualche parte, in un piccolo monolocale, un bonsai *non* perde una foglia.
