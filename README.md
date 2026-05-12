@@ -14,7 +14,8 @@ libro/
 │   ├── 03_capitolo_3.md      # Otto colleghi, sette di troppo
 │   ├── 04_capitolo_4.md      # Lo scantinato
 │   ├── 05_capitolo_5.md      # Il sonno è una pratica non ottimizzata
-│   └── 06_capitolo_6.md      # Una guerra in attesa di chiusura
+│   ├── 06_capitolo_6.md      # Una guerra in attesa di chiusura
+│   └── 07_capitolo_7.md      # Il meteo censurato
 └── progetto/                 # documenti di lavoro
     ├── 01_outline.md
     ├── 02_personaggi.md
@@ -37,6 +38,7 @@ libro/
 4. [Lo scantinato](capitoli/04_capitolo_4.md)
 5. [Il sonno è una pratica non ottimizzata](capitoli/05_capitolo_5.md)
 6. [Una guerra in attesa di chiusura](capitoli/06_capitolo_6.md)
+7. [Il meteo censurato](capitoli/07_capitolo_7.md)
 
 ## Tono in una riga
 
