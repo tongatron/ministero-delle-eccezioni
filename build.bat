@@ -10,7 +10,7 @@ set BUILD_DIR=%SCRIPT_DIR%build
 set METADATA=%SCRIPT_DIR%metadata.yml
 set CSS=%SCRIPT_DIR%assets\css\epub.css
 set COVER=%SCRIPT_DIR%assets\copertina\copertina.jpg
-set OUTPUT=%BUILD_DIR%\libro.epub
+set OUTPUT=%BUILD_DIR%\ministero-delle-eccezioni.epub
 
 where pandoc >nul 2>&1
 if errorlevel 1 (

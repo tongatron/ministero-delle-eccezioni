@@ -12,8 +12,8 @@ BUILD_DIR="$SCRIPT_DIR/build"
 METADATA="$SCRIPT_DIR/metadata.yml"
 CSS="$SCRIPT_DIR/assets/css/epub.css"
 COVER="$SCRIPT_DIR/assets/copertina/copertina.jpg"
-OUTPUT_EPUB="$BUILD_DIR/libro.epub"
-OUTPUT_HTML="$BUILD_DIR/libro.html"
+OUTPUT_EPUB="$BUILD_DIR/ministero-delle-eccezioni.epub"
+OUTPUT_HTML="$BUILD_DIR/ministero-delle-eccezioni.html"
 
 GENERA_HTML=false
 APRI_DOPO=false
