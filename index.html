@@ -229,9 +229,10 @@
 <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 <script>
 const CHAPTERS = [
-  { n: 1, slug: "capitolo-1", title: "Una convocazione cortese",        file: "capitoli/01_capitolo_1.md" },
-  { n: 2, slug: "capitolo-2", title: "La città che non attraversa",      file: "capitoli/02_capitolo_2.md" },
-  { n: 3, slug: "capitolo-3", title: "Otto colleghi, sette di troppo",  file: "capitoli/03_capitolo_3.md" }
+  { n: 0, slug: "introduzione", title: "Introduzione",                   label: "Introduzione",  file: "capitoli/00_introduzione.md" },
+  { n: 1, slug: "capitolo-1",   title: "Una convocazione cortese",       label: "Capitolo 1",    file: "capitoli/01_capitolo_1.md" },
+  { n: 2, slug: "capitolo-2",   title: "La città che non attraversa",    label: "Capitolo 2",    file: "capitoli/02_capitolo_2.md" },
+  { n: 3, slug: "capitolo-3",   title: "Otto colleghi, sette di troppo", label: "Capitolo 3",    file: "capitoli/03_capitolo_3.md" }
 ];
 
 const app = document.getElementById("app");
@@ -242,11 +243,11 @@ function renderIndex() {
     <h1 class="book-title">Il Ministero delle Eccezioni</h1>
     <div class="subtitle">Un romanzo in lavorazione</div>
     <p><em>Una commedia burocratica cosmica in cui la civiltà non è caduta: è solo bloccata in attesa di approvazione.</em></p>
-    <h2>Capitoli</h2>
+    <h2>Indice</h2>
     <ul class="toc">
       ${CHAPTERS.map(c => `
         <li><a href="#/${c.slug}">
-          <span class="num">${String(c.n).padStart(2,"0")}</span>
+          <span class="num">${c.n === 0 ? "—" : String(c.n).padStart(2,"0")}</span>
           <span class="title">${c.title}</span>
         </a></li>
       `).join("")}
@@ -271,7 +272,7 @@ async function renderChapter(slug) {
     const prev = idx > 0 ? CHAPTERS[idx - 1] : null;
     const next = idx < CHAPTERS.length - 1 ? CHAPTERS[idx + 1] : null;
     app.innerHTML = `
-      <div class="subtitle">Capitolo ${ch.n}</div>
+      <div class="subtitle">${ch.label}</div>
       <h1>${ch.title}</h1>
       <article>${html}</article>
       <nav class="chapter-nav">
