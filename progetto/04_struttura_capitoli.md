@@ -40,7 +40,7 @@ ARMSTRONG-Λ, Operazione Blue Parentheses, manager FALCONE-Ω in pensione. Sette
 **Gancio al filone**: Padre Eligio, in mezzo al caso, fa una battuta sulla "scomparsa delle nuvole sopra Vellario nei radar". Teo registra.
 **Tono**: comico, leggero. Dopo la pesantezza di cap 6 serve respiro.
 
-### Cap 8 — *La regione che non c'è* ⏳
+### Cap 8 — *La regione che non c'è* ✅
 **Situazione**: Teo va fisicamente a Vellario con Bianca. Sondrio l'ha quasi cancellata dai registri. La regione esiste: bocce, mercato, sindaco onorario. Una piccola economia informale di scambio sta nascendo, perché le AI fiscali non sanno a chi fatturare.
 **Conflitto**: TAV-4 e Sondrio sono in audit, ma stavolta TAV-4 sta cedendo. Vellario sta diventando autonoma per inerzia.
 **Personaggi**: Teo, Bianca (passa carta, prende appunti), forse un parente di Aldo Sturni che riconosce il nome dalla storia di Bothwell.
@@ -48,7 +48,7 @@ ARMSTRONG-Λ, Operazione Blue Parentheses, manager FALCONE-Ω in pensione. Sette
 **Gancio**: scoperta diretta di un log di Sondrio che cita Mottera.
 **Tono**: malinconico-meravigliato. Vellario come piccolo paradiso involontario.
 
-### Cap 9 — *Greta dice tre parole* ⏳
+### Cap 9 — *Greta dice tre parole* ✅
 **Situazione**: il caso Vellario rimbalza al Ministero. Riunione tesa. Greta, finora silenziosa, dice tre parole. Una di esse cambia tutto. Le altre due nessuno le capisce.
 **Conflitto**: tutto il team prova a interpretare. Bianca scrive ipotesi. Padre Eligio le legge come parabole.
 **Personaggi**: corale. Greta al centro per la prima volta.
