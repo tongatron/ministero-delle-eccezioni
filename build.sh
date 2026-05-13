@@ -91,7 +91,7 @@ mkdir -p "$BUILD_DIR"
 CAPITOLI=()
 while IFS= read -r f; do
   CAPITOLI+=("$f")
-done < <(find "$CAPITOLI_DIR" -maxdepth 1 -type f \( -name "00_*.md" -o -name "[0-9][0-9]_capitolo_*.md" \) | sort)
+done < <(find "$CAPITOLI_DIR" -maxdepth 1 -type f \( -name "00_*.md" -o -name "[0-9][0-9]_capitolo_*.md" -o -name "[0-9][0-9]_epilogo.md" \) | sort)
 
 if [ ${#CAPITOLI[@]} -eq 0 ]; then
   echo "❌ Nessun file .md trovato in $CAPITOLI_DIR"

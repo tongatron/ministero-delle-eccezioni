@@ -45,7 +45,7 @@ Il testo è in corso di sviluppo attraverso una collaborazione non sempre consen
 
 Versioni in lavorazione:
 
-- `V0.1.codex` — bozza Codex attiva.
+- `V0.1.codex` — bozza Codex completa fino all'epilogo.
 - `V0.1.claude` — bozza Claude/reference.
 
 📘 `ministero-delle-eccezioni-v0.1.codex.epub`

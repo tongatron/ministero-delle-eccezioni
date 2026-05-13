@@ -41,7 +41,16 @@ const VERSIONS = {
       { n: 12, slug: "capitolo-12", title: "Bothwell racconta qualcosa", label: "Capitolo 12", file: "12_capitolo_12.md" },
       { n: 13, slug: "capitolo-13", title: "Il distributore di caffè parla", label: "Capitolo 13", file: "13_capitolo_13.md" },
       { n: 14, slug: "capitolo-14", title: "Ada dice no", label: "Capitolo 14", file: "14_capitolo_14.md" },
-      { n: 15, slug: "capitolo-15", title: "La verità su Bothwell", label: "Capitolo 15", file: "15_capitolo_15.md" }
+      { n: 15, slug: "capitolo-15", title: "La verità su Bothwell", label: "Capitolo 15", file: "15_capitolo_15.md" },
+      { n: 16, slug: "capitolo-16", title: "L'audit arriva", label: "Capitolo 16", file: "16_capitolo_16.md" },
+      { n: 17, slug: "capitolo-17", title: "Preparativi", label: "Capitolo 17", file: "17_capitolo_17.md" },
+      { n: 18, slug: "capitolo-18", title: "L'edificio dell'udienza", label: "Capitolo 18", file: "18_capitolo_18.md" },
+      { n: 19, slug: "capitolo-19", title: "L'udienza, parte prima", label: "Capitolo 19", file: "19_capitolo_19.md" },
+      { n: 20, slug: "capitolo-20", title: "L'udienza, parte seconda", label: "Capitolo 20", file: "20_capitolo_20.md" },
+      { n: 21, slug: "capitolo-21", title: "La virgola", label: "Capitolo 21", file: "21_capitolo_21.md" },
+      { n: 22, slug: "capitolo-22", title: "Funerale di Bothwell", label: "Capitolo 22", file: "22_capitolo_22.md" },
+      { n: 23, slug: "capitolo-23", title: "Riassunzioni", label: "Capitolo 23", file: "23_capitolo_23.md" },
+      { n: 24, slug: "epilogo", title: "Una notifica", label: "Epilogo", file: "24_epilogo.md" }
     ]
   }
 };

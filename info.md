@@ -8,7 +8,7 @@ Romanzo satirico di fantascienza. Materiali di lavorazione.
 libro/
 ├── README.md
 ├── capitoli (V0.1.claude)/       # bozza Claude/reference fino al capitolo 16
-├── capitoli (V0.1.codex)/        # bozza Codex in lavorazione fino al capitolo 15
+├── capitoli (V0.1.codex)/        # bozza Codex completa fino all'epilogo
 ├── progetto/                     # documenti di lavoro
 ├── assets/                       # css, copertina e asset tecnici
 ├── build/                        # output generati
@@ -56,12 +56,21 @@ libro/
 13. [Il distributore di caffè parla](<capitoli (V0.1.codex)/13_capitolo_13.md>)
 14. [Ada dice no](<capitoli (V0.1.codex)/14_capitolo_14.md>)
 15. [La verità su Bothwell](<capitoli (V0.1.codex)/15_capitolo_15.md>)
+16. [L'audit arriva](<capitoli (V0.1.codex)/16_capitolo_16.md>)
+17. [Preparativi](<capitoli (V0.1.codex)/17_capitolo_17.md>)
+18. [L'edificio dell'udienza](<capitoli (V0.1.codex)/18_capitolo_18.md>)
+19. [L'udienza, parte prima](<capitoli (V0.1.codex)/19_capitolo_19.md>)
+20. [L'udienza, parte seconda](<capitoli (V0.1.codex)/20_capitolo_20.md>)
+21. [La virgola](<capitoli (V0.1.codex)/21_capitolo_21.md>)
+22. [Funerale di Bothwell](<capitoli (V0.1.codex)/22_capitolo_22.md>)
+23. [Riassunzioni](<capitoli (V0.1.codex)/23_capitolo_23.md>)
+24. [Una notifica](<capitoli (V0.1.codex)/24_epilogo.md>)
 
 ## Scarica l'ePub
 
 [ministero-delle-eccezioni-v0.1.claude.epub](https://github.com/tongatron/ministero-delle-eccezioni/raw/main/build/ministero-delle-eccezioni-v0.1.claude.epub) — bozza Claude/reference fino al capitolo 16, con titolo EPUB `Il Ministero delle Eccezioni (V0.1.claude)`.
 
-[ministero-delle-eccezioni-v0.1.codex.epub](https://github.com/tongatron/ministero-delle-eccezioni/raw/main/build/ministero-delle-eccezioni-v0.1.codex.epub) — bozza Codex in lavorazione; l'ePub pubblico resta da aggiornare dopo revisione dei capitoli 14-15.
+[ministero-delle-eccezioni-v0.1.codex.epub](https://github.com/tongatron/ministero-delle-eccezioni/raw/main/build/ministero-delle-eccezioni-v0.1.codex.epub) — bozza Codex aggiornata e completa fino all'epilogo, con titolo EPUB `Il Ministero delle Eccezioni (V0.1.codex)`.
 
 Leggibile anche online su [tongatron.org/ministero-delle-eccezioni](https://tongatron.org/ministero-delle-eccezioni/), dove l'indice consente di scegliere tra V0.1.claude e V0.1.codex.
 
