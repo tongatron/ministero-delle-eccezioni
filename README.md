@@ -45,6 +45,10 @@ libro/
 3. [Otto colleghi, sette di troppo](<capitoli (V 1.0 Codex)/03_capitolo_3.md>)
 4. [Lo scantinato](<capitoli (V 1.0 Codex)/04_capitolo_4.md>)
 5. [Il sonno è una pratica non ottimizzata](<capitoli (V 1.0 Codex)/05_capitolo_5.md>)
+6. [Una guerra in attesa di chiusura](<capitoli (V 1.0 Codex)/06_capitolo_6.md>)
+7. [Il meteo censurato](<capitoli (V 1.0 Codex)/07_capitolo_7.md>)
+8. [La regione che non c'è](<capitoli (V 1.0 Codex)/08_capitolo_8.md>)
+9. [Greta dice tre parole](<capitoli (V 1.0 Codex)/09_capitolo_9.md>)
 
 ## Scarica l'ePub
 

@@ -30,7 +30,11 @@ const VERSIONS = {
       { n: 2, slug: "capitolo-2", title: "La città che non attraversa", label: "Capitolo 2", file: "02_capitolo_2.md" },
       { n: 3, slug: "capitolo-3", title: "Otto colleghi, sette di troppo", label: "Capitolo 3", file: "03_capitolo_3.md" },
       { n: 4, slug: "capitolo-4", title: "Lo scantinato", label: "Capitolo 4", file: "04_capitolo_4.md" },
-      { n: 5, slug: "capitolo-5", title: "Il sonno è una pratica non ottimizzata", label: "Capitolo 5", file: "05_capitolo_5.md" }
+      { n: 5, slug: "capitolo-5", title: "Il sonno è una pratica non ottimizzata", label: "Capitolo 5", file: "05_capitolo_5.md" },
+      { n: 6, slug: "capitolo-6", title: "Una guerra in attesa di chiusura", label: "Capitolo 6", file: "06_capitolo_6.md" },
+      { n: 7, slug: "capitolo-7", title: "Il meteo censurato", label: "Capitolo 7", file: "07_capitolo_7.md" },
+      { n: 8, slug: "capitolo-8", title: "La regione che non c'è", label: "Capitolo 8", file: "08_capitolo_8.md" },
+      { n: 9, slug: "capitolo-9", title: "Greta dice tre parole", label: "Capitolo 9", file: "09_capitolo_9.md" }
     ]
   }
 };
