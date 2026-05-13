@@ -117,6 +117,105 @@ main h1.book-title {
   margin-bottom: 0.4rem;
 }
 
+.hero {
+  min-height: calc(100vh - 13rem);
+  display: grid;
+  grid-template-columns: minmax(13rem, 20rem) minmax(0, 1fr);
+  gap: 2.5rem;
+  align-items: center;
+  padding: 2.2rem 0 1rem;
+}
+
+.hero-cover img {
+  width: 100%;
+  display: block;
+  border-radius: 0.9rem;
+  box-shadow: 0 1.2rem 2.8rem rgba(26, 26, 26, 0.12);
+  border: 1px solid var(--rule);
+}
+
+.hero-copy {
+  max-width: 30rem;
+}
+
+.hero-copy .book-title {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.hero-text {
+  font-size: 1.12rem;
+  line-height: 1.75;
+  margin-bottom: 1.6rem;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.cta-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 10rem;
+  padding: 0.8rem 1.15rem;
+  border-radius: 0.55rem;
+  border: 1px solid var(--rule);
+  background: transparent;
+  color: var(--fg);
+  text-decoration: none;
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: 0.86rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.cta-btn:hover {
+  border-color: var(--fg-soft);
+  color: var(--accent);
+}
+
+.cta-btn.primary {
+  background: var(--fg);
+  color: var(--bg);
+  border-color: var(--fg);
+}
+
+.cta-btn.primary:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--bg);
+}
+
+.inline-download {
+  color: var(--accent);
+  text-decoration: none;
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: 0.84rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.inline-download:hover {
+  color: var(--fg);
+}
+
+.hero-note {
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--fg-soft);
+}
+
+.hero p + p,
+.hero h1 + p {
+  text-indent: 0;
+}
+
 main .subtitle {
   font-family: "Inter", system-ui, sans-serif;
   font-size: 0.85rem;
@@ -257,6 +356,23 @@ footer.site a { color: var(--fg-soft); }
   main { padding: 1.2rem 1.1rem 4rem; }
   main h1.book-title { font-size: 2rem; }
   main h1 { font-size: 1.65rem; }
+}
+
+@media (max-width: 760px) {
+  .hero {
+    min-height: auto;
+    grid-template-columns: 1fr;
+    gap: 1.4rem;
+    padding-top: 1rem;
+  }
+
+  .hero-cover {
+    max-width: 18rem;
+  }
+
+  .hero-copy {
+    max-width: none;
+  }
 }
 
 @media (min-width: 900px) {

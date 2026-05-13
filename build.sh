@@ -3,8 +3,8 @@
 # Requisiti: pandoc >= 3.0
 # Uso:
 #   ./build.sh [--html] [--open]
-#   ./build.sh --version v0.1.claude
-#   ./build.sh --version v0.1.codex --output build/ministero-delle-eccezioni.epub
+#   ./build.sh --version v0.0.1
+#   ./build.sh --version v0.1 --output build/ministero-delle-eccezioni.epub
 
 set -eo pipefail
 
@@ -15,7 +15,7 @@ METADATA="$SCRIPT_DIR/metadata.yml"
 CSS="$SCRIPT_DIR/assets/css/epub.css"
 COVER="$SCRIPT_DIR/assets/copertina/copertina.png"
 BASE_TITLE="Il Ministero delle Eccezioni"
-VERSION="v0.1.codex"
+VERSION="v0.1"
 CAPITOLI_DIR=""
 OUTPUT_EPUB=""
 OUTPUT_HTML=""
@@ -52,17 +52,17 @@ while [ $# -gt 0 ]; do
 done
 
 case "$VERSION" in
-  v0.1.claude|V0.1.claude|v01claude|v1claude|V1claude)
-    DEFAULT_CAPITOLI_DIR="$SCRIPT_DIR/capitoli (V0.1.claude)"
-    DEFAULT_OUTPUT_EPUB="$BUILD_DIR/ministero-delle-eccezioni-v0.1.claude.epub"
-    DEFAULT_OUTPUT_HTML="$BUILD_DIR/ministero-delle-eccezioni-v0.1.claude.html"
-    DEFAULT_TITLE_SUFFIX="V0.1.claude"
+  v0.0.1|V0.0.1|v0001|V0001)
+    DEFAULT_CAPITOLI_DIR="$SCRIPT_DIR/capitoli (V0.0.1)"
+    DEFAULT_OUTPUT_EPUB="$BUILD_DIR/ministero-delle-eccezioni-v0.0.1.epub"
+    DEFAULT_OUTPUT_HTML="$BUILD_DIR/ministero-delle-eccezioni-v0.0.1.html"
+    DEFAULT_TITLE_SUFFIX="V0.0.1"
     ;;
-  v0.1.codex|V0.1.codex|v01codex|v1codex|V1Codex)
-    DEFAULT_CAPITOLI_DIR="$SCRIPT_DIR/capitoli (V0.1.codex)"
-    DEFAULT_OUTPUT_EPUB="$BUILD_DIR/ministero-delle-eccezioni-v0.1.codex.epub"
-    DEFAULT_OUTPUT_HTML="$BUILD_DIR/ministero-delle-eccezioni-v0.1.codex.html"
-    DEFAULT_TITLE_SUFFIX="V0.1.codex"
+  v0.1|V0.1|v01|V01)
+    DEFAULT_CAPITOLI_DIR="$SCRIPT_DIR/capitoli (V0.1)"
+    DEFAULT_OUTPUT_EPUB="$BUILD_DIR/ministero-delle-eccezioni-v0.1.epub"
+    DEFAULT_OUTPUT_HTML="$BUILD_DIR/ministero-delle-eccezioni-v0.1.html"
+    DEFAULT_TITLE_SUFFIX="V0.1"
     ;;
   *)
     echo "❌ Versione non riconosciuta: $VERSION"

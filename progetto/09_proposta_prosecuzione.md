@@ -4,11 +4,9 @@ Questo documento è la prima cosa che un agente AI dovrebbe leggere prima di scr
 
 ## Stato corrente
 
-- **Versione attiva**: `V0.1.codex`, in `capitoli (V0.1.codex)/`.
-- **Bozza Codex**: introduzione + capitoli 1–15.
-- **Bozza Claude/reference**: introduzione + capitoli 1–16, in `capitoli (V0.1.claude)/`.
-- **Prossimo capitolo Codex da scrivere**: 16, *L'audit arriva*.
-- **Capitoli Codex da scrivere**: 16–23 + epilogo.
+- **Versione corrente**: `V0.1`, in `capitoli (V0.1)/`.
+- **Versione precedente**: `V0.0.1`, in `capitoli (V0.0.1)/`.
+- **Stato V0.1**: introduzione + capitoli 1–24.
 - **Outline completo**: `01_outline.md`.
 - **Voce e regole**: `10_regole_di_voce.md`.
 - **Personaggi canone**: `02_personaggi.md`.
@@ -21,7 +19,7 @@ Questo documento è la prima cosa che un agente AI dovrebbe leggere prima di scr
    - `02_personaggi.md` (per i tic di ogni personaggio);
    - `11_continuita_e_fili.md` (per non contraddire le rivelazioni programmate);
    - `04_struttura_capitoli.md`, la sezione del capitolo che stai scrivendo (per la trama);
-   - **il capitolo immediatamente precedente** in `capitoli (V0.1.codex)/` (per la voce attuale di Teo e gli stati emotivi correnti).
+   - **il capitolo immediatamente precedente** in `capitoli (V0.1)/` (per la voce attuale di Teo e gli stati emotivi correnti).
 
 2. **Calibra l'apertura**:
    - Quasi sempre con una notifica o un piccolo dettaglio domestico (bonsai, bollitore, telefono).
@@ -87,10 +85,10 @@ Questo documento è la prima cosa che un agente AI dovrebbe leggere prima di scr
 
 ## Procedura tecnica
 
-1. Crea il file `capitoli (V0.1.codex)/0X_capitolo_X.md`.
+1. Crea il file `capitoli (V0.1)/0X_capitolo_X.md`.
 2. Apri con il titolo in `# Capitolo X — *Titolo*` (il sito strappa l'H1 prima del rendering).
 3. Scrivi.
-4. Aggiungi la voce della versione `V0.1.codex` in `assets/js/app.js`.
+4. Aggiungi la voce della versione `V0.1` in `assets/js/app.js`.
 5. Aggiorna `info.md` e, se cambia la release pubblica, `README.md`.
 6. Commit con messaggio: `Capitolo X: <titolo>`.
 7. Push.

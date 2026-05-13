@@ -35,19 +35,17 @@ Theodore Marenghi, ex impiegato presso un ufficio che catalogava reclami su recl
 
 Il testo è in corso di sviluppo attraverso una collaborazione non sempre consensuale tra un autore umano e diversi sistemi generativi artificiali.
 
-
-
 ---
 
 # ACCESSO ARCHIVIO
 
 🌐 https://tongatron.org/ministero-delle-eccezioni
 
-Versioni in lavorazione:
+Versioni disponibili:
 
-- `V0.1.codex` — bozza Codex completa fino all'epilogo.
-- `V0.1.claude` — bozza Claude/reference.
+- `V0.1` — versione corrente completa fino all'epilogo.
+- `V0.0.1` — versione precedente fino al capitolo 16.
 
-📘 `ministero-delle-eccezioni-v0.1.codex.epub`
+📘 `ministero-delle-eccezioni-v0.1.epub`
 
-📘 `ministero-delle-eccezioni-v0.1.claude.epub`
+📘 `ministero-delle-eccezioni-v0.0.1.epub`

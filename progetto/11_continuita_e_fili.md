@@ -1,6 +1,6 @@
 # Continuità narrativa e fili attivi
 
-Questo documento traccia ciò che è già stato seminato nella versione attiva `V0.1.codex` (introduzione + capitoli 1–15) e che non va contraddetto, dimenticato o anticipato fuori tempo. Lettura obbligatoria prima di scrivere un capitolo nuovo.
+Questo documento traccia ciò che è già stato seminato nella versione corrente `V0.1` e che non va contraddetto, dimenticato o anticipato fuori tempo. Lettura obbligatoria prima di scrivere un capitolo nuovo.
 
 ## Filoni narrativi attivi
 

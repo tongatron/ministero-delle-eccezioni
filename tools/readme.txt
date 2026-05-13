@@ -18,41 +18,41 @@ Verifica:
 STRUTTURA VERSIONI
 --------------------------------------------------
 
-Versione Codex attiva:
+Versione corrente:
 
-    capitoli (V0.1.codex)/
+    capitoli (V0.1)/
 
-Versione Claude/reference:
+Versione precedente:
 
-    capitoli (V0.1.claude)/
+    capitoli (V0.0.1)/
 
 
 --------------------------------------------------
 GENERARE EPUB
 --------------------------------------------------
 
-Versione Codex:
+Versione corrente:
 
-    ./build.sh --version v0.1.codex
-
-Genera:
-
-    build/ministero-delle-eccezioni-v0.1.codex.epub
-
-Versione Claude/reference:
-
-    ./build.sh --version v0.1.claude
+    ./build.sh --version v0.1
 
 Genera:
 
-    build/ministero-delle-eccezioni-v0.1.claude.epub
+    build/ministero-delle-eccezioni-v0.1.epub
+
+Versione precedente:
+
+    ./build.sh --version v0.0.1
+
+Genera:
+
+    build/ministero-delle-eccezioni-v0.0.1.epub
 
 
 --------------------------------------------------
 GENERARE EPUB + HTML
 --------------------------------------------------
 
-    ./build.sh --version v0.1.codex --html
+    ./build.sh --version v0.1 --html
 
 
 --------------------------------------------------

@@ -1,6 +1,6 @@
 # Scene chiave
 
-Le scene madri del libro. Quelle dei capitoli scritti nella linea attiva (✅) sono in forma piena nei file `capitoli (V0.1.codex)/`. Quelle dei capitoli futuri (⏳) sono qui in sinossi.
+Le scene madri del libro. Quelle dei capitoli scritti nella versione corrente (✅) sono in forma piena nei file `capitoli (V0.1)/`. Quelle dei capitoli futuri (⏳) sono qui in sinossi.
 
 ## Scene già scritte (✅)
 

@@ -1,7 +1,7 @@
 const VERSIONS = {
-  "v0.1.claude": {
-    label: "V0.1.claude",
-    base: "capitoli%20%28V0.1.claude%29",
+  "v0.0.1": {
+    label: "V0.0.1",
+    base: "capitoli%20%28V0.0.1%29",
     chapters: [
       { n: 0, slug: "introduzione", title: "Introduzione", label: "Introduzione", file: "00_introduzione.md" },
       { n: 1, slug: "capitolo-1", title: "Una convocazione cortese", label: "Capitolo 1", file: "01_capitolo_1.md" },
@@ -22,9 +22,9 @@ const VERSIONS = {
       { n: 16, slug: "capitolo-16", title: "L'audit arriva", label: "Capitolo 16", file: "16_capitolo_16.md" }
     ]
   },
-  "v0.1.codex": {
-    label: "V0.1.codex",
-    base: "capitoli%20%28V0.1.codex%29",
+  "v0.1": {
+    label: "V0.1",
+    base: "capitoli%20%28V0.1%29",
     chapters: [
       { n: 0, slug: "introduzione", title: "Introduzione", label: "Introduzione", file: "00_introduzione.md" },
       { n: 1, slug: "capitolo-1", title: "Una convocazione cortese", label: "Capitolo 1", file: "01_capitolo_1.md" },
@@ -55,10 +55,10 @@ const VERSIONS = {
   }
 };
 
-let currentVersionKey = "v0.1.codex";
+let currentVersionKey = "v0.1";
 
 function currentVersion() {
-  return VERSIONS[currentVersionKey] || VERSIONS["v0.1.codex"];
+  return VERSIONS[currentVersionKey] || VERSIONS["v0.1"];
 }
 
 function chapterUrl(chapter) {
@@ -78,13 +78,36 @@ function stripFirstHeading(markdown) {
   return markdown.replace(/^#\s+.*$/m, "").trim();
 }
 
+function renderHome() {
+  document.title = "Il Ministero delle Eccezioni";
+  app.innerHTML = `
+    <section class="hero">
+      <div class="hero-cover">
+        <img src="assets/copertina/copertina.png" alt="Copertina de Il Ministero delle Eccezioni" />
+      </div>
+      <div class="hero-copy">
+        <div class="subtitle">Romanzo satirico di fantascienza</div>
+        <h1 class="book-title">Il Ministero delle Eccezioni</h1>
+        <p class="hero-text"><em>Una commedia burocratica cosmica in cui la civiltà non è caduta: è solo bloccata in attesa di approvazione.</em></p>
+        <div class="hero-actions">
+          <a href="#/leggi" class="cta-btn primary">&gt; Leggi</a>
+          <a href="build/ministero-delle-eccezioni-v0.1.epub" class="cta-btn">&gt; Scarica EPUB</a>
+        </div>
+        <p class="hero-note">Ultima versione disponibile: V0.1</p>
+      </div>
+    </section>
+  `;
+  window.scrollTo(0, 0);
+}
+
 function renderIndex() {
   const version = currentVersion();
-  document.title = `${version.label} · Il Ministero delle Eccezioni`;
+  document.title = `Leggi ${version.label} · Il Ministero delle Eccezioni`;
   app.innerHTML = `
     <h1 class="book-title">Il Ministero delle Eccezioni</h1>
-    <div class="subtitle">Un romanzo in lavorazione · ${version.label}</div>
+    <div class="subtitle">Indice · ${version.label}</div>
     <p><em>Una commedia burocratica cosmica in cui la civiltà non è caduta: è solo bloccata in attesa di approvazione.</em></p>
+    <p><a href="build/ministero-delle-eccezioni-v0.1.epub" class="inline-download">&gt; Scarica EPUB</a></p>
     <h2>Indice</h2>
     <ul class="toc">
       ${version.chapters.map((chapter) => `
@@ -124,7 +147,7 @@ async function renderChapter(slug) {
       <article>${html}</article>
       <nav class="chapter-nav">
         ${previous ? `<a href="#/${previous.slug}" class="prev"><span class="label">← Precedente</span><span class="name">${previous.title}</span></a>` : `<span></span>`}
-        ${next ? `<a href="#/${next.slug}" class="next"><span class="label">Successivo →</span><span class="name">${next.title}</span></a>` : `<a href="#/" class="next"><span class="label">Indice</span><span class="name">Tutti i capitoli</span></a>`}
+        ${next ? `<a href="#/${next.slug}" class="next"><span class="label">Successivo →</span><span class="name">${next.title}</span></a>` : `<a href="#/leggi" class="next"><span class="label">Indice</span><span class="name">Tutti i capitoli</span></a>`}
       </nav>
     `;
     window.scrollTo(0, 0);
@@ -137,6 +160,10 @@ function route() {
   versionSelect.value = currentVersionKey;
   const hash = location.hash.replace(/^#\/?/, "");
   if (!hash || hash === "/") {
+    renderHome();
+    return;
+  }
+  if (hash === "leggi" || hash === "indice") {
     renderIndex();
     return;
   }

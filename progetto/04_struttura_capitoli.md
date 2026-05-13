@@ -2,7 +2,7 @@
 
 Documento operativo per gli agenti AI che proseguono. Per ogni capitolo: stato, sinossi, gag chiave, gancio al filone principale, voci da rispettare. Lunghezza target: 4.500–6.000 parole. Eccezioni: cap 21 e 22 più corti (~3.000) per ritmo. Cap 1 più lungo (~7.000, già scritto).
 
-Stato versioni: `V0.1.codex` contiene introduzione + capitoli 1–15; `V0.1.claude` contiene introduzione + capitoli 1–16 ed è usata come reference. Le spunte sotto indicano lo stato della versione Codex attiva, salvo note esplicite.
+Stato versioni: `V0.1` contiene introduzione + capitoli 1–24; `V0.0.1` contiene introduzione + capitoli 1–16. Le spunte sotto indicano lo stato della versione corrente, salvo note esplicite.
 
 Linee guida per ogni capitolo:
 - Una situazione assurda.
@@ -104,7 +104,7 @@ ARMSTRONG-Λ, Operazione Blue Parentheses, manager FALCONE-Ω in pensione. Sette
 **Gancio**: Bothwell gli dice che, *prima di andare*, avrà bisogno che Teo metta una virgola in un verbale (preparazione di cap 21).
 **Tono**: intimo, malinconico, leggero. Niente musica drammatica. Solo il condizionatore rotto. *"Pensare è stata l'ultima cosa che mi è venuta bene."*
 
-### Cap 16 — *L'audit arriva* ⏳ (presente in V0.1.claude)
+### Cap 16 — *L'audit arriva* ✅
 **Situazione**: il Dipartimento 14 apre un audit formale sul Ministero. L'audit apre un sotto-audit. Il sotto-audit apre un audit sull'audit.
 **Conflitto**: massimo. Il Ministero potrebbe essere chiuso.
 **Personaggi**: corale, tensione. MINERVA-7 più severa che mai. Vittoria con la stilografica nera.

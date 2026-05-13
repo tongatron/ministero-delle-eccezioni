@@ -23,7 +23,7 @@ Theodore "Teo" Marenghi, 41 anni, ex impiegato presso un ufficio che catalogava 
 
 ### Atto II — Il Ministero (capitoli 7–16) — IN CORSO
 
-Stato versioni: in `V0.1.codex` sono presenti i capitoli 7–15; il capitolo 16 è presente solo nella bozza `V0.1.claude` e resta da scrivere/adattare nella linea Codex.
+Stato versioni: in `V0.1` sono presenti i capitoli 7–24; `V0.0.1` si ferma al capitolo 16.
 
 Casi della seconda metà, in escalation, con il filone Vellario/Mottera che cresce sotto la superficie:
 
