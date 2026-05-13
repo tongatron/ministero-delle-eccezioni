@@ -36,7 +36,9 @@ const VERSIONS = {
       { n: 8, slug: "capitolo-8", title: "La regione che non c'è", label: "Capitolo 8", file: "08_capitolo_8.md" },
       { n: 9, slug: "capitolo-9", title: "Greta dice tre parole", label: "Capitolo 9", file: "09_capitolo_9.md" },
       { n: 10, slug: "capitolo-10", title: "Il servizio funerario predittivo", label: "Capitolo 10", file: "10_capitolo_10.md" },
-      { n: 11, slug: "capitolo-11", title: "Riunione interdicasteriale", label: "Capitolo 11", file: "11_capitolo_11.md" }
+      { n: 11, slug: "capitolo-11", title: "Riunione interdicasteriale", label: "Capitolo 11", file: "11_capitolo_11.md" },
+      { n: 12, slug: "capitolo-12", title: "Bothwell racconta qualcosa", label: "Capitolo 12", file: "12_capitolo_12.md" },
+      { n: 13, slug: "capitolo-13", title: "Il distributore di caffè parla", label: "Capitolo 13", file: "13_capitolo_13.md" }
     ]
   }
 };
