@@ -15,7 +15,12 @@ libro/
 │   ├── 04_capitolo_4.md      # Lo scantinato
 │   ├── 05_capitolo_5.md      # Il sonno è una pratica non ottimizzata
 │   ├── 06_capitolo_6.md      # Una guerra in attesa di chiusura
-│   └── 07_capitolo_7.md      # Il meteo censurato
+│   ├── 07_capitolo_7.md      # Il meteo censurato
+│   ├── 08_capitolo_8.md      # La regione che non c'è
+│   ├── 09_capitolo_9.md      # Greta dice tre parole
+│   ├── 10_capitolo_10.md     # Il servizio funerario predittivo
+│   ├── 11_capitolo_11.md     # Riunione interdicasteriale
+│   └── 12_capitolo_12.md     # Bothwell racconta qualcosa
 └── progetto/                 # documenti di lavoro
     ├── 01_outline.md
     ├── 02_personaggi.md
@@ -39,6 +44,17 @@ libro/
 5. [Il sonno è una pratica non ottimizzata](capitoli/05_capitolo_5.md)
 6. [Una guerra in attesa di chiusura](capitoli/06_capitolo_6.md)
 7. [Il meteo censurato](capitoli/07_capitolo_7.md)
+8. [La regione che non c'è](capitoli/08_capitolo_8.md)
+9. [Greta dice tre parole](capitoli/09_capitolo_9.md)
+10. [Il servizio funerario predittivo](capitoli/10_capitolo_10.md)
+11. [Riunione interdicasteriale](capitoli/11_capitolo_11.md)
+12. [Bothwell racconta qualcosa](capitoli/12_capitolo_12.md)
+
+## Scarica l'ePub
+
+📖 **[ministero-delle-eccezioni.epub](https://github.com/tongatron/ministero-delle-eccezioni/raw/main/build/ministero-delle-eccezioni.epub)** — versione aggiornata con tutti i capitoli pubblicati.
+
+Leggibile anche online su [tongatron.org/ministero-delle-eccezioni](https://tongatron.org/ministero-delle-eccezioni/).
 
 ## Tono in una riga
 
