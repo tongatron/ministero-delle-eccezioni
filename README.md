@@ -20,7 +20,9 @@ libro/
 │   ├── 09_capitolo_9.md      # Greta dice tre parole
 │   ├── 10_capitolo_10.md     # Il servizio funerario predittivo
 │   ├── 11_capitolo_11.md     # Riunione interdicasteriale
-│   └── 12_capitolo_12.md     # Bothwell racconta qualcosa
+│   ├── 12_capitolo_12.md     # Bothwell racconta qualcosa
+│   ├── 13_capitolo_13.md     # Il distributore di caffè parla
+│   └── 14_capitolo_14.md     # Ada dice no
 └── progetto/                 # documenti di lavoro
     ├── 01_outline.md
     ├── 02_personaggi.md
@@ -49,6 +51,8 @@ libro/
 10. [Il servizio funerario predittivo](capitoli/10_capitolo_10.md)
 11. [Riunione interdicasteriale](capitoli/11_capitolo_11.md)
 12. [Bothwell racconta qualcosa](capitoli/12_capitolo_12.md)
+13. [Il distributore di caffè parla](capitoli/13_capitolo_13.md)
+14. [Ada dice no](capitoli/14_capitolo_14.md)
 
 ## Scarica l'ePub
 
