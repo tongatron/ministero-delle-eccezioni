@@ -77,7 +77,7 @@ function renderHome() {
       <div class="home-lead">
         <div class="home-copy">
           <h1 class="book-title">Il Ministero delle Eccezioni</h1>
-          <p class="home-deck"><em>Una commedia burocratica cosmica in cui la civiltà non si è interrotta. Ha soltanto iniziato a giustificarsi male.</em></p>
+          <p class="home-deck"><em>Una commedia burocratica cosmica in cui la civiltà non è collassata: è semplicemente bloccata in attesa di approvazione.</em></p>
           <div class="hero-actions">
             <a href="#/leggi" class="cta-btn">&gt; Leggi</a>
             <a href="build/ministero-delle-eccezioni-v0.1.epub" class="cta-btn">&gt; Scarica EPUB</a>
