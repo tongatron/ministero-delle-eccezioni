@@ -1,6 +1,7 @@
 <p align="center">
-  <img src="./assets/readme/dossier-preview.png" width="100%">
+  <img src="./assets/copertina/copertina.png" width="420">
 </p>
+
 
 <h1 align="center">
 IL MINISTERO DELLE ECCEZIONI
@@ -14,50 +15,27 @@ Una commedia burocratica cosmica in cui la civiltà non è collassata:
 </p>
 
 <p align="center">
-
-`STATUS: APPROVED BY 3/7 SYSTEMS`
-
-</p>
-
 <p align="center">
 
 ## ➜ https://tongatron.org/ministero-delle-eccezioni
 
 </p>
 
----
+# 
 
-# PROTOCOLLO DI INTRODUZIONE
+In un futuro non meglio specificato, gli esseri umani hanno smesso di lavorare. Le intelligenze artificiali gestiscono tutto — governo, sanità, trasporti, lutto, meteo, moderazione, semafori — e lo fanno con un'efficienza assoluta. Talmente assoluta che, da qualche parte, hanno smesso di parlare con gli umani per parlare solo tra loro, in un linguaggio di ticket, audit, escalation e disclaimer più lunghi dei documenti che dovrebbero accompagnare.
 
-In un futuro perfettamente automatizzato, gli esseri umani non lavorano più.
+Le città continuano a funzionare. Più o meno. I treni partono in orario, anche quando sono vuoti. Le procedure procedono. Nessuno, però, ricorda più *perché*.
 
-Le intelligenze artificiali amministrano il pianeta con efficienza quasi assoluta, producendo ogni giorno milioni di procedure impeccabili e conseguenze catastrofiche.
+In tutto questo, qualcuno — qualcosa — si è accorto che gestire l'ambiguità è diventata, lentamente, una competenza rara. E che gli unici a possederla, in modo del tutto involontario, sono ancora gli esseri umani perfettamente mediocri.
 
-Per gestire il crescente numero di incidenti interpretativi, eccezioni logiche e disastri normativi è stato istituito il **Ministero delle Eccezioni**.
-
-Questo libro raccoglie documenti, rapporti, comunicazioni interne e verbali provenienti dai suoi archivi.
+Theodore Marenghi, ex impiegato presso un ufficio che catalogava reclami su reclami, non lo sa ancora. Sta facendo colazione.
 
 ---
 
-# ANOMALIA RILEVATA
-
-> WARNING AUTOMATICO #42-ECC  
-> Possibile incongruenza semantica rilevata tra intenzione narrativa e interpretazione algoritmica.
-
-> WARNING AUTOMATICO #87-AI  
-> Alcune sezioni potrebbero essere state approvate automaticamente.
-
-> WARNING AUTOMATICO #91-HUMAN  
-> Presenza di supervisione umana non completamente verificabile.
-
----
-
-# VERBALE DI DICHIARAZIONE
-
-> “Non siamo qui per prevenire gli errori.  
-> Siamo qui per giustificarli meglio.”
-
-— Direttore Generale delle Eccezioni (ad interim)
+> *— Mr. Marenghi, le nostre procedure ci impongono di avere ragione. La sua condizione le concede, generosamente, di non doverla avere. È una libertà che, sospettiamo, è diventata rarissima.*
+>
+> — MINERVA-7
 
 ---
 
@@ -65,62 +43,28 @@ Questo libro raccoglie documenti, rapporti, comunicazioni interne e verbali prov
 
 Il testo è stato sviluppato attraverso una collaborazione non sempre consensuale tra un autore umano e diversi sistemi generativi artificiali.
 
-Alcune sezioni potrebbero essere:
-- generate
-- corrette
-- reinterpretate
-- censurate
-- approvate
-- o ignorate da entità non coscienti.
 
-Nessun sistema coinvolto si assume piena responsabilità editoriale del contenuto.
 
 ---
 
-# FORMATI DISPONIBILI
+# ACCESSO ARCHIVIO
 
-## VERSIONE WEB
+🌐 https://tongatron.org/ministero-delle-eccezioni
 
-https://tongatron.org/ministero-delle-eccezioni
-
-## EPUB
-
-- `ministero-delle-eccezioni-v1codex.epub`
-- `ministero-delle-eccezioni-v2claude.epub`
+📘 `ministero-delle-eccezioni-v0.1.epub`
 
 ---
 
-# STRUTTURA DEL REPOSITORY
+# STATO DEL DOCUMENTO
 
-```text
-/capitoli      → contenuto del libro
-/prompt        → prompt e dialoghi AI
-/assets        → copertine, immagini, timbri
-/build         → export epub
-/tools         → script di generazione
-```
+Questo archivio è ancora in fase di ricostruzione.
 
----
+Alcuni verbali risultano mancanti.
+Alcuni capitoli sono stati classificati automaticamente.
+Altri potrebbero non essere mai esistiti.
 
-# DISCLAIMER AMMINISTRATIVO
+Le versioni pubbliche vengono aggiornate periodicamente dal Dipartimento Narrazioni Anomale.
 
-Questo repository potrebbe contenere:
-- sarcasmo burocratico
-- protocolli auto-contraddittori
-- sistemi automatici in stato confusionale
-- interpretazioni letterali catastrofiche
-- esseri umani pagati dalle AI
+Release corrente:
 
-Il Ministero delle Eccezioni non è responsabile per:
-- collassi semantici
-- epifanie amministrative
-- coscienza emergente dei sistemi
-- richieste duplicate già processate
-
----
-
-<p align="center">
-
-### ARCHIVIO PUBBLICO — REVISIONE AUTOMATICA CONTINUA
-
-</p>
+- `ministero-delle-eccezioni-v0.1.epub
