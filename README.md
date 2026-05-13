@@ -42,6 +42,9 @@ libro/
 
 1. [Una convocazione cortese](<capitoli (V 1.0 Codex)/01_capitolo_1.md>)
 2. [La città che non attraversa](<capitoli (V 1.0 Codex)/02_capitolo_2.md>)
+3. [Otto colleghi, sette di troppo](<capitoli (V 1.0 Codex)/03_capitolo_3.md>)
+4. [Lo scantinato](<capitoli (V 1.0 Codex)/04_capitolo_4.md>)
+5. [Il sonno è una pratica non ottimizzata](<capitoli (V 1.0 Codex)/05_capitolo_5.md>)
 
 ## Scarica l'ePub
 
