@@ -29,6 +29,10 @@ body {
   padding-bottom: 6rem;
 }
 
+body.home-view {
+  padding-bottom: 3rem;
+}
+
 header.site {
   border-bottom: 1px solid var(--rule);
   padding: 0.9rem 1.2rem;
@@ -117,77 +121,99 @@ main h1.book-title {
   margin-bottom: 0.4rem;
 }
 
-.hero {
-  min-height: calc(100vh - 13rem);
-  display: grid;
-  grid-template-columns: minmax(13rem, 20rem) minmax(0, 1fr);
-  gap: 2.5rem;
-  align-items: center;
-  padding: 2.2rem 0 1rem;
+.home-editorial {
+  padding-top: 2.4rem;
 }
 
-.hero-cover img {
+.home-kicker {
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: 0.74rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--fg-soft);
+  margin-bottom: 1.2rem;
+}
+
+.home-lead {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 12rem;
+  gap: 2rem;
+  align-items: start;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+.home-copy {
+  max-width: 34rem;
+}
+
+.home-copy .book-title {
+  margin-top: 0;
+  margin-bottom: 0.7rem;
+  max-width: 12ch;
+}
+
+.home-deck {
+  font-size: 1.12rem;
+  line-height: 1.7;
+  color: var(--fg);
+  margin-bottom: 1.5rem;
+}
+
+.home-cover {
+  margin: 0;
+}
+
+.home-cover img {
   width: 100%;
+  max-width: 12rem;
   display: block;
-  border-radius: 0.9rem;
-  box-shadow: 0 1.2rem 2.8rem rgba(26, 26, 26, 0.12);
+  border-radius: 0.2rem;
+  box-shadow: 0 0.9rem 2rem rgba(26, 26, 26, 0.09);
   border: 1px solid var(--rule);
 }
 
-.hero-copy {
-  max-width: 30rem;
+.home-body {
+  max-width: 38rem;
 }
 
-.hero-copy .book-title {
-  margin-top: 0;
-  margin-bottom: 1rem;
+.home-body p + p {
+  text-indent: 1.2em;
 }
 
-.hero-text {
-  font-size: 1.12rem;
-  line-height: 1.75;
-  margin-bottom: 1.6rem;
+.home-body hr + blockquote p,
+.home-body blockquote p + p {
+  text-indent: 0;
 }
 
 .hero-actions {
   display: flex;
   gap: 0.8rem;
   flex-wrap: wrap;
-  margin-bottom: 1rem;
+  margin-bottom: 0.9rem;
 }
 
 .cta-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-width: 10rem;
-  padding: 0.8rem 1.15rem;
-  border-radius: 0.55rem;
+  min-width: 9rem;
+  padding: 0.72rem 0.95rem;
+  border-radius: 0.12rem;
   border: 1px solid var(--rule);
   background: transparent;
-  color: var(--fg);
+  color: var(--fg-soft);
   text-decoration: none;
   font-family: "Inter", system-ui, sans-serif;
-  font-size: 0.86rem;
-  letter-spacing: 0.03em;
+  font-size: 0.8rem;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 
 .cta-btn:hover {
-  border-color: var(--fg-soft);
-  color: var(--accent);
-}
-
-.cta-btn.primary {
-  background: var(--fg);
-  color: var(--bg);
   border-color: var(--fg);
-}
-
-.cta-btn.primary:hover {
-  background: var(--accent);
-  border-color: var(--accent);
-  color: var(--bg);
+  color: var(--fg);
 }
 
 .inline-download {
@@ -205,14 +231,14 @@ main h1.book-title {
 
 .hero-note {
   font-family: "Inter", system-ui, sans-serif;
-  font-size: 0.8rem;
-  letter-spacing: 0.03em;
+  font-size: 0.74rem;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--fg-soft);
 }
 
-.hero p + p,
-.hero h1 + p {
+.home-editorial h1 + p,
+.home-editorial p:first-of-type {
   text-indent: 0;
 }
 
@@ -359,19 +385,17 @@ footer.site a { color: var(--fg-soft); }
 }
 
 @media (max-width: 760px) {
-  .hero {
-    min-height: auto;
+  .home-lead {
     grid-template-columns: 1fr;
-    gap: 1.4rem;
-    padding-top: 1rem;
+    gap: 1rem;
   }
 
-  .hero-cover {
-    max-width: 18rem;
+  .home-cover {
+    order: -1;
   }
 
-  .hero-copy {
-    max-width: none;
+  .home-cover img {
+    max-width: 8.5rem;
   }
 }
 

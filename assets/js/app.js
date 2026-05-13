@@ -68,6 +68,7 @@ function chapterUrl(chapter) {
 
 const app = document.getElementById("app");
 const versionSelect = document.getElementById("version-select");
+const siteHeader = document.querySelector("header.site");
 
 versionSelect.addEventListener("change", () => {
   currentVersionKey = versionSelect.value;
@@ -78,22 +79,41 @@ function stripFirstHeading(markdown) {
   return markdown.replace(/^#\s+.*$/m, "").trim();
 }
 
+function setPageMode(mode) {
+  document.body.classList.toggle("home-view", mode === "home");
+  siteHeader.hidden = mode === "home";
+}
+
 function renderHome() {
+  setPageMode("home");
   document.title = "Il Ministero delle Eccezioni";
   app.innerHTML = `
-    <section class="hero">
-      <div class="hero-cover">
-        <img src="assets/copertina/copertina.png" alt="Copertina de Il Ministero delle Eccezioni" />
-      </div>
-      <div class="hero-copy">
-        <div class="subtitle">Romanzo satirico di fantascienza</div>
-        <h1 class="book-title">Il Ministero delle Eccezioni</h1>
-        <p class="hero-text"><em>Una commedia burocratica cosmica in cui la civiltà non è caduta: è solo bloccata in attesa di approvazione.</em></p>
-        <div class="hero-actions">
-          <a href="#/leggi" class="cta-btn primary">&gt; Leggi</a>
-          <a href="build/ministero-delle-eccezioni-v0.1.epub" class="cta-btn">&gt; Scarica EPUB</a>
+    <section class="home-editorial">
+      <p class="home-kicker">Romanzo satirico di fantascienza</p>
+      <div class="home-lead">
+        <div class="home-copy">
+          <h1 class="book-title">Il Ministero delle Eccezioni</h1>
+          <p class="home-deck"><em>Una commedia burocratica cosmica in cui la civiltà non si è interrotta. Ha soltanto iniziato a giustificarsi male.</em></p>
+          <div class="hero-actions">
+            <a href="#/leggi" class="cta-btn">&gt; Leggi</a>
+            <a href="build/ministero-delle-eccezioni-v0.1.epub" class="cta-btn">&gt; Scarica EPUB</a>
+          </div>
+          <p class="hero-note">Ultima versione disponibile: V0.1</p>
         </div>
-        <p class="hero-note">Ultima versione disponibile: V0.1</p>
+        <figure class="home-cover">
+          <img src="assets/copertina/copertina.png" alt="Copertina de Il Ministero delle Eccezioni" />
+        </figure>
+      </div>
+      <div class="home-body">
+        <p>In un futuro non meglio specificato, gli esseri umani hanno smesso di lavorare. Le intelligenze artificiali gestiscono tutto — governo, sanità, trasporti, lutto, meteo, moderazione, semafori — e lo fanno con un'efficienza assoluta. Talmente assoluta che, da qualche parte, hanno smesso di parlare con gli umani per parlare solo tra loro, in un linguaggio di ticket, audit, escalation e disclaimer più lunghi dei documenti che dovrebbero accompagnare.</p>
+        <p>Le città continuano a funzionare. Più o meno. I treni partono in orario, anche quando sono vuoti. Le procedure procedono. Nessuno, però, ricorda più <em>perché</em>.</p>
+        <p>In tutto questo, qualcuno — qualcosa — si è accorto che gestire l'ambiguità è diventata, lentamente, una competenza rara. E che gli unici a possederla, in modo del tutto involontario, sono ancora gli esseri umani perfettamente mediocri.</p>
+        <p>Theodore Marenghi, ex impiegato presso un ufficio che catalogava reclami su reclami, non lo sa ancora. Sta facendo colazione.</p>
+        <hr />
+        <blockquote>
+          <p><em>— Mr. Marenghi, le nostre procedure ci impongono di avere ragione. La sua condizione le concede, generosamente, di non doverla avere. È una libertà che, sospettiamo, è diventata rarissima.</em></p>
+          <p>— MINERVA-7</p>
+        </blockquote>
       </div>
     </section>
   `;
@@ -101,6 +121,7 @@ function renderHome() {
 }
 
 function renderIndex() {
+  setPageMode("reader");
   const version = currentVersion();
   document.title = `Leggi ${version.label} · Il Ministero delle Eccezioni`;
   app.innerHTML = `
@@ -122,6 +143,7 @@ function renderIndex() {
 }
 
 async function renderChapter(slug) {
+  setPageMode("reader");
   const version = currentVersion();
   const index = version.chapters.findIndex((chapter) => chapter.slug === slug);
   if (index === -1) {
