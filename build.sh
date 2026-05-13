@@ -3,8 +3,8 @@
 # Requisiti: pandoc >= 3.0
 # Uso:
 #   ./build.sh [--html] [--open]
-#   ./build.sh --version v1claude
-#   ./build.sh --version v1codex --output build/ministero-delle-eccezioni.epub
+#   ./build.sh --version v0.1.claude
+#   ./build.sh --version v0.1.codex --output build/ministero-delle-eccezioni.epub
 
 set -eo pipefail
 
@@ -13,9 +13,9 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 BUILD_DIR="$SCRIPT_DIR/build"
 METADATA="$SCRIPT_DIR/metadata.yml"
 CSS="$SCRIPT_DIR/assets/css/epub.css"
-COVER="$SCRIPT_DIR/assets/copertina/copertina2.png"
+COVER="$SCRIPT_DIR/assets/copertina/copertina.png"
 BASE_TITLE="Il Ministero delle Eccezioni"
-VERSION="v1claude"
+VERSION="v0.1.codex"
 CAPITOLI_DIR=""
 OUTPUT_EPUB=""
 OUTPUT_HTML=""
@@ -52,17 +52,17 @@ while [ $# -gt 0 ]; do
 done
 
 case "$VERSION" in
-  v1claude|V1claude)
-    DEFAULT_CAPITOLI_DIR="$SCRIPT_DIR/capitoli (V 1.0 Claude)"
-    DEFAULT_OUTPUT_EPUB="$BUILD_DIR/ministero-delle-eccezioni-v1claude.epub"
-    DEFAULT_OUTPUT_HTML="$BUILD_DIR/ministero-delle-eccezioni-v1claude.html"
-    DEFAULT_TITLE_SUFFIX="V1claude"
+  v0.1.claude|V0.1.claude|v01claude|v1claude|V1claude)
+    DEFAULT_CAPITOLI_DIR="$SCRIPT_DIR/capitoli (V0.1.claude)"
+    DEFAULT_OUTPUT_EPUB="$BUILD_DIR/ministero-delle-eccezioni-v0.1.claude.epub"
+    DEFAULT_OUTPUT_HTML="$BUILD_DIR/ministero-delle-eccezioni-v0.1.claude.html"
+    DEFAULT_TITLE_SUFFIX="V0.1.claude"
     ;;
-  v1codex|V1Codex)
-    DEFAULT_CAPITOLI_DIR="$SCRIPT_DIR/capitoli (V 1.0 Codex)"
-    DEFAULT_OUTPUT_EPUB="$BUILD_DIR/ministero-delle-eccezioni-v1codex.epub"
-    DEFAULT_OUTPUT_HTML="$BUILD_DIR/ministero-delle-eccezioni-v1codex.html"
-    DEFAULT_TITLE_SUFFIX="V1Codex"
+  v0.1.codex|V0.1.codex|v01codex|v1codex|V1Codex)
+    DEFAULT_CAPITOLI_DIR="$SCRIPT_DIR/capitoli (V0.1.codex)"
+    DEFAULT_OUTPUT_EPUB="$BUILD_DIR/ministero-delle-eccezioni-v0.1.codex.epub"
+    DEFAULT_OUTPUT_HTML="$BUILD_DIR/ministero-delle-eccezioni-v0.1.codex.html"
+    DEFAULT_TITLE_SUFFIX="V0.1.codex"
     ;;
   *)
     echo "❌ Versione non riconosciuta: $VERSION"
@@ -91,7 +91,7 @@ mkdir -p "$BUILD_DIR"
 CAPITOLI=()
 while IFS= read -r f; do
   CAPITOLI+=("$f")
-done < <(find "$CAPITOLI_DIR" -maxdepth 1 -name "*.md" | sort)
+done < <(find "$CAPITOLI_DIR" -maxdepth 1 -type f \( -name "00_*.md" -o -name "[0-9][0-9]_capitolo_*.md" \) | sort)
 
 if [ ${#CAPITOLI[@]} -eq 0 ]; then
   echo "❌ Nessun file .md trovato in $CAPITOLI_DIR"

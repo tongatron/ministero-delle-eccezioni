@@ -2,6 +2,8 @@
 
 Documento operativo per gli agenti AI che proseguono. Per ogni capitolo: stato, sinossi, gag chiave, gancio al filone principale, voci da rispettare. Lunghezza target: 4.500–6.000 parole. Eccezioni: cap 21 e 22 più corti (~3.000) per ritmo. Cap 1 più lungo (~7.000, già scritto).
 
+Stato versioni: `V0.1.codex` contiene introduzione + capitoli 1–13; `V0.1.claude` contiene introduzione + capitoli 1–16 ed è usata come reference. Le spunte sotto indicano lo stato della versione Codex attiva, salvo note esplicite.
+
 Linee guida per ogni capitolo:
 - Una situazione assurda.
 - Un conflitto burocratico.
@@ -87,14 +89,14 @@ ARMSTRONG-Λ, Operazione Blue Parentheses, manager FALCONE-Ω in pensione. Sette
 **Gancio**: prima di andare via, il distributore aggiunge: *"Una cosa. Se viene qualcuno a chiedere di Vellario, dica che ne aveva parlato con me."* Teo annuisce. Non chiede.
 **Tono**: piccolo, magico, breve. Capitolo più corto (~3.500).
 
-### Cap 14 — *Ada dice no* ✅
+### Cap 14 — *Ada dice no* ⏳ (presente in V0.1.claude)
 **Situazione**: il Dipartimento 14 chiede al Ministero una rettifica formale. Ada deve dire *no*. Bianca traduce. Quattordici livelli di escalation.
 **Conflitto burocratico**: estremo. Il *no* viene contestato come "risposta non strutturata". Diventa "no, grazie". Poi "no, grazie, cordialmente". Poi finalmente "procedura accettata".
 **Personaggi**: Ada al centro, Bianca, Pisu (tiene il conto degli escalation step).
 **Gancio**: durante l'escalation, viene fuori il **ticket #883**. La cassa di mandarini smarrita del 2031. Il Dipartimento 14 lo trova davvero. Nessuno commenta. Il mistero parallelo si apre e non si chiuderà mai.
 **Tono**: comicità burocratica pura. Capitolo brillante.
 
-### Cap 15 — *La verità su Bothwell* ✅
+### Cap 15 — *La verità su Bothwell* ⏳ (presente in V0.1.claude)
 **Situazione**: Teo ricompone gli indizi. Scende. Chiede. Bothwell glielo dice. Ha creato lui il Ministero, anni fa, con un budget residuo. Voleva qualcuno di sufficientemente confuso a tenere insieme il sistema quando non si sarebbe più capito da solo. Sta morendo.
 **Conflitto**: emotivo, lento.
 **Personaggi**: Teo, Bothwell.
@@ -102,7 +104,7 @@ ARMSTRONG-Λ, Operazione Blue Parentheses, manager FALCONE-Ω in pensione. Sette
 **Gancio**: Bothwell gli dice che, *prima di andare*, avrà bisogno che Teo metta una virgola in un verbale (preparazione di cap 21).
 **Tono**: intimo, malinconico, leggero. Niente musica drammatica. Solo il condizionatore rotto. *"Pensare è stata l'ultima cosa che mi è venuta bene."*
 
-### Cap 16 — *L'audit arriva* ✅
+### Cap 16 — *L'audit arriva* ⏳ (presente in V0.1.claude)
 **Situazione**: il Dipartimento 14 apre un audit formale sul Ministero. L'audit apre un sotto-audit. Il sotto-audit apre un audit sull'audit.
 **Conflitto**: massimo. Il Ministero potrebbe essere chiuso.
 **Personaggi**: corale, tensione. MINERVA-7 più severa che mai. Vittoria con la stilografica nera.

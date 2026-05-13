@@ -1,137 +1,65 @@
-# TOOLS — Build e Preview locale
+# TOOLS - Build locale
 # Il Ministero delle Eccezioni
 
 --------------------------------------------------
 REQUISITI
 --------------------------------------------------
 
-Installare Python 3
-
-Verifica:
-
-    python3 --version
-
 Installare Pandoc:
 
     brew install pandoc
 
-Installare libreria markdown per Python:
+Verifica:
 
-    pip3 install markdown
+    pandoc --version
 
 
 --------------------------------------------------
-STRUTTURA PROGETTO
+STRUTTURA VERSIONI
 --------------------------------------------------
 
-tools/
-├── build_epub.py
-└── build_preview.py
+Versione Codex attiva:
 
-build/
-└── (file generati automaticamente)
+    capitoli (V0.1.codex)/
+
+Versione Claude/reference:
+
+    capitoli (V0.1.claude)/
 
 
 --------------------------------------------------
 GENERARE EPUB
 --------------------------------------------------
 
-Versione base:
-
-    python3 tools/build_epub.py
-
-Genera:
-
-    build/ministero-delle-eccezioni-AAAA-MM-GG.epub
-
-
---------------------------------------------------
-GENERARE EPUB CON NOME PERSONALIZZATO
---------------------------------------------------
-
-Esempio:
-
-    python3 tools/build_epub.py --name ministero-v2
-
-Genera:
-
-    build/ministero-v2-AAAA-MM-GG.epub
-
-
---------------------------------------------------
-GENERARE EPUB SENZA DATA
---------------------------------------------------
-
-Esempio:
-
-    python3 tools/build_epub.py --name ministero-final --no-date
-
-Genera:
-
-    build/ministero-final.epub
-
-
---------------------------------------------------
-SELEZIONARE VERSIONE LIBRO
---------------------------------------------------
-
-Versione Claude:
-
-    python3 tools/build_epub.py --version claude
-
 Versione Codex:
 
-    python3 tools/build_epub.py --version codex
-
-
---------------------------------------------------
-GENERARE PREVIEW LOCALE HTML
---------------------------------------------------
-
-Genera un file HTML statico leggibile anche senza server web.
-
-Comando:
-
-    python3 tools/build_preview.py
+    ./build.sh --version v0.1.codex
 
 Genera:
 
-    build/index-local.html
+    build/ministero-delle-eccezioni-v0.1.codex.epub
+
+Versione Claude/reference:
+
+    ./build.sh --version v0.1.claude
+
+Genera:
+
+    build/ministero-delle-eccezioni-v0.1.claude.epub
 
 
 --------------------------------------------------
-APRIRE PREVIEW LOCALE SU MACOS
+GENERARE EPUB + HTML
 --------------------------------------------------
 
-    open build/index-local.html
+    ./build.sh --version v0.1.codex --html
 
 
 --------------------------------------------------
 NOTE
 --------------------------------------------------
 
-- build/ contiene solo file generati automaticamente
-- index-local.html NON dipende da GitHub Pages
-- La preview locale funziona anche con doppio click
-- Se la preview online funziona ma quella locale no,
-  il problema è quasi sempre dovuto ai fetch()
-  bloccati dal browser in modalità file://
-
-
---------------------------------------------------
-IDEA FUTURA
---------------------------------------------------
-
-Possibile script unico:
-
-    python3 tools/build_all.py
-
-Che:
-- genera epub
-- genera preview locale
-- copia assets
-- crea zip finale del progetto
-- aggiorna indice capitoli
-- pubblica automaticamente su GitHub Pages
-
-Per ora meglio tenere i tool separati.
+- build/ contiene output generati.
+- Lo script include solo i file narrativi con prefisso numerico.
+- I documenti di progetto restano in progetto/.
+- La lettura online usa index.html e assets/js/app.js.

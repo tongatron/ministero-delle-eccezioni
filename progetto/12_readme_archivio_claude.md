@@ -21,7 +21,7 @@ Una commedia burocratica cosmica in cui la civiltà non è collassata:
 
 `ARCHIVIO PUBBLICO — REVISIONE CONTINUA`
 
-`VERSIONE: v0.1`
+`VERSIONE: V0.1.claude`
 
 `STATO: IN FASE DI ESPANSIONE NARRATIVA`
 
@@ -33,7 +33,7 @@ Una commedia burocratica cosmica in cui la civiltà non è collassata:
 
 🌐 https://tongatron.org/ministero-delle-eccezioni
 
-📘 `ministero-delle-eccezioni-v0.1.epub`
+📘 `ministero-delle-eccezioni-v0.1.claude.epub`
 
 ---
 
@@ -97,7 +97,7 @@ Le versioni pubbliche vengono aggiornate periodicamente dal Dipartimento Narrazi
 
 Release corrente:
 
-- `ministero-delle-eccezioni-v0.1.epub`
+- `ministero-delle-eccezioni-v0.1.claude.epub`
 
 ---
 

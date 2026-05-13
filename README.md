@@ -13,14 +13,6 @@ Una commedia burocratica cosmica in cui la civiltà non è collassata:
 è semplicemente bloccata in attesa di approvazione.
 </i>
 </p>
-
-<p align="center">
-<p align="center">
-
-## ➜ https://tongatron.org/ministero-delle-eccezioni
-
-</p>
-
 # 
 
 In un futuro non meglio specificato, gli esseri umani hanno smesso di lavorare. Le intelligenze artificiali gestiscono tutto — governo, sanità, trasporti, lutto, meteo, moderazione, semafori — e lo fanno con un'efficienza assoluta. Talmente assoluta che, da qualche parte, hanno smesso di parlare con gli umani per parlare solo tra loro, in un linguaggio di ticket, audit, escalation e disclaimer più lunghi dei documenti che dovrebbero accompagnare.
@@ -41,7 +33,7 @@ Theodore Marenghi, ex impiegato presso un ufficio che catalogava reclami su recl
 
 # NOTA SUL PROCESSO DI PRODUZIONE
 
-Il testo è stato sviluppato attraverso una collaborazione non sempre consensuale tra un autore umano e diversi sistemi generativi artificiali.
+Il testo è in corso di sviluppo attraverso una collaborazione non sempre consensuale tra un autore umano e diversi sistemi generativi artificiali.
 
 
 
@@ -51,20 +43,11 @@ Il testo è stato sviluppato attraverso una collaborazione non sempre consensual
 
 🌐 https://tongatron.org/ministero-delle-eccezioni
 
-📘 `ministero-delle-eccezioni-v0.1.epub`
+Versioni in lavorazione:
 
----
+- `V0.1.codex` — bozza Codex attiva.
+- `V0.1.claude` — bozza Claude/reference.
 
-# STATO DEL DOCUMENTO
+📘 `ministero-delle-eccezioni-v0.1.codex.epub`
 
-Questo archivio è ancora in fase di ricostruzione.
-
-Alcuni verbali risultano mancanti.
-Alcuni capitoli sono stati classificati automaticamente.
-Altri potrebbero non essere mai esistiti.
-
-Le versioni pubbliche vengono aggiornate periodicamente dal Dipartimento Narrazioni Anomale.
-
-Release corrente:
-
-- `ministero-delle-eccezioni-v0.1.epub
+📘 `ministero-delle-eccezioni-v0.1.claude.epub`

@@ -1,12 +1,12 @@
 # Continuità narrativa e fili attivi
 
-Questo documento traccia tutto ciò che è già stato seminato nei capitoli 1–6 e che non va contraddetto, dimenticato o anticipato fuori tempo. Lettura obbligatoria prima di scrivere un capitolo nuovo.
+Questo documento traccia ciò che è già stato seminato nella versione attiva `V0.1.codex` (introduzione + capitoli 1–13) e che non va contraddetto, dimenticato o anticipato fuori tempo. Lettura obbligatoria prima di scrivere un capitolo nuovo.
 
 ## Filoni narrativi attivi
 
 ### 1. Filone Vellario / Mottera / Sondrio (filo rosso del libro)
 
-**Stato di rivelazione attuale (post cap 6)**:
+**Stato di rivelazione di base (cap 1–6, con sviluppi fino al cap 13)**:
 - Cap 2: Mottera è stata sbloccata da Teo per un audit semafori-pedoni.
 - Cap 4: Bothwell rivela a Teo, in privato, che l'audit *vero* su Mottera è un altro: **TAV-4 vs Sondrio** stanno auditando in MUTTER l'**esistenza** della città dal 2068. Le AI direttive del Ministero non lo sanno.
 - Cap 4: Bothwell racconta la storia di **Aldo Sturni** a **Vellario** nel 2027 (porta che "non ha voluto chiudersi"). Lascia capire che Vellario è già scomparsa dai registri.
@@ -21,7 +21,7 @@ Questo documento traccia tutto ciò che è già stato seminato nei capitoli 1–
 
 ### 2. Filone Bothwell
 
-**Stato di rivelazione attuale (post cap 6)**:
+**Stato di rivelazione di base (cap 1–6, con sviluppi fino al cap 13)**:
 - Cap 3: Greta sussurra il nome.
 - Cap 4: primo incontro. Bothwell è una AI legacy del 2024 nel piano S1. Voce calda con [parentesi quadre]. Sentirà *tutto*.
 - Cap 6: Bothwell, dallo scantinato, pulsa lievemente più caldo del solito alla fine del caso ARMSTRONG-Λ. È sintonia.
@@ -103,7 +103,6 @@ Questo documento traccia tutto ciò che è già stato seminato nei capitoli 1–
 
 - Bothwell ha creato il Ministero (rivelazione cap 15).
 - Bothwell sta morendo (rivelazione cap 15).
-- Il distributore è una AI senior (rivelazione cap 13).
 - Il ticket #883 esiste davvero (rivelazione cap 14).
 - Il Ministero verrà auditato dal Dipartimento 14 (rivelazione cap 16).
 - La virgola di Teo (rivelazione cap 21).

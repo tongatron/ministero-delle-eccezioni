@@ -1,16 +1,16 @@
 @echo off
-:: build.bat — Genera l'ePub da /capitoli su Windows
+:: build.bat — Genera l'ePub dalla bozza Codex su Windows
 :: Requisiti: pandoc nel PATH (https://pandoc.org/installing.html)
 
 setlocal enabledelayedexpansion
 
 set SCRIPT_DIR=%~dp0
-set CAPITOLI_DIR=%SCRIPT_DIR%capitoli
+set CAPITOLI_DIR=%SCRIPT_DIR%capitoli (V0.1.codex)
 set BUILD_DIR=%SCRIPT_DIR%build
 set METADATA=%SCRIPT_DIR%metadata.yml
 set CSS=%SCRIPT_DIR%assets\css\epub.css
-set COVER=%SCRIPT_DIR%assets\copertina\copertina2.png
-set OUTPUT=%BUILD_DIR%\ministero-delle-eccezioni.epub
+set COVER=%SCRIPT_DIR%assets\copertina\copertina.png
+set OUTPUT=%BUILD_DIR%\ministero-delle-eccezioni-v0.1.codex.epub
 
 where pandoc >nul 2>&1
 if errorlevel 1 (
@@ -22,7 +22,7 @@ if not exist "%BUILD_DIR%" mkdir "%BUILD_DIR%"
 
 :: Raccoglie i capitoli in ordine
 set FILES=
-for /f "delims=" %%f in ('dir /b /o:n "%CAPITOLI_DIR%\*.md" 2^>nul') do (
+for /f "delims=" %%f in ('dir /b /o:n "%CAPITOLI_DIR%\??_*.md" 2^>nul') do (
     set FILES=!FILES! "%CAPITOLI_DIR%\%%f"
 )
 

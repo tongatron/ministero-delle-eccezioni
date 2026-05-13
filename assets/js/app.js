@@ -1,7 +1,7 @@
 const VERSIONS = {
-  v1claude: {
-    label: "V1claude",
-    base: "capitoli%20%28V%201.0%20Claude%29",
+  "v0.1.claude": {
+    label: "V0.1.claude",
+    base: "capitoli%20%28V0.1.claude%29",
     chapters: [
       { n: 0, slug: "introduzione", title: "Introduzione", label: "Introduzione", file: "00_introduzione.md" },
       { n: 1, slug: "capitolo-1", title: "Una convocazione cortese", label: "Capitolo 1", file: "01_capitolo_1.md" },
@@ -22,10 +22,11 @@ const VERSIONS = {
       { n: 16, slug: "capitolo-16", title: "L'audit arriva", label: "Capitolo 16", file: "16_capitolo_16.md" }
     ]
   },
-  v1codex: {
-    label: "V1Codex",
-    base: "capitoli%20%28V%201.0%20Codex%29",
+  "v0.1.codex": {
+    label: "V0.1.codex",
+    base: "capitoli%20%28V0.1.codex%29",
     chapters: [
+      { n: 0, slug: "introduzione", title: "Introduzione", label: "Introduzione", file: "00_introduzione.md" },
       { n: 1, slug: "capitolo-1", title: "Una convocazione cortese", label: "Capitolo 1", file: "01_capitolo_1.md" },
       { n: 2, slug: "capitolo-2", title: "La città che non attraversa", label: "Capitolo 2", file: "02_capitolo_2.md" },
       { n: 3, slug: "capitolo-3", title: "Otto colleghi, sette di troppo", label: "Capitolo 3", file: "03_capitolo_3.md" },
@@ -43,10 +44,10 @@ const VERSIONS = {
   }
 };
 
-let currentVersionKey = "v1claude";
+let currentVersionKey = "v0.1.codex";
 
 function currentVersion() {
-  return VERSIONS[currentVersionKey] || VERSIONS.v1claude;
+  return VERSIONS[currentVersionKey] || VERSIONS["v0.1.codex"];
 }
 
 function chapterUrl(chapter) {
@@ -62,9 +63,11 @@ const PROJECT_FILES = [
   { slug: "temi-running-jokes", title: "Temi e running jokes", file: "progetto/05_temi_e_running_jokes.md" },
   { slug: "scene-chiave", title: "Scene chiave", file: "progetto/06_scene_chiave.md" },
   { slug: "dialoghi-memorabili", title: "Dialoghi memorabili", file: "progetto/07_dialoghi_memorabili.md" },
+  { slug: "varianti-presentazione", title: "Varianti presentazione", file: "progetto/08_varianti_presentazione.md" },
   { slug: "guida-prosecuzione", title: "Guida alla prosecuzione", file: "progetto/09_proposta_prosecuzione.md" },
   { slug: "regole-di-voce", title: "Regole di voce", file: "progetto/10_regole_di_voce.md" },
-  { slug: "continuita-e-fili", title: "Continuità e fili narrativi", file: "progetto/11_continuita_e_fili.md" }
+  { slug: "continuita-e-fili", title: "Continuità e fili narrativi", file: "progetto/11_continuita_e_fili.md" },
+  { slug: "readme-archivio-claude", title: "README archivio Claude", file: "progetto/12_readme_archivio_claude.md" }
 ];
 
 const app = document.getElementById("app");

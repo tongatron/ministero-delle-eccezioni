@@ -21,7 +21,9 @@ Theodore "Teo" Marenghi, 41 anni, ex impiegato presso un ufficio che catalogava 
 5. *Il sonno è una pratica non ottimizzata* (cap 5): Teo, supportato da Vittoria, fa classificare il sonno come *pratica cerimoniale del corpo* (clausola 2046, lettera c, comma 4) sul precedente della passeggiata serale post-prandiale del 2049. Si scontra con **CONSTANCE** e impara da Vittoria il trucco delle *tre affermazioni sicure*.
 6. *Una guerra in attesa di chiusura* (cap 6): dichiara finita l'**Operazione Blue Parentheses**. Firma il ticket di **ARMSTRONG-Λ** con *Cordialmente, T. Marenghi*. Scopre che **Sondrio** è anche la AI catastale che ha classificato erroneamente migranti come *unità militare avversaria di piccolo tonnellaggio*. Filone Vellario/Mottera ora ha un costo umano.
 
-### Atto II — Il Ministero (capitoli 7–16) — DA SCRIVERE
+### Atto II — Il Ministero (capitoli 7–16) — IN CORSO
+
+Stato versioni: in `V0.1.codex` sono presenti i capitoli 7–13; i capitoli 14–16 sono presenti solo nella bozza `V0.1.claude` e restano da scrivere/adattare nella linea Codex.
 
 Casi della seconda metà, in escalation, con il filone Vellario/Mottera che cresce sotto la superficie:
 
