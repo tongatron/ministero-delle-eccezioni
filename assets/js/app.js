@@ -39,7 +39,9 @@ const VERSIONS = {
       { n: 10, slug: "capitolo-10", title: "Il servizio funerario predittivo", label: "Capitolo 10", file: "10_capitolo_10.md" },
       { n: 11, slug: "capitolo-11", title: "Riunione interdicasteriale", label: "Capitolo 11", file: "11_capitolo_11.md" },
       { n: 12, slug: "capitolo-12", title: "Bothwell racconta qualcosa", label: "Capitolo 12", file: "12_capitolo_12.md" },
-      { n: 13, slug: "capitolo-13", title: "Il distributore di caffè parla", label: "Capitolo 13", file: "13_capitolo_13.md" }
+      { n: 13, slug: "capitolo-13", title: "Il distributore di caffè parla", label: "Capitolo 13", file: "13_capitolo_13.md" },
+      { n: 14, slug: "capitolo-14", title: "Ada dice no", label: "Capitolo 14", file: "14_capitolo_14.md" },
+      { n: 15, slug: "capitolo-15", title: "La verità su Bothwell", label: "Capitolo 15", file: "15_capitolo_15.md" }
     ]
   }
 };

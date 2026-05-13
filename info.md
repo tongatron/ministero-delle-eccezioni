@@ -8,7 +8,7 @@ Romanzo satirico di fantascienza. Materiali di lavorazione.
 libro/
 ├── README.md
 ├── capitoli (V0.1.claude)/       # bozza Claude/reference fino al capitolo 16
-├── capitoli (V0.1.codex)/        # bozza Codex in lavorazione fino al capitolo 13
+├── capitoli (V0.1.codex)/        # bozza Codex in lavorazione fino al capitolo 15
 ├── progetto/                     # documenti di lavoro
 ├── assets/                       # css, copertina e asset tecnici
 ├── build/                        # output generati
@@ -54,12 +54,14 @@ libro/
 11. [Riunione interdicasteriale](<capitoli (V0.1.codex)/11_capitolo_11.md>)
 12. [Bothwell racconta qualcosa](<capitoli (V0.1.codex)/12_capitolo_12.md>)
 13. [Il distributore di caffè parla](<capitoli (V0.1.codex)/13_capitolo_13.md>)
+14. [Ada dice no](<capitoli (V0.1.codex)/14_capitolo_14.md>)
+15. [La verità su Bothwell](<capitoli (V0.1.codex)/15_capitolo_15.md>)
 
 ## Scarica l'ePub
 
 [ministero-delle-eccezioni-v0.1.claude.epub](https://github.com/tongatron/ministero-delle-eccezioni/raw/main/build/ministero-delle-eccezioni-v0.1.claude.epub) — bozza Claude/reference fino al capitolo 16, con titolo EPUB `Il Ministero delle Eccezioni (V0.1.claude)`.
 
-[ministero-delle-eccezioni-v0.1.codex.epub](https://github.com/tongatron/ministero-delle-eccezioni/raw/main/build/ministero-delle-eccezioni-v0.1.codex.epub) — bozza Codex in lavorazione, aggiornata fino al capitolo 13.
+[ministero-delle-eccezioni-v0.1.codex.epub](https://github.com/tongatron/ministero-delle-eccezioni/raw/main/build/ministero-delle-eccezioni-v0.1.codex.epub) — bozza Codex in lavorazione; l'ePub pubblico resta da aggiornare dopo revisione dei capitoli 14-15.
 
 Leggibile anche online su [tongatron.org/ministero-delle-eccezioni](https://tongatron.org/ministero-delle-eccezioni/), dove l'indice consente di scegliere tra V0.1.claude e V0.1.codex.
 

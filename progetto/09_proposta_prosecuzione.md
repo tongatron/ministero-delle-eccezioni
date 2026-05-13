@@ -5,10 +5,10 @@ Questo documento è la prima cosa che un agente AI dovrebbe leggere prima di scr
 ## Stato corrente
 
 - **Versione attiva**: `V0.1.codex`, in `capitoli (V0.1.codex)/`.
-- **Bozza Codex**: introduzione + capitoli 1–13.
+- **Bozza Codex**: introduzione + capitoli 1–15.
 - **Bozza Claude/reference**: introduzione + capitoli 1–16, in `capitoli (V0.1.claude)/`.
-- **Prossimo capitolo Codex da scrivere**: 14, *Ada dice no*.
-- **Capitoli Codex da scrivere**: 14–23 + epilogo.
+- **Prossimo capitolo Codex da scrivere**: 16, *L'audit arriva*.
+- **Capitoli Codex da scrivere**: 16–23 + epilogo.
 - **Outline completo**: `01_outline.md`.
 - **Voce e regole**: `10_regole_di_voce.md`.
 - **Personaggi canone**: `02_personaggi.md`.

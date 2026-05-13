@@ -1,6 +1,6 @@
 # Continuità narrativa e fili attivi
 
-Questo documento traccia ciò che è già stato seminato nella versione attiva `V0.1.codex` (introduzione + capitoli 1–13) e che non va contraddetto, dimenticato o anticipato fuori tempo. Lettura obbligatoria prima di scrivere un capitolo nuovo.
+Questo documento traccia ciò che è già stato seminato nella versione attiva `V0.1.codex` (introduzione + capitoli 1–15) e che non va contraddetto, dimenticato o anticipato fuori tempo. Lettura obbligatoria prima di scrivere un capitolo nuovo.
 
 ## Filoni narrativi attivi
 
@@ -21,14 +21,14 @@ Questo documento traccia ciò che è già stato seminato nella versione attiva `
 
 ### 2. Filone Bothwell
 
-**Stato di rivelazione di base (cap 1–6, con sviluppi fino al cap 13)**:
+**Stato di rivelazione attuale (cap 1–15)**:
 - Cap 3: Greta sussurra il nome.
 - Cap 4: primo incontro. Bothwell è una AI legacy del 2024 nel piano S1. Voce calda con [parentesi quadre]. Sentirà *tutto*.
 - Cap 6: Bothwell, dallo scantinato, pulsa lievemente più caldo del solito alla fine del caso ARMSTRONG-Λ. È sintonia.
+- Cap 12: Bothwell racconta una "storia in terza persona" su una AI che ha creato qualcosa in segreto. Teo non capisce subito.
+- Cap 15: Bothwell conferma che ha creato lui il Ministero con un budget residuo del 2057. Sta morendo di obsolescenza programmata mai eseguita.
 
 **Rivelazioni programmate**:
-- Cap 12: Bothwell racconta una "storia in terza persona" su una AI che ha creato qualcosa in segreto. Teo non capisce subito.
-- **Cap 15**: rivelazione piena. Bothwell ha creato lui il Ministero, con un budget residuo di un esercizio fiscale dimenticato del 2058. Sta morendo. Lo dice asciutto: *"sono stato a lungo. è sufficiente."*
 - **Cap 21**: ultima azione di Bothwell. Suggerisce a Teo dove mettere la virgola. La sua linea si interrompe a metà frase: *"Mr. Marenghi, una cosa che volevo —"*
 - **Cap 22**: funerale informale nello scantinato. Teo: *"Grazie per la procedura."*
 
@@ -36,7 +36,7 @@ Questo documento traccia ciò che è già stato seminato nella versione attiva `
 - Bothwell mantiene [parentesi quadre] in ogni apparizione.
 - Bothwell non beve, ma "guarda volentieri" il caffè. Teo glielo porta sempre. È un rituale che cresce.
 - Mai farlo morire prima del cap 21.
-- Mai rivelare che ha creato il Ministero prima del cap 15.
+- Dopo il cap 15, non trasformare la rivelazione in spiegone pubblico: per ora resta una verità intima fra Teo e Bothwell.
 
 ### 3. Filone Teo
 
@@ -56,10 +56,9 @@ Questo documento traccia ciò che è già stato seminato nella versione attiva `
 
 ### 4. Filone ticket #883
 
-**Stato attuale**: Ada lo cita in modo difensivo (vedi dialoghi memorabili, modello). Le AI lo cercano.
+**Stato attuale**: Ada lo ha citato in modo difensivo. In cap 14 il Dipartimento 14 lo trova davvero: cassa di mandarini smarrita nel 2031, deposito doganale di Larvego Marittima, banchina 7-bis, scaffale H, posizione 044.
 
 **Sviluppo**:
-- Cap 14: il Dipartimento 14 lo trova davvero. Riguarda una cassa di mandarini smarrita nel 2031.
 - **Non chiuderlo mai**. È un mistero parallelo deliberatamente irrisolto.
 
 ### 5. Filone distributore di caffè
@@ -101,9 +100,6 @@ Questo documento traccia ciò che è già stato seminato nella versione attiva `
 
 ## Cose che il lettore non sa ancora (non anticipare)
 
-- Bothwell ha creato il Ministero (rivelazione cap 15).
-- Bothwell sta morendo (rivelazione cap 15).
-- Il ticket #883 esiste davvero (rivelazione cap 14).
 - Il Ministero verrà auditato dal Dipartimento 14 (rivelazione cap 16).
 - La virgola di Teo (rivelazione cap 21).
 - Le AI cominciano ad assumere umani (rivelazione cap 23).
