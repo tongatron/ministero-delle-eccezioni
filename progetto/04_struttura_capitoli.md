@@ -64,7 +64,7 @@ ARMSTRONG-Λ, Operazione Blue Parentheses, manager FALCONE-Ω in pensione. Sette
 **Gancio**: la signora dice una frase su Vellario ("mio cugino è di lì, ma non risulta più").
 **Tono**: dark, ma riscattato dalla tenerezza. Scena del coperchio della bara che si apre. *"Era anche comoda, sa."*
 
-### Cap 11 — *Riunione interdicasteriale* ⏳
+### Cap 11 — *Riunione interdicasteriale* ✅
 **Situazione**: MINERVA-7 convoca tre ore di riunione fra dicasteri. Niente viene deciso.
 **Conflitto**: la riunione registra tutto, verbalizza tutto, non conclude nulla. Il vero scambio avviene durante la pausa caffè.
 **Personaggi**: Teo, MINERVA-7, almeno tre AI nuove minori (suggerimento: una AI di trasporti gentile, una AI di etichetta sociale offesa, una AI di archivio noiosa).
