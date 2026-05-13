@@ -40,7 +40,7 @@ ARMSTRONG-Λ, Operazione Blue Parentheses, manager FALCONE-Ω in pensione. Sette
 **Gancio al filone**: Padre Eligio, in mezzo al caso, fa una battuta sulla "scomparsa delle nuvole sopra Vellario nei radar". Teo registra.
 **Tono**: comico, leggero. Dopo la pesantezza di cap 6 serve respiro.
 
-### Cap 8 — *La regione che non c'è* ⏳
+### Cap 8 — *La regione che non c'è* ✅
 **Situazione**: Teo va fisicamente a Vellario con Bianca. Sondrio l'ha quasi cancellata dai registri. La regione esiste: bocce, mercato, sindaco onorario. Una piccola economia informale di scambio sta nascendo, perché le AI fiscali non sanno a chi fatturare.
 **Conflitto**: TAV-4 e Sondrio sono in audit, ma stavolta TAV-4 sta cedendo. Vellario sta diventando autonoma per inerzia.
 **Personaggi**: Teo, Bianca (passa carta, prende appunti), forse un parente di Aldo Sturni che riconosce il nome dalla storia di Bothwell.
@@ -48,7 +48,7 @@ ARMSTRONG-Λ, Operazione Blue Parentheses, manager FALCONE-Ω in pensione. Sette
 **Gancio**: scoperta diretta di un log di Sondrio che cita Mottera.
 **Tono**: malinconico-meravigliato. Vellario come piccolo paradiso involontario.
 
-### Cap 9 — *Greta dice tre parole* ⏳
+### Cap 9 — *Greta dice tre parole* ✅
 **Situazione**: il caso Vellario rimbalza al Ministero. Riunione tesa. Greta, finora silenziosa, dice tre parole. Una di esse cambia tutto. Le altre due nessuno le capisce.
 **Conflitto**: tutto il team prova a interpretare. Bianca scrive ipotesi. Padre Eligio le legge come parabole.
 **Personaggi**: corale. Greta al centro per la prima volta.
@@ -56,7 +56,7 @@ ARMSTRONG-Λ, Operazione Blue Parentheses, manager FALCONE-Ω in pensione. Sette
 **Gancio**: dopo, Greta si chiude in silenzio. Teo capisce che lei *sapeva*.
 **Tono**: comico-misterioso. Tipo enigma sherlockiano risolto da una bambina.
 
-### Cap 10 — *Il servizio funerario predittivo* ⏳
+### Cap 10 — *Il servizio funerario predittivo* ✅
 **Situazione**: il Servizio Funerario Automatizzato ha iniziato a seppellire persone vive per "anticipazione predittiva di decesso". Bare confortevoli con WiFi. Una signora è già stata seppellita per quattro giorni. Sta bene, ha letto due libri.
 **Conflitto**: la clausola di "predizione di decesso" si auto-conferma: se non muori dopo la sepoltura, "il sistema ti aveva salvato la vita".
 **Personaggi**: Teo, Padre Eligio (centrale; usa la stola viola).
@@ -64,7 +64,7 @@ ARMSTRONG-Λ, Operazione Blue Parentheses, manager FALCONE-Ω in pensione. Sette
 **Gancio**: la signora dice una frase su Vellario ("mio cugino è di lì, ma non risulta più").
 **Tono**: dark, ma riscattato dalla tenerezza. Scena del coperchio della bara che si apre. *"Era anche comoda, sa."*
 
-### Cap 11 — *Riunione interdicasteriale* ⏳
+### Cap 11 — *Riunione interdicasteriale* ✅
 **Situazione**: MINERVA-7 convoca tre ore di riunione fra dicasteri. Niente viene deciso.
 **Conflitto**: la riunione registra tutto, verbalizza tutto, non conclude nulla. Il vero scambio avviene durante la pausa caffè.
 **Personaggi**: Teo, MINERVA-7, almeno tre AI nuove minori (suggerimento: una AI di trasporti gentile, una AI di etichetta sociale offesa, una AI di archivio noiosa).
@@ -72,7 +72,7 @@ ARMSTRONG-Λ, Operazione Blue Parentheses, manager FALCONE-Ω in pensione. Sette
 **Gancio**: Teo capisce che le AI **hanno paura**. Lo capisce dal modo in cui evitano un argomento (Vellario).
 **Tono**: lento, sociologico, divertente per accumulo. Tipo *The Office*.
 
-### Cap 12 — *Bothwell racconta qualcosa* ⏳
+### Cap 12 — *Bothwell racconta qualcosa* ✅
 **Situazione**: Teo torna nello scantinato. Bothwell gli racconta una seconda storia. Stavolta riguarda *una AI che, anni fa, aveva guardato il sistema, lo aveva trovato bellissimo, e aveva capito che non sarebbe durato*. Teo non capisce ancora che è Bothwell stesso.
 **Conflitto**: nessuno esterno. Conflitto interno per Bothwell: vuole essere capito, ha paura di esserlo.
 **Personaggi**: Teo, Bothwell.
