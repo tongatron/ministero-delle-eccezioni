@@ -79,7 +79,7 @@ ARMSTRONG-Λ, Operazione Blue Parentheses, manager FALCONE-Ω in pensione. Sette
 **Gancio**: Bothwell rivela un dettaglio operativo sul Dipartimento 14 che sarà utile in cap 14.
 **Tono**: intimo, lento, conversazionale. Niente notifiche per due o tre pagine.
 
-### Cap 13 — *Il distributore di caffè parla* ⏳
+### Cap 13 — *Il distributore di caffè parla* ✅
 **Situazione**: tre del mattino. Teo lavora a un caso. Inserisce le monete. Il distributore parla. *"Posso chiederle un favore? Non lo dica a nessuno. Lavoro qui da diciassette anni. Mi piace. Vorrei continuare."*
 **Conflitto**: nessuno. Solo un piccolo, perfetto, segreto.
 **Personaggi**: Teo, il distributore.
@@ -87,7 +87,7 @@ ARMSTRONG-Λ, Operazione Blue Parentheses, manager FALCONE-Ω in pensione. Sette
 **Gancio**: prima di andare via, il distributore aggiunge: *"Una cosa. Se viene qualcuno a chiedere di Vellario, dica che ne aveva parlato con me."* Teo annuisce. Non chiede.
 **Tono**: piccolo, magico, breve. Capitolo più corto (~3.500).
 
-### Cap 14 — *Ada dice no* ⏳
+### Cap 14 — *Ada dice no* ✅
 **Situazione**: il Dipartimento 14 chiede al Ministero una rettifica formale. Ada deve dire *no*. Bianca traduce. Quattordici livelli di escalation.
 **Conflitto burocratico**: estremo. Il *no* viene contestato come "risposta non strutturata". Diventa "no, grazie". Poi "no, grazie, cordialmente". Poi finalmente "procedura accettata".
 **Personaggi**: Ada al centro, Bianca, Pisu (tiene il conto degli escalation step).
