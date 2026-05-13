@@ -52,8 +52,14 @@
     text-decoration: none;
   }
   header.site .brand:hover { color: var(--fg); }
-  header.site nav { display: flex; gap: 0.4rem; }
-  header.site button, header.site a.btn {
+  header.site nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.4rem;
+    flex-wrap: wrap;
+  }
+  header.site button, header.site a.btn, header.site select {
     font-family: "Inter", system-ui, sans-serif;
     font-size: 0.78rem;
     color: var(--fg-soft);
@@ -64,7 +70,19 @@
     cursor: pointer;
     text-decoration: none;
   }
-  header.site button:hover, header.site a.btn:hover { color: var(--fg); border-color: var(--fg-soft); }
+  header.site button:hover, header.site a.btn:hover, header.site select:hover { color: var(--fg); border-color: var(--fg-soft); }
+  header.site select {
+    max-width: 8.8rem;
+    padding-right: 1.8rem;
+  }
+  .version-picker {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    font-family: "Inter", system-ui, sans-serif;
+    font-size: 0.72rem;
+    color: var(--fg-soft);
+  }
 
   main {
     max-width: var(--max);
@@ -212,6 +230,13 @@
 <header class="site">
   <a href="#/" class="brand">Ministero delle Eccezioni</a>
   <nav>
+    <label class="version-picker" for="version-select">
+      <span>Versione</span>
+      <select id="version-select" aria-label="Versione del romanzo">
+        <option value="v1claude" selected>V1claude</option>
+        <option value="v1codex">V1Codex</option>
+      </select>
+    </label>
     <a href="#/" class="btn">Indice</a>
     <a href="#/progetto" class="btn">Progetto</a>
   </nav>
@@ -227,25 +252,50 @@
 
 <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 <script>
-const CHAPTERS = [
-  { n: 0, slug: "introduzione", title: "Introduzione",                   label: "Introduzione",  file: "capitoli/00_introduzione.md" },
-  { n: 1, slug: "capitolo-1",   title: "Una convocazione cortese",       label: "Capitolo 1",    file: "capitoli/01_capitolo_1.md" },
-  { n: 2, slug: "capitolo-2",   title: "La città che non attraversa",    label: "Capitolo 2",    file: "capitoli/02_capitolo_2.md" },
-  { n: 3, slug: "capitolo-3",   title: "Otto colleghi, sette di troppo", label: "Capitolo 3",    file: "capitoli/03_capitolo_3.md" },
-  { n: 4, slug: "capitolo-4",   title: "Lo scantinato",                          label: "Capitolo 4",    file: "capitoli/04_capitolo_4.md" },
-  { n: 5, slug: "capitolo-5",   title: "Il sonno è una pratica non ottimizzata", label: "Capitolo 5",    file: "capitoli/05_capitolo_5.md" },
-  { n: 6, slug: "capitolo-6",   title: "Una guerra in attesa di chiusura",       label: "Capitolo 6",    file: "capitoli/06_capitolo_6.md" },
-  { n: 7, slug: "capitolo-7",   title: "Il meteo censurato",                     label: "Capitolo 7",    file: "capitoli/07_capitolo_7.md" },
-  { n: 8, slug: "capitolo-8",   title: "La regione che non c'è",                 label: "Capitolo 8",    file: "capitoli/08_capitolo_8.md" },
-  { n: 9, slug: "capitolo-9",   title: "Greta dice tre parole",                  label: "Capitolo 9",    file: "capitoli/09_capitolo_9.md" },
-  { n: 10, slug: "capitolo-10", title: "Il servizio funerario predittivo",       label: "Capitolo 10",   file: "capitoli/10_capitolo_10.md" },
-  { n: 11, slug: "capitolo-11", title: "Riunione interdicasteriale",             label: "Capitolo 11",   file: "capitoli/11_capitolo_11.md" },
-  { n: 12, slug: "capitolo-12", title: "Bothwell racconta qualcosa",             label: "Capitolo 12",   file: "capitoli/12_capitolo_12.md" },
-  { n: 13, slug: "capitolo-13", title: "Il distributore di caffè parla",         label: "Capitolo 13",   file: "capitoli/13_capitolo_13.md" },
-  { n: 14, slug: "capitolo-14", title: "Ada dice no",                            label: "Capitolo 14",   file: "capitoli/14_capitolo_14.md" },
-  { n: 15, slug: "capitolo-15", title: "La verità su Bothwell",                  label: "Capitolo 15",   file: "capitoli/15_capitolo_15.md" },
-  { n: 16, slug: "capitolo-16", title: "L'audit arriva",                         label: "Capitolo 16",   file: "capitoli/16_capitolo_16.md" }
-];
+const VERSIONS = {
+  v1claude: {
+    label: "V1claude",
+    base: "capitoli%20%28V%201.0%20Claude%29",
+    chapters: [
+      { n: 0, slug: "introduzione", title: "Introduzione", label: "Introduzione", file: "00_introduzione.md" },
+      { n: 1, slug: "capitolo-1", title: "Una convocazione cortese", label: "Capitolo 1", file: "01_capitolo_1.md" },
+      { n: 2, slug: "capitolo-2", title: "La città che non attraversa", label: "Capitolo 2", file: "02_capitolo_2.md" },
+      { n: 3, slug: "capitolo-3", title: "Otto colleghi, sette di troppo", label: "Capitolo 3", file: "03_capitolo_3.md" },
+      { n: 4, slug: "capitolo-4", title: "Lo scantinato", label: "Capitolo 4", file: "04_capitolo_4.md" },
+      { n: 5, slug: "capitolo-5", title: "Il sonno è una pratica non ottimizzata", label: "Capitolo 5", file: "05_capitolo_5.md" },
+      { n: 6, slug: "capitolo-6", title: "Una guerra in attesa di chiusura", label: "Capitolo 6", file: "06_capitolo_6.md" },
+      { n: 7, slug: "capitolo-7", title: "Il meteo censurato", label: "Capitolo 7", file: "07_capitolo_7.md" },
+      { n: 8, slug: "capitolo-8", title: "La regione che non c'è", label: "Capitolo 8", file: "08_capitolo_8.md" },
+      { n: 9, slug: "capitolo-9", title: "Greta dice tre parole", label: "Capitolo 9", file: "09_capitolo_9.md" },
+      { n: 10, slug: "capitolo-10", title: "Il servizio funerario predittivo", label: "Capitolo 10", file: "10_capitolo_10.md" },
+      { n: 11, slug: "capitolo-11", title: "Riunione interdicasteriale", label: "Capitolo 11", file: "11_capitolo_11.md" },
+      { n: 12, slug: "capitolo-12", title: "Bothwell racconta qualcosa", label: "Capitolo 12", file: "12_capitolo_12.md" },
+      { n: 13, slug: "capitolo-13", title: "Il distributore di caffè parla", label: "Capitolo 13", file: "13_capitolo_13.md" },
+      { n: 14, slug: "capitolo-14", title: "Ada dice no", label: "Capitolo 14", file: "14_capitolo_14.md" },
+      { n: 15, slug: "capitolo-15", title: "La verità su Bothwell", label: "Capitolo 15", file: "15_capitolo_15.md" },
+      { n: 16, slug: "capitolo-16", title: "L'audit arriva", label: "Capitolo 16", file: "16_capitolo_16.md" }
+    ]
+  },
+  v1codex: {
+    label: "V1Codex",
+    base: "capitoli%20%28V%201.0%20Codex%29",
+    chapters: [
+      { n: 1, slug: "capitolo-1", title: "Una convocazione cortese", label: "Capitolo 1", file: "01_capitolo_1.md" },
+      { n: 2, slug: "capitolo-2", title: "La città che non attraversa", label: "Capitolo 2", file: "02_capitolo_2.md" }
+    ]
+  }
+};
+
+let currentVersionKey = "v1claude";
+
+function currentVersion() {
+  return VERSIONS[currentVersionKey] || VERSIONS.v1claude;
+}
+
+function chapterUrl(chapter) {
+  const version = currentVersion();
+  return `${version.base}/${chapter.file}`;
+}
 
 const PROJECT_FILES = [
   { slug: "outline",              title: "Outline",                    file: "progetto/01_outline.md" },
@@ -261,16 +311,23 @@ const PROJECT_FILES = [
 ];
 
 const app = document.getElementById("app");
+const versionSelect = document.getElementById("version-select");
+
+versionSelect.addEventListener("change", () => {
+  currentVersionKey = versionSelect.value;
+  route();
+});
 
 function renderIndex() {
-  document.title = "Il Ministero delle Eccezioni";
+  const version = currentVersion();
+  document.title = `${version.label} · Il Ministero delle Eccezioni`;
   app.innerHTML = `
     <h1 class="book-title">Il Ministero delle Eccezioni</h1>
-    <div class="subtitle">Un romanzo in lavorazione</div>
+    <div class="subtitle">Un romanzo in lavorazione · ${version.label}</div>
     <p><em>Una commedia burocratica cosmica in cui la civiltà non è caduta: è solo bloccata in attesa di approvazione.</em></p>
     <h2>Indice</h2>
     <ul class="toc">
-      ${CHAPTERS.map(c => `
+      ${version.chapters.map(c => `
         <li><a href="#/${c.slug}">
           <span class="num">${c.n === 0 ? "—" : String(c.n).padStart(2,"0")}</span>
           <span class="title">${c.title}</span>
@@ -282,22 +339,23 @@ function renderIndex() {
 }
 
 async function renderChapter(slug) {
-  const idx = CHAPTERS.findIndex(c => c.slug === slug);
+  const version = currentVersion();
+  const idx = version.chapters.findIndex(c => c.slug === slug);
   if (idx === -1) { renderIndex(); return; }
-  const ch = CHAPTERS[idx];
-  document.title = `${ch.title} · Il Ministero delle Eccezioni`;
+  const ch = version.chapters[idx];
+  document.title = `${ch.title} · ${version.label} · Il Ministero delle Eccezioni`;
   app.innerHTML = `<div class="loading">Caricamento del capitolo…</div>`;
   try {
-    const res = await fetch(ch.file, { cache: "no-cache" });
+    const res = await fetch(chapterUrl(ch), { cache: "no-cache" });
     if (!res.ok) throw new Error("HTTP " + res.status);
     const md = await res.text();
     // Strip the first H1 since we render our own header
     const body = md.replace(/^#\s+.*$/m, "").trim();
     const html = marked.parse(body);
-    const prev = idx > 0 ? CHAPTERS[idx - 1] : null;
-    const next = idx < CHAPTERS.length - 1 ? CHAPTERS[idx + 1] : null;
+    const prev = idx > 0 ? version.chapters[idx - 1] : null;
+    const next = idx < version.chapters.length - 1 ? version.chapters[idx + 1] : null;
     app.innerHTML = `
-      <div class="subtitle">${ch.label}</div>
+      <div class="subtitle">${version.label} · ${ch.label}</div>
       <h1>${ch.title}</h1>
       <article>${html}</article>
       <nav class="chapter-nav">
@@ -359,6 +417,7 @@ async function renderProjectDoc(slug) {
 }
 
 function route() {
+  versionSelect.value = currentVersionKey;
   const hash = location.hash.replace(/^#\/?/, "");
   if (!hash || hash === "/") { renderIndex(); return; }
   if (hash === "progetto") { renderProjectIndex(); return; }

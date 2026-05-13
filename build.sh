@@ -1,29 +1,80 @@
 #!/usr/bin/env bash
-# build.sh — Genera l'ePub (e opzionalmente HTML) da /capitoli
+# build.sh — Genera l'ePub (e opzionalmente HTML) da una cartella capitoli
 # Requisiti: pandoc >= 3.0
-# Uso: ./build.sh [--html] [--open]
+# Uso:
+#   ./build.sh [--html] [--open]
+#   ./build.sh --version v1claude
+#   ./build.sh --version v1codex --output build/ministero-delle-eccezioni.epub
 
 set -eo pipefail
 
 # ---------- configurazione ----------
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-CAPITOLI_DIR="$SCRIPT_DIR/capitoli"
 BUILD_DIR="$SCRIPT_DIR/build"
 METADATA="$SCRIPT_DIR/metadata.yml"
 CSS="$SCRIPT_DIR/assets/css/epub.css"
 COVER="$SCRIPT_DIR/assets/copertina/copertina2.png"
-OUTPUT_EPUB="$BUILD_DIR/ministero-delle-eccezioni.epub"
-OUTPUT_HTML="$BUILD_DIR/ministero-delle-eccezioni.html"
+BASE_TITLE="Il Ministero delle Eccezioni"
+VERSION="v1claude"
+CAPITOLI_DIR=""
+OUTPUT_EPUB=""
+OUTPUT_HTML=""
+TITLE_SUFFIX=""
 
 GENERA_HTML=false
 APRI_DOPO=false
 
-for arg in "$@"; do
-  case $arg in
-    --html)   GENERA_HTML=true ;;
-    --open)   APRI_DOPO=true ;;
+while [ $# -gt 0 ]; do
+  case "$1" in
+    --html) GENERA_HTML=true; shift ;;
+    --open) APRI_DOPO=true; shift ;;
+    --version)
+      VERSION="${2:-}"
+      shift 2
+      ;;
+    --chapters)
+      CAPITOLI_DIR="$SCRIPT_DIR/${2:-}"
+      shift 2
+      ;;
+    --output)
+      OUTPUT_EPUB="$SCRIPT_DIR/${2:-}"
+      shift 2
+      ;;
+    --title-suffix)
+      TITLE_SUFFIX="${2:-}"
+      shift 2
+      ;;
+    *)
+      echo "❌ Argomento non riconosciuto: $1"
+      exit 1
+      ;;
   esac
 done
+
+case "$VERSION" in
+  v1claude|V1claude)
+    DEFAULT_CAPITOLI_DIR="$SCRIPT_DIR/capitoli (V 1.0 Claude)"
+    DEFAULT_OUTPUT_EPUB="$BUILD_DIR/ministero-delle-eccezioni-v1claude.epub"
+    DEFAULT_OUTPUT_HTML="$BUILD_DIR/ministero-delle-eccezioni-v1claude.html"
+    DEFAULT_TITLE_SUFFIX="V1claude"
+    ;;
+  v1codex|V1Codex)
+    DEFAULT_CAPITOLI_DIR="$SCRIPT_DIR/capitoli (V 1.0 Codex)"
+    DEFAULT_OUTPUT_EPUB="$BUILD_DIR/ministero-delle-eccezioni-v1codex.epub"
+    DEFAULT_OUTPUT_HTML="$BUILD_DIR/ministero-delle-eccezioni-v1codex.html"
+    DEFAULT_TITLE_SUFFIX="V1Codex"
+    ;;
+  *)
+    echo "❌ Versione non riconosciuta: $VERSION"
+    exit 1
+    ;;
+esac
+
+CAPITOLI_DIR="${CAPITOLI_DIR:-$DEFAULT_CAPITOLI_DIR}"
+OUTPUT_EPUB="${OUTPUT_EPUB:-$DEFAULT_OUTPUT_EPUB}"
+OUTPUT_HTML="${OUTPUT_HTML:-$DEFAULT_OUTPUT_HTML}"
+TITLE_SUFFIX="${TITLE_SUFFIX:-$DEFAULT_TITLE_SUFFIX}"
+BOOK_TITLE="$BASE_TITLE ($TITLE_SUFFIX)"
 
 # ---------- controlli ----------
 if ! command -v pandoc &>/dev/null; then
@@ -51,6 +102,7 @@ echo "📚 Capitoli trovati:"
 for f in "${CAPITOLI[@]}"; do
   echo "   • $(basename "$f")"
 done
+echo "🏷  Titolo: $BOOK_TITLE"
 
 # ---------- argomenti copertina (opzionale) ----------
 COVER_ARG=()
@@ -69,6 +121,7 @@ pandoc \
   --from markdown+smart+yaml_metadata_block \
   --to epub3 \
   --metadata-file="$METADATA" \
+  --metadata=title:"$BOOK_TITLE" \
   --css="$CSS" \
   --toc \
   --toc-depth=1 \
@@ -88,6 +141,7 @@ if [ "$GENERA_HTML" = true ]; then
     --from markdown+smart+yaml_metadata_block \
     --to html5 \
     --metadata-file="$METADATA" \
+    --metadata=title:"$BOOK_TITLE" \
     --css="$CSS" \
     --toc \
     --toc-depth=1 \
