@@ -66,21 +66,6 @@ function chapterUrl(chapter) {
   return `${version.base}/${chapter.file}`;
 }
 
-const PROJECT_FILES = [
-  { slug: "outline", title: "Outline", file: "progetto/01_outline.md" },
-  { slug: "personaggi", title: "Personaggi", file: "progetto/02_personaggi.md" },
-  { slug: "worldbuilding", title: "Worldbuilding", file: "progetto/03_worldbuilding.md" },
-  { slug: "struttura-capitoli", title: "Struttura capitoli", file: "progetto/04_struttura_capitoli.md" },
-  { slug: "temi-running-jokes", title: "Temi e running jokes", file: "progetto/05_temi_e_running_jokes.md" },
-  { slug: "scene-chiave", title: "Scene chiave", file: "progetto/06_scene_chiave.md" },
-  { slug: "dialoghi-memorabili", title: "Dialoghi memorabili", file: "progetto/07_dialoghi_memorabili.md" },
-  { slug: "varianti-presentazione", title: "Varianti presentazione", file: "progetto/08_varianti_presentazione.md" },
-  { slug: "guida-prosecuzione", title: "Guida alla prosecuzione", file: "progetto/09_proposta_prosecuzione.md" },
-  { slug: "regole-di-voce", title: "Regole di voce", file: "progetto/10_regole_di_voce.md" },
-  { slug: "continuita-e-fili", title: "Continuità e fili narrativi", file: "progetto/11_continuita_e_fili.md" },
-  { slug: "readme-archivio-claude", title: "README archivio Claude", file: "progetto/12_readme_archivio_claude.md" }
-];
-
 const app = document.getElementById("app");
 const versionSelect = document.getElementById("version-select");
 
@@ -148,71 +133,11 @@ async function renderChapter(slug) {
   }
 }
 
-function renderProjectIndex() {
-  document.title = "Progetto · Il Ministero delle Eccezioni";
-  app.innerHTML = `
-    <div class="subtitle">Materiali di lavorazione</div>
-    <h1>Progetto</h1>
-    <p><em>Documenti dietro le quinte: outline, personaggi, mondo, struttura, regole di voce. Non fanno parte del romanzo — sono lo scheletro su cui è costruito.</em></p>
-    <ul class="toc">
-      ${PROJECT_FILES.map((projectFile, index) => `
-        <li><a href="#/progetto/${projectFile.slug}">
-          <span class="num">${String(index + 1).padStart(2, "0")}</span>
-          <span class="title">${projectFile.title}</span>
-        </a></li>
-      `).join("")}
-    </ul>
-  `;
-  window.scrollTo(0, 0);
-}
-
-async function renderProjectDoc(slug) {
-  const index = PROJECT_FILES.findIndex((projectFile) => projectFile.slug === slug);
-  if (index === -1) {
-    renderProjectIndex();
-    return;
-  }
-
-  const doc = PROJECT_FILES[index];
-  document.title = `${doc.title} · Progetto · Il Ministero delle Eccezioni`;
-  app.innerHTML = `<div class="loading">Caricamento…</div>`;
-
-  try {
-    const response = await fetch(doc.file, { cache: "no-cache" });
-    if (!response.ok) throw new Error("HTTP " + response.status);
-    const markdown = await response.text();
-    const html = marked.parse(stripFirstHeading(markdown));
-    const previous = index > 0 ? PROJECT_FILES[index - 1] : null;
-    const next = index < PROJECT_FILES.length - 1 ? PROJECT_FILES[index + 1] : null;
-
-    app.innerHTML = `
-      <div class="subtitle">Progetto</div>
-      <h1>${doc.title}</h1>
-      <article>${html}</article>
-      <nav class="chapter-nav">
-        ${previous ? `<a href="#/progetto/${previous.slug}" class="prev"><span class="label">← Precedente</span><span class="name">${previous.title}</span></a>` : `<a href="#/progetto" class="prev"><span class="label">← Progetto</span><span class="name">Indice</span></a>`}
-        ${next ? `<a href="#/progetto/${next.slug}" class="next"><span class="label">Successivo →</span><span class="name">${next.title}</span></a>` : `<a href="#/progetto" class="next"><span class="label">Progetto</span><span class="name">Indice</span></a>`}
-      </nav>
-    `;
-    window.scrollTo(0, 0);
-  } catch (error) {
-    app.innerHTML = `<div class="loading">Impossibile caricare il documento. (${error.message})</div>`;
-  }
-}
-
 function route() {
   versionSelect.value = currentVersionKey;
   const hash = location.hash.replace(/^#\/?/, "");
   if (!hash || hash === "/") {
     renderIndex();
-    return;
-  }
-  if (hash === "progetto") {
-    renderProjectIndex();
-    return;
-  }
-  if (hash.startsWith("progetto/")) {
-    renderProjectDoc(hash.slice("progetto/".length));
     return;
   }
   renderChapter(hash);
