@@ -1,79 +1,41 @@
-const VERSIONS = {
-  "v0.0.1": {
-    label: "V0.0.1",
-    base: "capitoli%20%28V0.0.1%29",
-    chapters: [
-      { n: 0, slug: "introduzione", title: "Introduzione", label: "Introduzione", file: "00_introduzione.md" },
-      { n: 1, slug: "capitolo-1", title: "Una convocazione cortese", label: "Capitolo 1", file: "01_capitolo_1.md" },
-      { n: 2, slug: "capitolo-2", title: "La città che non attraversa", label: "Capitolo 2", file: "02_capitolo_2.md" },
-      { n: 3, slug: "capitolo-3", title: "Otto colleghi, sette di troppo", label: "Capitolo 3", file: "03_capitolo_3.md" },
-      { n: 4, slug: "capitolo-4", title: "Lo scantinato", label: "Capitolo 4", file: "04_capitolo_4.md" },
-      { n: 5, slug: "capitolo-5", title: "Il sonno è una pratica non ottimizzata", label: "Capitolo 5", file: "05_capitolo_5.md" },
-      { n: 6, slug: "capitolo-6", title: "Una guerra in attesa di chiusura", label: "Capitolo 6", file: "06_capitolo_6.md" },
-      { n: 7, slug: "capitolo-7", title: "Il meteo censurato", label: "Capitolo 7", file: "07_capitolo_7.md" },
-      { n: 8, slug: "capitolo-8", title: "La regione che non c'è", label: "Capitolo 8", file: "08_capitolo_8.md" },
-      { n: 9, slug: "capitolo-9", title: "Greta dice tre parole", label: "Capitolo 9", file: "09_capitolo_9.md" },
-      { n: 10, slug: "capitolo-10", title: "Il servizio funerario predittivo", label: "Capitolo 10", file: "10_capitolo_10.md" },
-      { n: 11, slug: "capitolo-11", title: "Riunione interdicasteriale", label: "Capitolo 11", file: "11_capitolo_11.md" },
-      { n: 12, slug: "capitolo-12", title: "Bothwell racconta qualcosa", label: "Capitolo 12", file: "12_capitolo_12.md" },
-      { n: 13, slug: "capitolo-13", title: "Il distributore di caffè parla", label: "Capitolo 13", file: "13_capitolo_13.md" },
-      { n: 14, slug: "capitolo-14", title: "Ada dice no", label: "Capitolo 14", file: "14_capitolo_14.md" },
-      { n: 15, slug: "capitolo-15", title: "La verità su Bothwell", label: "Capitolo 15", file: "15_capitolo_15.md" },
-      { n: 16, slug: "capitolo-16", title: "L'audit arriva", label: "Capitolo 16", file: "16_capitolo_16.md" }
-    ]
-  },
-  "v0.1": {
-    label: "V0.1",
-    base: "capitoli%20%28V0.1%29",
-    chapters: [
-      { n: 0, slug: "introduzione", title: "Introduzione", label: "Introduzione", file: "00_introduzione.md" },
-      { n: 1, slug: "capitolo-1", title: "Una convocazione cortese", label: "Capitolo 1", file: "01_capitolo_1.md" },
-      { n: 2, slug: "capitolo-2", title: "La città che non attraversa", label: "Capitolo 2", file: "02_capitolo_2.md" },
-      { n: 3, slug: "capitolo-3", title: "Otto colleghi, sette di troppo", label: "Capitolo 3", file: "03_capitolo_3.md" },
-      { n: 4, slug: "capitolo-4", title: "Lo scantinato", label: "Capitolo 4", file: "04_capitolo_4.md" },
-      { n: 5, slug: "capitolo-5", title: "Il sonno è una pratica non ottimizzata", label: "Capitolo 5", file: "05_capitolo_5.md" },
-      { n: 6, slug: "capitolo-6", title: "Una guerra in attesa di chiusura", label: "Capitolo 6", file: "06_capitolo_6.md" },
-      { n: 7, slug: "capitolo-7", title: "Il meteo censurato", label: "Capitolo 7", file: "07_capitolo_7.md" },
-      { n: 8, slug: "capitolo-8", title: "La regione che non c'è", label: "Capitolo 8", file: "08_capitolo_8.md" },
-      { n: 9, slug: "capitolo-9", title: "Greta dice tre parole", label: "Capitolo 9", file: "09_capitolo_9.md" },
-      { n: 10, slug: "capitolo-10", title: "Il servizio funerario predittivo", label: "Capitolo 10", file: "10_capitolo_10.md" },
-      { n: 11, slug: "capitolo-11", title: "Riunione interdicasteriale", label: "Capitolo 11", file: "11_capitolo_11.md" },
-      { n: 12, slug: "capitolo-12", title: "Bothwell racconta qualcosa", label: "Capitolo 12", file: "12_capitolo_12.md" },
-      { n: 13, slug: "capitolo-13", title: "Il distributore di caffè parla", label: "Capitolo 13", file: "13_capitolo_13.md" },
-      { n: 14, slug: "capitolo-14", title: "Ada dice no", label: "Capitolo 14", file: "14_capitolo_14.md" },
-      { n: 15, slug: "capitolo-15", title: "La verità su Bothwell", label: "Capitolo 15", file: "15_capitolo_15.md" },
-      { n: 16, slug: "capitolo-16", title: "L'audit arriva", label: "Capitolo 16", file: "16_capitolo_16.md" },
-      { n: 17, slug: "capitolo-17", title: "Preparativi", label: "Capitolo 17", file: "17_capitolo_17.md" },
-      { n: 18, slug: "capitolo-18", title: "L'edificio dell'udienza", label: "Capitolo 18", file: "18_capitolo_18.md" },
-      { n: 19, slug: "capitolo-19", title: "L'udienza, parte prima", label: "Capitolo 19", file: "19_capitolo_19.md" },
-      { n: 20, slug: "capitolo-20", title: "L'udienza, parte seconda", label: "Capitolo 20", file: "20_capitolo_20.md" },
-      { n: 21, slug: "capitolo-21", title: "La virgola", label: "Capitolo 21", file: "21_capitolo_21.md" },
-      { n: 22, slug: "capitolo-22", title: "Funerale di Bothwell", label: "Capitolo 22", file: "22_capitolo_22.md" },
-      { n: 23, slug: "capitolo-23", title: "Riassunzioni", label: "Capitolo 23", file: "23_capitolo_23.md" },
-      { n: 24, slug: "epilogo", title: "Una notifica", label: "Epilogo", file: "24_epilogo.md" }
-    ]
-  }
+const CURRENT_VERSION = {
+  label: "V0.1",
+  base: "capitoli%20%28V0.1%29",
+  chapters: [
+    { n: 0, slug: "introduzione", title: "Introduzione", label: "Introduzione", file: "00_introduzione.md" },
+    { n: 1, slug: "capitolo-1", title: "Una convocazione cortese", label: "Capitolo 1", file: "01_capitolo_1.md" },
+    { n: 2, slug: "capitolo-2", title: "La città che non attraversa", label: "Capitolo 2", file: "02_capitolo_2.md" },
+    { n: 3, slug: "capitolo-3", title: "Otto colleghi, sette di troppo", label: "Capitolo 3", file: "03_capitolo_3.md" },
+    { n: 4, slug: "capitolo-4", title: "Lo scantinato", label: "Capitolo 4", file: "04_capitolo_4.md" },
+    { n: 5, slug: "capitolo-5", title: "Il sonno è una pratica non ottimizzata", label: "Capitolo 5", file: "05_capitolo_5.md" },
+    { n: 6, slug: "capitolo-6", title: "Una guerra in attesa di chiusura", label: "Capitolo 6", file: "06_capitolo_6.md" },
+    { n: 7, slug: "capitolo-7", title: "Il meteo censurato", label: "Capitolo 7", file: "07_capitolo_7.md" },
+    { n: 8, slug: "capitolo-8", title: "La regione che non c'è", label: "Capitolo 8", file: "08_capitolo_8.md" },
+    { n: 9, slug: "capitolo-9", title: "Greta dice tre parole", label: "Capitolo 9", file: "09_capitolo_9.md" },
+    { n: 10, slug: "capitolo-10", title: "Il servizio funerario predittivo", label: "Capitolo 10", file: "10_capitolo_10.md" },
+    { n: 11, slug: "capitolo-11", title: "Riunione interdicasteriale", label: "Capitolo 11", file: "11_capitolo_11.md" },
+    { n: 12, slug: "capitolo-12", title: "Bothwell racconta qualcosa", label: "Capitolo 12", file: "12_capitolo_12.md" },
+    { n: 13, slug: "capitolo-13", title: "Il distributore di caffè parla", label: "Capitolo 13", file: "13_capitolo_13.md" },
+    { n: 14, slug: "capitolo-14", title: "Ada dice no", label: "Capitolo 14", file: "14_capitolo_14.md" },
+    { n: 15, slug: "capitolo-15", title: "La verità su Bothwell", label: "Capitolo 15", file: "15_capitolo_15.md" },
+    { n: 16, slug: "capitolo-16", title: "L'audit arriva", label: "Capitolo 16", file: "16_capitolo_16.md" },
+    { n: 17, slug: "capitolo-17", title: "Preparativi", label: "Capitolo 17", file: "17_capitolo_17.md" },
+    { n: 18, slug: "capitolo-18", title: "L'edificio dell'udienza", label: "Capitolo 18", file: "18_capitolo_18.md" },
+    { n: 19, slug: "capitolo-19", title: "L'udienza, parte prima", label: "Capitolo 19", file: "19_capitolo_19.md" },
+    { n: 20, slug: "capitolo-20", title: "L'udienza, parte seconda", label: "Capitolo 20", file: "20_capitolo_20.md" },
+    { n: 21, slug: "capitolo-21", title: "La virgola", label: "Capitolo 21", file: "21_capitolo_21.md" },
+    { n: 22, slug: "capitolo-22", title: "Funerale di Bothwell", label: "Capitolo 22", file: "22_capitolo_22.md" },
+    { n: 23, slug: "capitolo-23", title: "Riassunzioni", label: "Capitolo 23", file: "23_capitolo_23.md" },
+    { n: 24, slug: "epilogo", title: "Una notifica", label: "Epilogo", file: "24_epilogo.md" }
+  ]
 };
 
-let currentVersionKey = "v0.1";
-
-function currentVersion() {
-  return VERSIONS[currentVersionKey] || VERSIONS["v0.1"];
-}
-
 function chapterUrl(chapter) {
-  const version = currentVersion();
-  return `${version.base}/${chapter.file}`;
+  return `${CURRENT_VERSION.base}/${chapter.file}`;
 }
 
 const app = document.getElementById("app");
-const versionSelect = document.getElementById("version-select");
-const siteHeader = document.querySelector("header.site");
-
-versionSelect.addEventListener("change", () => {
-  currentVersionKey = versionSelect.value;
-  route();
-});
+const siteNav = document.getElementById("site-nav");
 
 function stripFirstHeading(markdown) {
   return markdown.replace(/^#\s+.*$/m, "").trim();
@@ -81,7 +43,29 @@ function stripFirstHeading(markdown) {
 
 function setPageMode(mode) {
   document.body.classList.toggle("home-view", mode === "home");
-  siteHeader.hidden = mode === "home";
+  renderHeader(mode);
+}
+
+function renderHeader(mode) {
+  if (mode === "home") {
+    siteNav.innerHTML = `
+      <a href="#/leggi" class="btn">&gt; Leggi</a>
+      <a href="build/ministero-delle-eccezioni-v0.1.epub" class="btn">&gt; Scarica EPUB</a>
+    `;
+    return;
+  }
+
+  if (mode === "chapter") {
+    siteNav.innerHTML = `
+      <a href="#/leggi" class="btn">&gt; Torna all'indice</a>
+      <a href="build/ministero-delle-eccezioni-v0.1.epub" class="btn">&gt; Scarica EPUB</a>
+    `;
+    return;
+  }
+
+  siteNav.innerHTML = `
+    <a href="build/ministero-delle-eccezioni-v0.1.epub" class="btn">&gt; Scarica EPUB</a>
+  `;
 }
 
 function renderHome() {
@@ -121,17 +105,16 @@ function renderHome() {
 }
 
 function renderIndex() {
-  setPageMode("reader");
-  const version = currentVersion();
-  document.title = `Leggi ${version.label} · Il Ministero delle Eccezioni`;
+  setPageMode("index");
+  document.title = `Leggi ${CURRENT_VERSION.label} · Il Ministero delle Eccezioni`;
   app.innerHTML = `
     <h1 class="book-title">Il Ministero delle Eccezioni</h1>
-    <div class="subtitle">Indice · ${version.label}</div>
+    <div class="subtitle">Indice · ${CURRENT_VERSION.label}</div>
     <p><em>Una commedia burocratica cosmica in cui la civiltà non è caduta: è solo bloccata in attesa di approvazione.</em></p>
     <p><a href="build/ministero-delle-eccezioni-v0.1.epub" class="inline-download">&gt; Scarica EPUB</a></p>
     <h2>Indice</h2>
     <ul class="toc">
-      ${version.chapters.map((chapter) => `
+      ${CURRENT_VERSION.chapters.map((chapter) => `
         <li><a href="#/${chapter.slug}">
           <span class="num">${chapter.n === 0 ? "—" : String(chapter.n).padStart(2, "0")}</span>
           <span class="title">${chapter.title}</span>
@@ -143,16 +126,15 @@ function renderIndex() {
 }
 
 async function renderChapter(slug) {
-  setPageMode("reader");
-  const version = currentVersion();
-  const index = version.chapters.findIndex((chapter) => chapter.slug === slug);
+  setPageMode("chapter");
+  const index = CURRENT_VERSION.chapters.findIndex((chapter) => chapter.slug === slug);
   if (index === -1) {
     renderIndex();
     return;
   }
 
-  const chapter = version.chapters[index];
-  document.title = `${chapter.title} · ${version.label} · Il Ministero delle Eccezioni`;
+  const chapter = CURRENT_VERSION.chapters[index];
+  document.title = `${chapter.title} · ${CURRENT_VERSION.label} · Il Ministero delle Eccezioni`;
   app.innerHTML = `<div class="loading">Caricamento del capitolo…</div>`;
 
   try {
@@ -160,11 +142,11 @@ async function renderChapter(slug) {
     if (!response.ok) throw new Error("HTTP " + response.status);
     const markdown = await response.text();
     const html = marked.parse(stripFirstHeading(markdown));
-    const previous = index > 0 ? version.chapters[index - 1] : null;
-    const next = index < version.chapters.length - 1 ? version.chapters[index + 1] : null;
+    const previous = index > 0 ? CURRENT_VERSION.chapters[index - 1] : null;
+    const next = index < CURRENT_VERSION.chapters.length - 1 ? CURRENT_VERSION.chapters[index + 1] : null;
 
     app.innerHTML = `
-      <div class="subtitle">${version.label} · ${chapter.label}</div>
+      <div class="subtitle">${CURRENT_VERSION.label} · ${chapter.label}</div>
       <h1>${chapter.title}</h1>
       <article>${html}</article>
       <nav class="chapter-nav">
@@ -179,7 +161,6 @@ async function renderChapter(slug) {
 }
 
 function route() {
-  versionSelect.value = currentVersionKey;
   const hash = location.hash.replace(/^#\/?/, "");
   if (!hash || hash === "/") {
     renderHome();

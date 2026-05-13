@@ -67,8 +67,7 @@ header.site nav {
 }
 
 header.site button,
-header.site a.btn,
-header.site select {
+header.site a.btn {
   font-family: "Inter", system-ui, sans-serif;
   font-size: 0.78rem;
   color: var(--fg-soft);
@@ -81,24 +80,9 @@ header.site select {
 }
 
 header.site button:hover,
-header.site a.btn:hover,
-header.site select:hover {
+header.site a.btn:hover {
   color: var(--fg);
   border-color: var(--fg-soft);
-}
-
-header.site select {
-  max-width: 8.8rem;
-  padding-right: 1.8rem;
-}
-
-.version-picker {
-  display: flex;
-  align-items: center;
-  gap: 0.35rem;
-  font-family: "Inter", system-ui, sans-serif;
-  font-size: 0.72rem;
-  color: var(--fg-soft);
 }
 
 main {
