@@ -22,7 +22,9 @@ libro/
 │   ├── 11_capitolo_11.md     # Riunione interdicasteriale
 │   ├── 12_capitolo_12.md     # Bothwell racconta qualcosa
 │   ├── 13_capitolo_13.md     # Il distributore di caffè parla
-│   └── 14_capitolo_14.md     # Ada dice no
+│   ├── 14_capitolo_14.md     # Ada dice no
+│   ├── 15_capitolo_15.md     # La verità su Bothwell
+│   └── 16_capitolo_16.md     # L'audit arriva
 └── progetto/                 # documenti di lavoro
     ├── 01_outline.md
     ├── 02_personaggi.md
@@ -53,6 +55,8 @@ libro/
 12. [Bothwell racconta qualcosa](capitoli/12_capitolo_12.md)
 13. [Il distributore di caffè parla](capitoli/13_capitolo_13.md)
 14. [Ada dice no](capitoli/14_capitolo_14.md)
+15. [La verità su Bothwell](capitoli/15_capitolo_15.md)
+16. [L'audit arriva](capitoli/16_capitolo_16.md)
 
 ## Scarica l'ePub
 

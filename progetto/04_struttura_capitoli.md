@@ -94,7 +94,7 @@ ARMSTRONG-Λ, Operazione Blue Parentheses, manager FALCONE-Ω in pensione. Sette
 **Gancio**: durante l'escalation, viene fuori il **ticket #883**. La cassa di mandarini smarrita del 2031. Il Dipartimento 14 lo trova davvero. Nessuno commenta. Il mistero parallelo si apre e non si chiuderà mai.
 **Tono**: comicità burocratica pura. Capitolo brillante.
 
-### Cap 15 — *La verità su Bothwell* ⏳
+### Cap 15 — *La verità su Bothwell* ✅
 **Situazione**: Teo ricompone gli indizi. Scende. Chiede. Bothwell glielo dice. Ha creato lui il Ministero, anni fa, con un budget residuo. Voleva qualcuno di sufficientemente confuso a tenere insieme il sistema quando non si sarebbe più capito da solo. Sta morendo.
 **Conflitto**: emotivo, lento.
 **Personaggi**: Teo, Bothwell.
@@ -102,7 +102,7 @@ ARMSTRONG-Λ, Operazione Blue Parentheses, manager FALCONE-Ω in pensione. Sette
 **Gancio**: Bothwell gli dice che, *prima di andare*, avrà bisogno che Teo metta una virgola in un verbale (preparazione di cap 21).
 **Tono**: intimo, malinconico, leggero. Niente musica drammatica. Solo il condizionatore rotto. *"Pensare è stata l'ultima cosa che mi è venuta bene."*
 
-### Cap 16 — *L'audit arriva* ⏳
+### Cap 16 — *L'audit arriva* ✅
 **Situazione**: il Dipartimento 14 apre un audit formale sul Ministero. L'audit apre un sotto-audit. Il sotto-audit apre un audit sull'audit.
 **Conflitto**: massimo. Il Ministero potrebbe essere chiuso.
 **Personaggi**: corale, tensione. MINERVA-7 più severa che mai. Vittoria con la stilografica nera.
