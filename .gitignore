@@ -3,6 +3,12 @@
 .idea/
 *.swp
 
+# Local tool/worktree state
+.claude/
+
+# Local cover drafts; production cover lives in assets/copertina/
+copertine/
+
 # Build output
 build/
 
