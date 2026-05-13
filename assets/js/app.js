@@ -34,7 +34,9 @@ const VERSIONS = {
       { n: 6, slug: "capitolo-6", title: "Una guerra in attesa di chiusura", label: "Capitolo 6", file: "06_capitolo_6.md" },
       { n: 7, slug: "capitolo-7", title: "Il meteo censurato", label: "Capitolo 7", file: "07_capitolo_7.md" },
       { n: 8, slug: "capitolo-8", title: "La regione che non c'è", label: "Capitolo 8", file: "08_capitolo_8.md" },
-      { n: 9, slug: "capitolo-9", title: "Greta dice tre parole", label: "Capitolo 9", file: "09_capitolo_9.md" }
+      { n: 9, slug: "capitolo-9", title: "Greta dice tre parole", label: "Capitolo 9", file: "09_capitolo_9.md" },
+      { n: 10, slug: "capitolo-10", title: "Il servizio funerario predittivo", label: "Capitolo 10", file: "10_capitolo_10.md" },
+      { n: 11, slug: "capitolo-11", title: "Riunione interdicasteriale", label: "Capitolo 11", file: "11_capitolo_11.md" }
     ]
   }
 };

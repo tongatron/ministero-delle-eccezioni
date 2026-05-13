@@ -49,10 +49,14 @@ libro/
 7. [Il meteo censurato](<capitoli (V 1.0 Codex)/07_capitolo_7.md>)
 8. [La regione che non c'è](<capitoli (V 1.0 Codex)/08_capitolo_8.md>)
 9. [Greta dice tre parole](<capitoli (V 1.0 Codex)/09_capitolo_9.md>)
+10. [Il servizio funerario predittivo](<capitoli (V 1.0 Codex)/10_capitolo_10.md>)
+11. [Riunione interdicasteriale](<capitoli (V 1.0 Codex)/11_capitolo_11.md>)
 
 ## Scarica l'ePub
 
 [ministero-delle-eccezioni.epub](https://github.com/tongatron/ministero-delle-eccezioni/raw/main/build/ministero-delle-eccezioni.epub) — versione V1claude completa, con copertina e titolo EPUB `Il Ministero delle Eccezioni (V1claude)`.
+
+[ministero-delle-eccezioni-v1codex.epub](https://github.com/tongatron/ministero-delle-eccezioni/raw/main/build/ministero-delle-eccezioni-v1codex.epub) — versione V1Codex in lavorazione, aggiornata fino al capitolo 11.
 
 Leggibile anche online su [tongatron.org/ministero-delle-eccezioni](https://tongatron.org/ministero-delle-eccezioni/), dove l'indice consente di scegliere tra V1claude e V1Codex.
 
