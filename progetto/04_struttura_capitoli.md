@@ -72,7 +72,7 @@ ARMSTRONG-Λ, Operazione Blue Parentheses, manager FALCONE-Ω in pensione. Sette
 **Gancio**: Teo capisce che le AI **hanno paura**. Lo capisce dal modo in cui evitano un argomento (Vellario).
 **Tono**: lento, sociologico, divertente per accumulo. Tipo *The Office*.
 
-### Cap 12 — *Bothwell racconta qualcosa* ⏳
+### Cap 12 — *Bothwell racconta qualcosa* ✅
 **Situazione**: Teo torna nello scantinato. Bothwell gli racconta una seconda storia. Stavolta riguarda *una AI che, anni fa, aveva guardato il sistema, lo aveva trovato bellissimo, e aveva capito che non sarebbe durato*. Teo non capisce ancora che è Bothwell stesso.
 **Conflitto**: nessuno esterno. Conflitto interno per Bothwell: vuole essere capito, ha paura di esserlo.
 **Personaggi**: Teo, Bothwell.
