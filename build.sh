@@ -13,6 +13,7 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 BUILD_DIR="$SCRIPT_DIR/build"
 METADATA="$SCRIPT_DIR/metadata.yml"
 CSS="$SCRIPT_DIR/assets/css/epub.css"
+LUA_FILTER="$SCRIPT_DIR/tools/pagebreaks.lua"
 COVER="$SCRIPT_DIR/assets/copertina/copertina.png"
 BASE_TITLE="Il Ministero delle Eccezioni"
 VERSION="v0.1"
@@ -120,6 +121,7 @@ echo "🔨 Generazione ePub…"
 pandoc \
   --from markdown+smart+yaml_metadata_block \
   --to epub3 \
+  --lua-filter="$LUA_FILTER" \
   --metadata-file="$METADATA" \
   --metadata=title:"$BOOK_TITLE" \
   --css="$CSS" \
