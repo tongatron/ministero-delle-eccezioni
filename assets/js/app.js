@@ -30,6 +30,9 @@ const CURRENT_VERSION = {
   ]
 };
 
+const EPUB_URL = "build/ministero-delle-eccezioni-v0.1.epub";
+const TONGATRON_URL = "https://tongatron.org";
+
 function chapterUrl(chapter) {
   return `${CURRENT_VERSION.base}/${chapter.file}`;
 }
@@ -46,25 +49,36 @@ function setPageMode(mode) {
   renderHeader(mode);
 }
 
+function renderTongatronButton() {
+  return `
+    <a href="${TONGATRON_URL}" class="btn tongatron-btn" target="_blank" rel="noopener" aria-label="Vai a tongatron.org">
+      <span class="desktop-label">tongatron.org</span><span class="mobile-label">tongatron</span><span class="external-mark" aria-hidden="true">↗</span>
+    </a>
+  `;
+}
+
 function renderHeader(mode) {
   if (mode === "home") {
     siteNav.innerHTML = `
-      <a href="#/leggi" class="btn">&gt; Leggi</a>
-      <a href="build/ministero-delle-eccezioni-v0.1.epub" class="btn">&gt; Scarica EPUB</a>
+      <a href="#/leggi" class="btn primary-nav">Leggi</a>
+      <a href="${EPUB_URL}" class="btn">EPUB</a>
+      ${renderTongatronButton()}
     `;
     return;
   }
 
   if (mode === "chapter") {
     siteNav.innerHTML = `
-      <a href="#/leggi" class="btn">&gt; Torna all'indice</a>
-      <a href="build/ministero-delle-eccezioni-v0.1.epub" class="btn">&gt; Scarica EPUB</a>
+      <a href="#/leggi" class="btn">Indice</a>
+      <a href="${EPUB_URL}" class="btn">EPUB</a>
+      ${renderTongatronButton()}
     `;
     return;
   }
 
   siteNav.innerHTML = `
-    <a href="build/ministero-delle-eccezioni-v0.1.epub" class="btn">&gt; Scarica EPUB</a>
+    <a href="${EPUB_URL}" class="btn">EPUB</a>
+    ${renderTongatronButton()}
   `;
 }
 
@@ -73,16 +87,16 @@ function renderHome() {
   document.title = "Il Ministero delle Eccezioni";
   app.innerHTML = `
     <section class="home-editorial">
-      <p class="home-kicker">Romanzo satirico di fantascienza</p>
+      <p class="home-kicker">Archivio narrativo / Romanzo satirico di fantascienza</p>
       <div class="home-lead">
         <div class="home-copy">
           <h1 class="book-title">Il Ministero delle Eccezioni</h1>
           <p class="home-deck"><em>Una commedia burocratica cosmica in cui la civiltà non è collassata: è semplicemente bloccata in attesa di approvazione.</em></p>
           <div class="hero-actions">
-            <a href="#/leggi" class="cta-btn">&gt; Leggi</a>
-            <a href="build/ministero-delle-eccezioni-v0.1.epub" class="cta-btn">&gt; Scarica EPUB</a>
+            <a href="#/leggi" class="cta-btn cta-primary">Leggi online</a>
+            <a href="${EPUB_URL}" class="cta-btn">Scarica EPUB</a>
           </div>
-          <p class="hero-note">Ultima versione disponibile: V0.1</p>
+          <p class="hero-note">V0.1 completa fino all'epilogo · in lavorazione</p>
         </div>
         <figure class="home-cover">
           <img src="assets/copertina/copertina.png" alt="Copertina de Il Ministero delle Eccezioni" />
@@ -109,9 +123,9 @@ function renderIndex() {
   document.title = `Leggi ${CURRENT_VERSION.label} · Il Ministero delle Eccezioni`;
   app.innerHTML = `
     <h1 class="book-title">Il Ministero delle Eccezioni</h1>
-    <div class="subtitle">Indice · ${CURRENT_VERSION.label}</div>
+    <div class="subtitle">Indice · ${CURRENT_VERSION.label} · archivio narrativo</div>
     <p><em>Una commedia burocratica cosmica in cui la civiltà non è caduta: è solo bloccata in attesa di approvazione.</em></p>
-    <p><a href="build/ministero-delle-eccezioni-v0.1.epub" class="inline-download">&gt; Scarica EPUB</a></p>
+    <p><a href="${EPUB_URL}" class="inline-download">Scarica EPUB</a></p>
     <h2>Indice</h2>
     <ul class="toc">
       ${CURRENT_VERSION.chapters.map((chapter) => `

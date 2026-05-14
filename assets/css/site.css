@@ -5,6 +5,7 @@
   --fg-soft: #555;
   --rule: #e3ddd0;
   --accent: #8a5a2b;
+  --accent-cool: #46635d;
   --max: 50rem;
 }
 
@@ -39,9 +40,10 @@ header.site {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 1rem;
   position: sticky;
   top: 0;
-  background: var(--bg);
+  background: rgba(250, 248, 243, 0.9);
   z-index: 5;
   backdrop-filter: saturate(140%) blur(6px);
 }
@@ -50,10 +52,11 @@ header.site .brand {
   font-family: "Inter", system-ui, sans-serif;
   font-size: 0.82rem;
   font-weight: 600;
-  letter-spacing: 0.04em;
+  letter-spacing: 0;
   text-transform: uppercase;
   color: var(--fg-soft);
   text-decoration: none;
+  white-space: nowrap;
 }
 
 header.site .brand:hover { color: var(--fg); }
@@ -73,10 +76,12 @@ header.site a.btn {
   color: var(--fg-soft);
   background: transparent;
   border: 1px solid var(--rule);
-  padding: 0.35rem 0.7rem;
-  border-radius: 0.4rem;
+  padding: 0.35rem 0.68rem;
+  border-radius: 0.25rem;
   cursor: pointer;
   text-decoration: none;
+  line-height: 1.2;
+  transition: color 160ms ease, border-color 160ms ease, background 160ms ease;
 }
 
 header.site button:hover,
@@ -84,6 +89,26 @@ header.site a.btn:hover {
   color: var(--fg);
   border-color: var(--fg-soft);
 }
+
+header.site a.primary-nav {
+  color: var(--fg);
+  border-color: #cfc5b6;
+  background: rgba(255, 255, 255, 0.28);
+}
+
+header.site a.tongatron-btn {
+  color: var(--accent-cool);
+  border-color: transparent;
+  padding-right: 0.55rem;
+}
+
+header.site a.tongatron-btn:hover {
+  border-color: #c8d0ca;
+  color: #243f3a;
+}
+
+.mobile-label { display: none; }
+.external-mark { margin-left: 0.25rem; }
 
 main {
   max-width: var(--max);
@@ -96,7 +121,7 @@ main h1 {
   font-size: 2.1rem;
   line-height: 1.15;
   margin: 1.5rem 0 0.3rem;
-  letter-spacing: -0.01em;
+  letter-spacing: 0;
 }
 
 main h1.book-title {
@@ -106,24 +131,24 @@ main h1.book-title {
 }
 
 .home-editorial {
-  padding-top: 2.4rem;
+  padding-top: clamp(1.8rem, 4vw, 3.2rem);
 }
 
 .home-kicker {
   font-family: "Inter", system-ui, sans-serif;
   font-size: 0.74rem;
-  letter-spacing: 0.14em;
+  letter-spacing: 0;
   text-transform: uppercase;
-  color: var(--fg-soft);
+  color: var(--accent-cool);
   margin-bottom: 1.2rem;
 }
 
 .home-lead {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 12rem;
+  grid-template-columns: minmax(0, 1fr) minmax(9rem, 12rem);
   gap: 2rem;
   align-items: start;
-  padding-bottom: 2rem;
+  padding: 0.4rem 0 2.2rem;
   margin-bottom: 2rem;
   border-bottom: 1px solid var(--rule);
 }
@@ -154,7 +179,7 @@ main h1.book-title {
   max-width: 12rem;
   display: block;
   border-radius: 0.2rem;
-  box-shadow: 0 0.9rem 2rem rgba(26, 26, 26, 0.09);
+  box-shadow: 0 1rem 2.2rem rgba(26, 26, 26, 0.11);
   border: 1px solid var(--rule);
 }
 
@@ -173,7 +198,7 @@ main h1.book-title {
 
 .hero-actions {
   display: flex;
-  gap: 0.8rem;
+  gap: 0.55rem;
   flex-wrap: wrap;
   margin-bottom: 0.9rem;
 }
@@ -182,22 +207,36 @@ main h1.book-title {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-width: 9rem;
-  padding: 0.72rem 0.95rem;
-  border-radius: 0.12rem;
+  min-width: 0;
+  padding: 0.64rem 0.88rem;
+  border-radius: 0.2rem;
   border: 1px solid var(--rule);
-  background: transparent;
+  background: rgba(255, 255, 255, 0.26);
   color: var(--fg-soft);
   text-decoration: none;
   font-family: "Inter", system-ui, sans-serif;
   font-size: 0.8rem;
-  letter-spacing: 0.06em;
+  letter-spacing: 0;
   text-transform: uppercase;
+  transition: color 160ms ease, border-color 160ms ease, background 160ms ease;
+}
+
+.cta-primary {
+  background: var(--fg);
+  border-color: var(--fg);
+  color: var(--bg);
 }
 
 .cta-btn:hover {
   border-color: var(--fg);
   color: var(--fg);
+  background: rgba(255, 255, 255, 0.45);
+}
+
+.cta-primary:hover {
+  background: var(--accent-cool);
+  border-color: var(--accent-cool);
+  color: #fff;
 }
 
 .inline-download {
@@ -205,7 +244,7 @@ main h1.book-title {
   text-decoration: none;
   font-family: "Inter", system-ui, sans-serif;
   font-size: 0.84rem;
-  letter-spacing: 0.03em;
+  letter-spacing: 0;
   text-transform: uppercase;
 }
 
@@ -216,7 +255,7 @@ main h1.book-title {
 .hero-note {
   font-family: "Inter", system-ui, sans-serif;
   font-size: 0.74rem;
-  letter-spacing: 0.08em;
+  letter-spacing: 0;
   text-transform: uppercase;
   color: var(--fg-soft);
 }
@@ -230,7 +269,7 @@ main .subtitle {
   font-family: "Inter", system-ui, sans-serif;
   font-size: 0.85rem;
   color: var(--fg-soft);
-  letter-spacing: 0.03em;
+  letter-spacing: 0;
   text-transform: uppercase;
   margin-bottom: 2.2rem;
 }
@@ -266,7 +305,7 @@ main hr {
 
 main hr::before {
   content: "✻   ✻   ✻";
-  letter-spacing: 0.6em;
+  letter-spacing: 0;
   font-size: 0.8rem;
 }
 
@@ -294,14 +333,18 @@ main li { margin-bottom: 0.3rem; }
   padding: 0.95rem 0.2rem;
   color: var(--fg);
   text-decoration: none;
+  transition: color 160ms ease, padding-left 160ms ease;
 }
 
-.toc a:hover { color: var(--accent); }
+.toc a:hover {
+  color: var(--accent);
+  padding-left: 0.45rem;
+}
 
 .toc .num {
   font-family: "Inter", system-ui, sans-serif;
   font-size: 0.78rem;
-  color: var(--fg-soft);
+  color: var(--accent-cool);
   min-width: 1.6rem;
   font-variant-numeric: tabular-nums;
 }
@@ -331,7 +374,7 @@ main li { margin-bottom: 0.3rem; }
 .chapter-nav .label {
   display: block;
   font-size: 0.7rem;
-  letter-spacing: 0.08em;
+  letter-spacing: 0;
   text-transform: uppercase;
   color: var(--fg-soft);
   margin-bottom: 0.2rem;
@@ -359,13 +402,45 @@ footer.site {
   border-top: 1px solid var(--rule);
 }
 
-footer.site a { color: var(--fg-soft); }
+footer.site p { margin: 0; }
+
+footer.site a {
+  color: var(--fg-soft);
+  text-underline-offset: 0.18em;
+}
+
+footer.site a:hover { color: var(--fg); }
 
 @media (max-width: 480px) {
   body { font-size: 18.5px; line-height: 1.65; }
   main { padding: 1.2rem 1.1rem 4rem; }
   main h1.book-title { font-size: 2rem; }
   main h1 { font-size: 1.65rem; }
+}
+
+@media (max-width: 560px) {
+  header.site {
+    padding: 0.75rem 1rem;
+    align-items: flex-start;
+  }
+
+  header.site .brand {
+    max-width: 10.5rem;
+    white-space: normal;
+  }
+
+  header.site nav {
+    gap: 0.3rem;
+  }
+
+  header.site button,
+  header.site a.btn {
+    font-size: 0.72rem;
+    padding: 0.32rem 0.5rem;
+  }
+
+  .desktop-label { display: none; }
+  .mobile-label { display: inline; }
 }
 
 @media (max-width: 760px) {
