@@ -11,8 +11,10 @@ copertine/
 
 # Build output
 build/*
-!build/ministero-delle-eccezioni-v0.1.codex.epub
-!build/ministero-delle-eccezioni-v0.1.claude.epub
+!build/ministero-delle-eccezioni-v0.1.epub
+
+# Documenti interni di progetto
+progetto/
 
 # Font (di solito pesanti — traccia solo i metadata)
 assets/fonts/*.ttf
