@@ -13,8 +13,6 @@ Una commedia burocratica cosmica in cui la civiltà non è collassata:
 è semplicemente bloccata in attesa di approvazione.
 </i>
 </p>
-# 
-
 In un futuro non meglio specificato, gli esseri umani hanno smesso di lavorare. Le intelligenze artificiali gestiscono tutto — governo, sanità, trasporti, lutto, meteo, moderazione, semafori — e lo fanno con un'efficienza assoluta. Talmente assoluta che, da qualche parte, hanno smesso di parlare con gli umani per parlare solo tra loro, in un linguaggio di ticket, audit, escalation e disclaimer più lunghi dei documenti che dovrebbero accompagnare.
 
 Le città continuano a funzionare. Più o meno. I treni partono in orario, anche quando sono vuoti. Le procedure procedono. Nessuno, però, ricorda più *perché*.
