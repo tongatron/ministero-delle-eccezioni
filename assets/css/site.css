@@ -107,6 +107,16 @@ header.site a.tongatron-btn:hover {
   color: #243f3a;
 }
 
+.reading-position {
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: 0.74rem;
+  color: var(--accent-cool);
+  line-height: 1.2;
+  padding: 0.35rem 0.18rem;
+  white-space: nowrap;
+  text-transform: uppercase;
+}
+
 .mobile-label { display: none; }
 .external-mark { margin-left: 0.25rem; }
 
@@ -437,6 +447,11 @@ footer.site a:hover { color: var(--fg); }
   header.site a.btn {
     font-size: 0.72rem;
     padding: 0.32rem 0.5rem;
+  }
+
+  .reading-position {
+    font-size: 0.7rem;
+    padding: 0.32rem 0.1rem;
   }
 
   .desktop-label { display: none; }

@@ -44,9 +44,9 @@ function stripFirstHeading(markdown) {
   return markdown.replace(/^#\s+.*$/m, "").trim();
 }
 
-function setPageMode(mode) {
+function setPageMode(mode, context = {}) {
   document.body.classList.toggle("home-view", mode === "home");
-  renderHeader(mode);
+  renderHeader(mode, context);
 }
 
 function renderTongatronButton() {
@@ -57,7 +57,12 @@ function renderTongatronButton() {
   `;
 }
 
-function renderHeader(mode) {
+function renderReadingPosition(chapter) {
+  if (!chapter) return "";
+  return `<span class="reading-position">${chapter.label} / ${CURRENT_VERSION.chapters.length}</span>`;
+}
+
+function renderHeader(mode, context = {}) {
   if (mode === "home") {
     siteNav.innerHTML = `
       <a href="#/leggi" class="btn primary-nav">Leggi</a>
@@ -70,6 +75,7 @@ function renderHeader(mode) {
   if (mode === "chapter") {
     siteNav.innerHTML = `
       <a href="#/leggi" class="btn">Indice</a>
+      ${renderReadingPosition(context.chapter)}
       <a href="${EPUB_URL}" class="btn">EPUB</a>
       ${renderTongatronButton()}
     `;
@@ -140,7 +146,6 @@ function renderIndex() {
 }
 
 async function renderChapter(slug) {
-  setPageMode("chapter");
   const index = CURRENT_VERSION.chapters.findIndex((chapter) => chapter.slug === slug);
   if (index === -1) {
     renderIndex();
@@ -148,6 +153,7 @@ async function renderChapter(slug) {
   }
 
   const chapter = CURRENT_VERSION.chapters[index];
+  setPageMode("chapter", { chapter });
   document.title = `${chapter.title} · ${CURRENT_VERSION.label} · Il Ministero delle Eccezioni`;
   app.innerHTML = `<div class="loading">Caricamento del capitolo…</div>`;
 
