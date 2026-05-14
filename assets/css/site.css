@@ -270,6 +270,17 @@ main h1.book-title {
   color: var(--fg-soft);
 }
 
+.support-action {
+  display: flex;
+  align-items: center;
+  min-height: 2.6rem;
+  margin-top: 1rem;
+}
+
+.support-action:empty {
+  display: none;
+}
+
 .home-editorial h1 + p,
 .home-editorial p:first-of-type {
   text-indent: 0;

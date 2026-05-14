@@ -32,6 +32,17 @@ const CURRENT_VERSION = {
 
 const EPUB_URL = "build/ministero-delle-eccezioni-v0.1.epub";
 const TONGATRON_URL = "https://tongatron.org";
+const BUY_ME_A_COFFEE_URL = "https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js";
+const BUY_ME_A_COFFEE_OPTIONS = {
+  text: "Buy me a coffee",
+  slug: "tongatron",
+  color: "#000000",
+  emoji: "☕",
+  font: "Cookie",
+  fontColor: "#ffffff",
+  outlineColor: "#ffffff",
+  coffeeColor: "#FFDD00"
+};
 
 function chapterUrl(chapter) {
   return `${CURRENT_VERSION.base}/${chapter.file}`;
@@ -88,6 +99,43 @@ function renderHeader(mode, context = {}) {
   `;
 }
 
+function mountBuyMeCoffeeButton() {
+  const container = document.getElementById("bmc-home-button");
+  if (!container) return;
+
+  function renderButton() {
+    if (typeof window.bmcBtnWidget !== "function") return false;
+    container.innerHTML = window.bmcBtnWidget(
+      BUY_ME_A_COFFEE_OPTIONS.text,
+      BUY_ME_A_COFFEE_OPTIONS.slug,
+      BUY_ME_A_COFFEE_OPTIONS.color,
+      BUY_ME_A_COFFEE_OPTIONS.emoji,
+      BUY_ME_A_COFFEE_OPTIONS.font,
+      BUY_ME_A_COFFEE_OPTIONS.fontColor,
+      BUY_ME_A_COFFEE_OPTIONS.outlineColor,
+      BUY_ME_A_COFFEE_OPTIONS.coffeeColor
+    );
+    return true;
+  }
+
+  if (renderButton()) return;
+
+  const script = document.createElement("script");
+  script.type = "text/javascript";
+  script.src = BUY_ME_A_COFFEE_URL;
+  script.dataset.name = "bmc-button";
+  script.dataset.slug = BUY_ME_A_COFFEE_OPTIONS.slug;
+  script.dataset.color = BUY_ME_A_COFFEE_OPTIONS.color;
+  script.dataset.emoji = BUY_ME_A_COFFEE_OPTIONS.emoji;
+  script.dataset.font = BUY_ME_A_COFFEE_OPTIONS.font;
+  script.dataset.text = BUY_ME_A_COFFEE_OPTIONS.text;
+  script.dataset.outlineColor = BUY_ME_A_COFFEE_OPTIONS.outlineColor;
+  script.dataset.fontColor = BUY_ME_A_COFFEE_OPTIONS.fontColor;
+  script.dataset.coffeeColor = BUY_ME_A_COFFEE_OPTIONS.coffeeColor;
+  script.onload = renderButton;
+  container.appendChild(script);
+}
+
 function renderHome() {
   setPageMode("home");
   document.title = "Il Ministero delle Eccezioni";
@@ -103,6 +151,7 @@ function renderHome() {
             <a href="${EPUB_URL}" class="cta-btn">Scarica EPUB</a>
           </div>
           <p class="hero-note">V0.1 completa fino all'epilogo · in lavorazione</p>
+          <div id="bmc-home-button" class="support-action" aria-label="Sostieni il progetto"></div>
         </div>
         <figure class="home-cover">
           <img src="assets/copertina/copertina.png" alt="Copertina de Il Ministero delle Eccezioni" />
@@ -121,6 +170,7 @@ function renderHome() {
       </div>
     </section>
   `;
+  mountBuyMeCoffeeButton();
   window.scrollTo(0, 0);
 }
 
