@@ -32,17 +32,7 @@ const CURRENT_VERSION = {
 
 const EPUB_URL = "build/ministero-delle-eccezioni-v0.1.epub";
 const TONGATRON_URL = "https://tongatron.org";
-const BUY_ME_A_COFFEE_URL = "https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js";
-const BUY_ME_A_COFFEE_OPTIONS = {
-  text: "Buy me a coffee",
-  slug: "tongatron",
-  color: "#000000",
-  emoji: "☕",
-  font: "Cookie",
-  fontColor: "#ffffff",
-  outlineColor: "#ffffff",
-  coffeeColor: "#FFDD00"
-};
+
 
 function chapterUrl(chapter) {
   return `${CURRENT_VERSION.base}/${chapter.file}`;
