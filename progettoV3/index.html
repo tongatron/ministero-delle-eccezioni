@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>v0.3 — Spegnere e Riaccendere</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,500;7..72,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --bg: #faf8f3;
+    --ink: #1a1a1a;
+    --muted: #6b6b6b;
+    --rule: #d8d3c5;
+    --accent: #7a3b2a;
+    --accent-soft: #b6705a;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: var(--bg); color: var(--ink); }
+  body {
+    font-family: "Literata", Georgia, serif;
+    line-height: 1.6;
+    font-size: 18px;
+    padding: 2.5rem 1.25rem 4rem;
+  }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+  header {
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  h1 {
+    font-family: "Literata", Georgia, serif;
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0 0 0.4rem;
+    letter-spacing: -0.01em;
+  }
+  h1 em { font-style: italic; }
+  header p {
+    color: var(--muted);
+    font-family: "Inter", system-ui, sans-serif;
+    font-size: 0.95rem;
+    margin: 0;
+  }
+  h2 {
+    font-family: "Inter", system-ui, sans-serif;
+    font-size: 0.78rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--muted);
+    margin: 2.4rem 0 0.8rem;
+  }
+  h3 {
+    font-family: "Literata", Georgia, serif;
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin: 1.6rem 0 0.6rem;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 0.4rem;
+  }
+  li {
+    border-bottom: 1px dotted var(--rule);
+    padding: 0.55rem 0;
+  }
+  li:last-child { border-bottom: none; }
+  a {
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color .15s;
+  }
+  a:hover {
+    border-bottom-color: var(--accent-soft);
+  }
+  .meta {
+    color: var(--muted);
+    font-family: "Inter", system-ui, sans-serif;
+    font-size: 0.85rem;
+    margin-left: 0.5rem;
+  }
+  .todo {
+    color: var(--muted);
+    font-style: italic;
+  }
+  .todo a { color: var(--muted); pointer-events: none; }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    font-family: "Inter", system-ui, sans-serif;
+    font-size: 0.9rem;
+    margin-top: 0.6rem;
+  }
+  th, td {
+    text-align: left;
+    padding: 0.5rem 0.6rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  th {
+    font-weight: 600;
+    color: var(--muted);
+    text-transform: uppercase;
+    font-size: 0.72rem;
+    letter-spacing: 0.1em;
+  }
+  td.num { text-align: right; color: var(--muted); }
+  footer {
+    margin-top: 3.5rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--rule);
+    color: var(--muted);
+    font-family: "Inter", system-ui, sans-serif;
+    font-size: 0.82rem;
+  }
+  footer a { color: var(--muted); border-bottom-color: var(--rule); }
+</style>
+</head>
+<body>
+<main>
+
+<header>
+  <h1>v0.3 — <em>Spegnere e Riaccendere</em></h1>
+  <p>Breve romanzo. Servizio Interventi Manuali di Torino, primavera 2080. Stessa civiltà del <em>Ministero delle Eccezioni</em> (v0.1), punto di vista laterale.</p>
+</header>
+
+<h2>Pre-produzione</h2>
+<ul>
+  <li><a href="00_README.md">README</a> <span class="meta">premessa, continuità con la v0.1, checklist</span></li>
+  <li><a href="01_outline.md">Outline</a> <span class="meta">logline, tre atti, dodici capitoli</span></li>
+  <li><a href="02_personaggi.md">Personaggi</a> <span class="meta">Sergio, Lucia, Brunetto, comparse</span></li>
+  <li><a href="03_worldbuilding.md">Worldbuilding</a> <span class="meta">S.I.M., Stato di Stallo Cortese, Modulo M-04</span></li>
+  <li><a href="04_struttura_capitoli.md">Struttura dei capitoli</a> <span class="meta">tabella, perni, semine</span></li>
+  <li><a href="05_temi_e_running_jokes.md">Temi e running jokes</a> <span class="meta">28 voci canone</span></li>
+  <li><a href="06_scene_chiave.md">Scene chiave</a> <span class="meta">nove scene perno con note di regia</span></li>
+  <li><a href="07_dialoghi_memorabili.md">Dialoghi memorabili</a> <span class="meta">banca battute</span></li>
+  <li><a href="10_regole_di_voce.md">Regole di voce</a> <span class="meta">checklist operativa</span></li>
+</ul>
+
+<h2>Capitoli</h2>
+
+<h3>Atto I — La chiamata</h3>
+<ul>
+  <li><a href="capitoli/01_la_ciabatta_sacra.md">Cap 1 — <em>La ciabatta sacra</em></a></li>
+  <li><a href="capitoli/02_corso_vinzaglio_ore_11_14.md">Cap 2 — <em>Corso Vinzaglio, ore 11:14</em></a></li>
+  <li><a href="capitoli/03_carta_avorio.md">Cap 3 — <em>Carta avorio</em></a></li>
+</ul>
+
+<h3>Atto II — I casi</h3>
+<ul>
+  <li class="todo">Cap 4 — <em>Centrifuga</em></li>
+  <li class="todo">Cap 5 — <em>Due pulsanti a sette metri</em></li>
+  <li class="todo">Cap 6 — <em>Il reparto che dice di sì</em></li>
+  <li class="todo">Cap 7 — <em>L'acqua di Chivasso</em></li>
+  <li class="todo">Cap 8 — <em>Il vicolo offeso</em></li>
+  <li class="todo">Cap 9 — <em>Il quaderno blu</em></li>
+</ul>
+
+<h3>Atto III — L'intervento</h3>
+<ul>
+  <li class="todo">Cap 10 — <em>Telefonata del martedì</em></li>
+  <li class="todo">Cap 11 — <em>Per favore</em></li>
+  <li class="todo">Cap 12 — <em>Modulo M-04, copia avorio</em></li>
+</ul>
+
+<h2>Stato</h2>
+<table>
+  <thead>
+    <tr><th>Capitolo</th><th>Stato</th><th class="num">Parole</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>01</td><td>bozza completa</td><td class="num">~1.500</td></tr>
+    <tr><td>02</td><td>bozza completa</td><td class="num">~1.900</td></tr>
+    <tr><td>03</td><td>bozza completa</td><td class="num">~1.800</td></tr>
+    <tr><td>04–12</td><td>da scrivere</td><td class="num">—</td></tr>
+  </tbody>
+</table>
+
+<footer>
+  <p>Romanzo in lavorazione · v0.3 · <a href="../">Torna alla root del repo</a></p>
+</footer>
+
+</main>
+</body>
+</html>
