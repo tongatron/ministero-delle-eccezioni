@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Spegnere e Riaccendere</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,500;7..72,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --bg: #faf8f3;
+    --ink: #1a1a1a;
+    --muted: #6b6b6b;
+    --rule: #d8d3c5;
+    --accent: #7a3b2a;
+    --accent-soft: #b6705a;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: var(--bg); color: var(--ink); }
+  body {
+    font-family: "Literata", Georgia, serif;
+    line-height: 1.75;
+    font-size: 18px;
+    padding: 2.5rem 1.25rem 5rem;
+  }
+  main { max-width: 680px; margin: 0 auto; }
+  nav {
+    font-family: "Inter", system-ui, sans-serif;
+    font-size: 0.85rem;
+    margin-bottom: 2.5rem;
+    color: var(--muted);
+  }
+  nav a { color: var(--accent); text-decoration: none; border-bottom: 1px solid transparent; transition: border-color .15s; }
+  nav a:hover { border-bottom-color: var(--accent-soft); }
+  nav span { margin: 0 0.4rem; }
+
+  #content h1 {
+    font-family: "Literata", Georgia, serif;
+    font-size: 1.9rem;
+    font-weight: 600;
+    margin: 0 0 1.5rem;
+    letter-spacing: -0.01em;
+    line-height: 1.2;
+  }
+  #content h1 em { font-style: italic; }
+  #content h2 {
+    font-family: "Inter", system-ui, sans-serif;
+    font-size: 0.78rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--muted);
+    margin: 2.4rem 0 0.8rem;
+  }
+  #content h3 {
+    font-family: "Literata", Georgia, serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 2rem 0 0.5rem;
+  }
+  #content p { margin: 0 0 1.1rem; }
+  #content p + p { text-indent: 1.5em; margin-top: -0.6rem; }
+  #content hr {
+    border: none;
+    border-top: 1px solid var(--rule);
+    margin: 2rem 0;
+  }
+  #content strong { font-weight: 600; }
+  #content em { font-style: italic; }
+  #content blockquote {
+    border-left: 3px solid var(--rule);
+    margin: 1.2rem 0 1.2rem 0;
+    padding: 0.2rem 0 0.2rem 1.2rem;
+    color: var(--muted);
+    font-style: italic;
+  }
+  #content ul, #content ol {
+    padding-left: 1.6rem;
+    margin: 0.6rem 0 1rem;
+  }
+  #content li { margin-bottom: 0.3rem; }
+  #content code {
+    font-family: monospace;
+    font-size: 0.88em;
+    background: #ede9df;
+    padding: 0.1em 0.35em;
+    border-radius: 3px;
+  }
+
+  #loading {
+    color: var(--muted);
+    font-family: "Inter", system-ui, sans-serif;
+    font-size: 0.9rem;
+  }
+  #error {
+    color: #a00;
+    font-family: "Inter", system-ui, sans-serif;
+    font-size: 0.9rem;
+    display: none;
+  }
+</style>
+</head>
+<body>
+<main>
+  <nav>
+    <a href="index.html">← Indice</a>
+  </nav>
+  <div id="loading">Caricamento…</div>
+  <div id="error">Impossibile caricare il file.</div>
+  <div id="content"></div>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script>
+(function () {
+  const params = new URLSearchParams(location.search);
+  const file = params.get('f');
+
+  if (!file) {
+    document.getElementById('loading').textContent = 'Nessun file specificato.';
+    return;
+  }
+
+  // sanitize: allow only relative paths with .md extension, no ../ escapes
+  if (!/^[\w\-./]+\.md$/.test(file) || file.includes('..')) {
+    document.getElementById('loading').textContent = 'Percorso non valido.';
+    return;
+  }
+
+  fetch(file)
+    .then(r => {
+      if (!r.ok) throw new Error(r.status);
+      return r.text();
+    })
+    .then(md => {
+      document.getElementById('loading').style.display = 'none';
+      const html = marked.parse(md);
+      document.getElementById('content').innerHTML = html;
+      // set page title from first h1 if present
+      const h1 = document.querySelector('#content h1');
+      if (h1) document.title = h1.textContent + ' — Spegnere e Riaccendere';
+    })
+    .catch(() => {
+      document.getElementById('loading').style.display = 'none';
+      document.getElementById('error').style.display = 'block';
+    });
+})();
+</script>
+</body>
+</html>
